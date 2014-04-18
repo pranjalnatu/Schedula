@@ -1,0 +1,136 @@
+@CHARSET "US-ASCII";
+
+            .a{
+                padding-top:34%;
+               padding-left:2%
+                 }
+            .b{
+                padding-top:27%;
+            }
+            .button{
+            background: transparent;
+                border-color: #A0A0A0;
+                  font-family: Century Gothic;
+                font-size:15px;
+                color:#A0A0A0;
+                
+            }
+             a.link1 {font-size: 15px;
+                font-family: Century Gothic;
+                
+                background:-webkit-linear-gradient(#F0F0F0 ,#606060 );
+                 -webkit-background-clip:text;
+                
+                -webkit-text-fill-color:transparent;
+                -moz-text-decoration-color: transparent;
+                  text-decoration:underline;
+              
+             
+             
+             } 
+           a.link2 {font-size: 15px;
+                font-family: Century Gothic;
+                
+                background:-webkit-linear-gradient(#F0F0F0 ,#606060 );
+                 -webkit-background-clip:text;
+                
+                -webkit-text-fill-color:transparent;
+                -moz-text-decoration-color: transparent;
+                 
+             
+             
+             } 
+              a.link3 {font-size: 15px;
+                font-family: Century Gothic;
+                
+               background-color:#FFFAE6;
+               color:black;
+             } 
+             a.link3:hover{
+             background-color:#F0F0F0;
+             }
+            
+            #logout{
+            margin-top:-10px;
+            margin-right:-5px;
+            }
+            #logout1{
+            margin-top:-13px
+            }
+         
+          /*#chat{
+          background-image:url(img/chat.png);
+          }*/
+            
+            h3{
+                font-size: 23px;
+                font-family: Century Gothic;
+                
+                background:-webkit-linear-gradient(#F0F0F0 ,#606060 );
+                 -webkit-background-clip:text;
+                
+                -webkit-text-fill-color:transparent;
+                -moz-text-decoration-color: transparent;
+              
+               
+            }
+            h4{
+                font-size: 18px;
+                font-family: Century Gothic;
+                
+                background:-webkit-linear-gradient(#F0F0F0 ,#606060 );
+                 -webkit-background-clip:text;
+                
+                -webkit-text-fill-color:transparent;
+                -moz-text-decoration-color: transparent;
+              
+               
+            }
+       input::-webkit-input-placeholder {
+	color: rgba(216,216,216,1);
+	 /* white color with alpha = 1 (alpha = opacity varies on a scale of 0 to 1 with decimal values in between) */
+	font-size: 20px;
+
+	font-weight: normal;
+	line-height: 18px;
+	font-family: Courier New;
+	padding: 0px 10px;
+	text-align: center;
+	
+}
+input::-moz-placeholder {
+	color: rgba(255,0,255,1);
+	text-transform: capitalize;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	line-height: 25px;
+	padding: 0px 10px;
+	text-align: left;
+	text-decoration: blink;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: rgba(255,0,255,1);    /* alpha property doesn't properly work Firefox */
+	text-transform: capitalize;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	line-height: 18px;
+	padding: 0px 10px;
+	text-align: left;
+	text-decoration: blink;
+}
+input:-ms-input-placeholder { 
+	color: rgba(255,0,255,1);
+	text-transform: capitalize;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	line-height: 18px;
+	padding: 0px 10px;
+	text-align: left;
+	text-decoration: blink;
+}
