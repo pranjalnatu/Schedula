@@ -12,39 +12,28 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+         <script src="js/asynch1.js"></script>
+          <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <title>JSP Page</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/stylesheet.css" rel="stylesheet">
-         <link rel="stylesheet" href="css/multiple-select.css"/>
+        <link rel="stylesheet" href="css/multiple-select.css"/>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
-
+   
         <style>
-            select {
-                width: 300px;
-            }
-        </style>
-        
-        <style>
+        	select{
+        	width: 300px;}
             body{
                 background-image: url(img/sch.png);
                 background-repeat: no-repeat;
-                background-size:  cover;
-             
-                }  
+                background-size: cover;
+            }  
                        
         </style>
    
-     <script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
-    <script>
-    $(function(){
-        $(".chzn-select").chosen();
-    }); 
-    </script>
- 
-   
            </head>
     <body>
+    <script src="js/asynch1.js"></script>
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-4">
@@ -55,52 +44,28 @@
                        
                         <form >
                             <div class="form-group col-sm-offset-2 col-sm-6">
-                                <select class="form-control">
+                                <select id = "major" class="form-control">
                                     <option>Select a Major</option>
-
                                     <option>Computer Science</option>
                                     <option>Applied Mathematics and Statistics</option>
                                     <option>Mechanical Engineering</option>
-
-                                </select>
+                               </select>
 
                             </div>
                             <div class="form-group  col-sm-offset-2 col-sm-6">
-                                <select class="form-control">
+                                <select id = "major2"class="form-control">
 
                                     <option>Select a Second Major</option>
-
-                                   <option>Computer Science</option>
+                                    <option>Computer Science</option>
                                     <option>Applied Mathematics and Statistics</option>
                                     <option>Mechanical Engineering</option>
 
                                 </select> 
                             </div>
-                            <div class=" col-sm-12">
-                            <h4>&nbsp;&nbsp;&nbsp;&nbsp;What major requirements have you finished?</h4>
+                            <div class="col-sm-12">
+                            <h4>What major requirements have you finished?</h4>
 </div>
-                            <div class="form-group col-sm-offset-2 col-sm-7">
-                            <!--  
-                                <select data-placeholder="Choose major you have finished" multiple class=" form-control chosen-select" multiple="true" name="faculty">
-                                    <option value="CSE 101">CSE 101</option>
-                                    <option value="CSE 102">CSE 102</option>
-                                    <option value="CSE 110">CSE 110</option>
-                                    <option value="CSE 114">CSE 114</option>
-                                    <option value="CSE 130">CSE 130</option>
-                                     <option value="CSE 101">CSE 101</option>
-                                    <option value="CSE 102">CSE 102</option>
-                                    <option value="CSE 110">CSE 110</option>
-                                    <option value="CSE 114">CSE 114</option>
-                                    <option value="CSE 130">CSE 130</option>
-                                   <option value="CSE 101">CSE 101</option>
-                                    <option value="CSE 102">CSE 102</option>
-                                    <option value="CSE 110">CSE 110</option>
-                                    <option value="CSE 114">CSE 114</option>
-                                    <option value="CSE 130">CSE 130</option>
-                              
-                                </select>-->
-                                
-             <select data-placeholder="Choose major you have finished" id="ms" multiple="multiple" class="form-control">
+                            <select data-placeholder="Choose major you have finished" id="ms" multiple="multiple" class="form-control">
             <option value="CSE 114">CSE 114</option>
             <option value="CSE 214">CSE 214</option>
             <option value="CSE 215">CSE 215</option>
@@ -120,17 +85,13 @@
             <option value="CSE 373">CSE 373</option>
             
             </select>
-                                
-                                
- 
-                            </div>
 
-                            <div class=" col-sm-12">
-                            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What DEC requirements have you finished?</h4>
+                            <div class="col-sm-12">
+                            <h4>What DEC requirements have you finished?</h4>
 </div>
                             <div class="form-group col-sm-offset-2 col-sm-7">
 
-           <select data-placeholder="Choose DEC you have finished" id="mb" multiple="multiple" class="form-control">
+                               <select data-placeholder="Choose DEC you have finished" id="mb" multiple="multiple" class="form-control">
             <option value="DEC A">DEC A</option>
             <option value="DEC B">DEC B</option>
             <option value="DEC C">DEC C</option>
@@ -144,25 +105,53 @@
             <option value="DEC K">DEC K</option>
            
             </select>
-                                                           </div>
 
-                            <center class=" col-sm-10 ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp; <a href="studenthomepage.jsp" class="link2 btn button">&nbsp;Submit</a>
+
+                            </div>
+
+                            <center class="col-sm-10 ">
+                          <button type="submit" class="btn  button"><a href="studenthomepage.jsp" class="link2">Submit</a></button>
                             </center>
                         </form>
 
+
                     </div>
                 </div>
-                <br><br>
-                
             </div>
-        </div>
-        
+            <script>
+            var major = $("#major");
             
-        
+            major.change(function() {
+            	//var b = $('#major').filter(":selected").text();
+            	var c = $('#major option:selected').val();
+            	loadClass(c);
+             /**$.ajax({  
+		    type: "GET",  
+		    url: "/schedula_build3", 
+		   // data: major.serialize(),
+		    //data: "para="+p,  
+		    success: function(data){  
+		      
+		    	var result  = data;
+		    	$("#classes").append("<option value=9> + result +</option>");
+		      
+		    },
+	         error: function(){alert("fail");}
+		    return false;
+		  }); 	
+            	**/
+            	//loadClass(c)
+            																																							
+            	//alert(c);
+            	
+        	});
+</script>
+
+
+        </div>
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.multiple.select.js"></script>
+        <script src="js/jquery.multiple.select.js"></script>
        
         <script>
             
@@ -176,7 +165,7 @@
                 
             });
         </script>
-      
+
     </body>
 
 </html>

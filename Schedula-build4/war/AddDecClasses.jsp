@@ -19,7 +19,7 @@
 
         <style>
             body{
-                background-image: url(img/background.png);
+                background-image: url(img/screen.png);
                 background-repeat: no-repeat;
                 background-size:  cover;
             }  
@@ -151,8 +151,7 @@
                         </tbody>
                     </table></div>
                     <center>
-                    <button class="btn btn-default button1">Preview</button> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                  
+                    <button class="btn btn-default button1">Preview</button>
                     <button class="btn btn-default button1">Done</button>
                     </center>
                 </div>

@@ -19,23 +19,21 @@
  <style>
         body{
                  background-image: url(img/sch.png);
-                background-repeat: no-repeat;
-                background-size:  cover;
-             
+                 background-repeat: no-repeat;
+                 background-size:cover;
+                
             }  
    
  </style>
        </head>
     <body>
-    <!-- This form is used to create a new advisor account. The advisor enters his first name, lastname, advising major
-    stony brook email id and password -->
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-5">
                 <div class=" col-sm-5 a">
                 <center>
-                    <h3>Create an account</h3>
-                       </center>
+                  <h3>Create an account</h3>
+                </center>
                     <br>
                     <form >
                         <div class="form-group">

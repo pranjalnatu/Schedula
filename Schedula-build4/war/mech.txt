@@ -1,0 +1,92 @@
+MEC 101
+Engineering Computing and Problem Solving I
+MEC 102
+Engineering Computing and Problem Solving II
+MEC 104
+Practical Science of Things
+MEC 105
+Everyday Science
+MEC 203
+Engineering Graphics and CAD
+MEC 213
+Studies in Nanotechnology
+MEC 214
+Probability and Statistics for Mechanical Engineers
+MEC 220
+Practical Electronics Mechanical Engineers
+MEC 225
+Fundamentals of Machining Practices
+MEC 260
+Engineering Statics
+MEC 262
+Engineering Dynamics
+MEC 280
+Pollution and Human Health
+MEC 300
+Technical Communication in Mechanical Engineering
+MEC 301
+Thermodynamics
+MEC 305
+Heat and Mass Transfer
+MEC 310
+Introduction to Machine Design
+MEC 316
+Mechanical Engineering Lab I: Sensors and Instrumentation
+MEC 317
+Mechanical Engineering Laboratory II
+MEC 320
+Numerical Methods in Engineering Design and Analysis
+MEC 325
+Manufacturing Processes
+MEC 363
+Mechanics of Solids
+MEC 364
+Introduction to Fluid Mechanics
+MEC 393
+Engineering Fluid Mechanics
+MEC 398
+Thermodynamics II
+MEC 400
+Research and Nanotechnology
+MEC 402
+Mechanical Vibrations
+MEC 410
+Design of Machine Elements
+MEC 411
+Control System Analysis and Design
+MEC 422
+Thermal System Design
+MEC 423
+Internal Combustion Engines
+MEC 440
+Mechanical Engineering Design I
+MEC 441
+Mechanical Engineering Design II
+MEC 442
+Introduction to Experimental Stress Analysis
+MEC 450
+Mechatronics
+MEC 455
+Applied Stress Analysis
+MEC 456
+Introduction to Engineering Mechanics of Composites
+MEC 457
+Engineering Composites Fabrication and Characterization
+MEC 464
+Fundamentals of Aerodynamics
+MEC 465
+Aerospace Propulsion
+MEC 470
+Introduction to Tribology
+MEC 475
+Undergraduate Teaching Practicum
+MEC 488
+Mechanical Engineering Internship
+MEC 491
+Topics in Mechanical Engineering
+MEC 492
+Topics in Mechanical Engineering
+MEC 495
+Professional Engineering Seminar
+MEC 499
+Research in Mechanical Engineering

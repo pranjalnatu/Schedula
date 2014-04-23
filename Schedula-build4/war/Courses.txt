@@ -1,0 +1,356 @@
+93175CSE101Introduction to Computers01CSE14:3015:50MW52063090714CSE102Introduction to Web Design & Programming01CSE14:3015:50TUTH00000089433CSE110Introduction to Computer Science01CSE13:0014:20MF52063089437CSE114Computer Science I01CSE08:0008:53MWF161488191162CSE114Computer Science I02CSE11:0011:53MWF161488191064CSE130Intro to Programming in C01CSE10:0010:53MWF8602090716CSE150Foundations of Comp Sci: Honors01CSE13:0014:20MF69057089314CSE214Computer Science II01CSE12:0012:53MWF8602090895CSE215Foundations of Comp Sci01CSE14:3015:50MW95083589318CSE219Computer Science III01CSE13:0014:20MF26689391234CSE219Computer Science III02CSE16:0017:20TUTH161488189320CSE220Systems-Level Programming01CSE08:3009:50TUTH104712290749CSE260Computer Science B: Honors01CSE11:3012:50TUTH92657789323CSE300Technical Communications01CSE13:0014:20TUTH53447890805CSE300Technical Communications02CSE14:3015:50TUTH40650189106CSE300Technical Communications03CSE11:3012:50TUTH148833290643CSE301History of Computing01CSE13:0014:20TUTH33830989324CSE303Intro to Theory of Computation01CSE08:3009:50MW61268190914CSE305Principles of Database Systems01CSE16:0017:20MW83506589325CSE306Operating Systems01CSE14:3015:50TUTH92657789326CSE307Principles of Programming Lang01CSE16:0017:20MW33895989327CSE308Software Engineering01CSE17:3018:50TUTH148833291235CSE308Software Engineering02CSE19:3020:20MW9965089169CSE310Computer Networks01CSE14:3015:50TUTH148833291089CSE312Legal Issues in Info Systems01CSE14:3015:50MW40650189118CSE312Legal Issues in Info Systems02CSE11:3012:50TUTH104712291063CSE320Computer Org & Architecture01CSE17:3018:50TUTH1892289098CSE325Computers and Sculpture01CSE16:0017:20TUTH00189328CSE334Intro to Multimedia Systems01CSE11:3012:50TUTH40650190849CSE352Artificial Intelligence01CSE14:3015:50MW33830791096CSE355Computational Geometry01CSE11:3012:50TUTH25290789713CSE371Logic01CSE17:3018:50MW33830789329CSE373Analysis of Algorithms01CSE16:0017:20TUTH53447891236CSE376Adv Sys Programming in UNIX/C01CSE08:3009:50TUTH78850590851CSE381Advanced Game Programming01CSE10:0011:20TUTH26689391237CSE390Topics in Computer Science01CSE08:3009:50MW00293044CSE391Topics in Computer Science01CSE08:3011:53F104712291238CSE392Topics in Computer Science01CSE13:0014:20TUTH00393105CSE393Topics in Computer Science01CSE11:3012:50266893
+91091CSE409Computer System Security01CSE10:0011:20TUTH116852180153
+WRT101
+Introductory Writing Workshop
+02
+A
+10:0010:53
+MWF
+403846
+80155
+WRT101
+Introductory Writing Workshop
+04
+A
+11:0011:53
+MWF
+307173
+80156
+WRT101
+Introductory Writing Workshop
+05
+A
+12:0012:53
+MWF
+40384680159
+WRT101
+Introductory Writing Workshop
+08
+A
+16:0017:20
+MW
+62301180161
+WRT101
+Introductory Writing Workshop
+10
+A
+17:3018:50
+MW
+623011
+80164
+WRT101
+Introductory Writing Workshop
+13
+A
+08:3009:50
+TUTH
+888622
+80165
+WRT101
+Introductory Writing Workshop
+14
+A
+10:0011:20
+TUTH
+88862288994
+WRT101Introductory Writing Workshop
+21
+A
+16:0017:20
+TUTH
+539222
+89001
+WRT101Introductory Writing Workshop
+23
+A
+17:3018:50
+TUTH
+539222
+89042
+WRT101
+Introductory Writing Workshop
+25
+A
+19:0020:20
+TUTH
+539222
+80168
+WRT102
+Intermediate Writing Workshop A
+01
+A
+08:00
+08:53
+MWF
+933335
+80169
+WRT102
+Intermediate Writing Workshop A
+02
+A
+09:00
+09:53
+MWF
+933335
+80170
+WRT102
+Intermediate Writing Workshop A
+03
+A
+09:00
+09:53
+MWF
+139247580173
+WRT102
+Intermediate Writing Workshop A
+06
+A
+10:00
+10:53
+MWF
+933335
+80174
+WRT102
+Intermediate Writing Workshop A
+07
+A
+10:00
+10:53
+MWF
+1392475
+80175
+WRT102
+Intermediate Writing Workshop A
+08
+A
+10:00
+10:53
+MWF
+1211057
+80178
+WRT102
+Intermediate Writing Workshop A
+11
+A
+11:00
+11:53
+MWF
+1392475
+80179
+WRT102
+Intermediate Writing Workshop A
+12
+A
+11:00
+11:53
+MWF
+215021
+80180
+WRT102
+Intermediate Writing Workshop A
+13
+A
+11:00
+11:53
+MWF
+375989
+80183
+WRT102
+Intermediate Writing Workshop A
+16
+A
+12:00
+12:53
+MWF
+215021
+80184
+WRT102
+Intermediate Writing Workshop A
+17
+A
+12:00
+12:53
+MWF
+375989
+80185
+WRT102
+Intermediate Writing Workshop A
+21
+A
+14:30
+15:23
+MWF
+1211057
+80189
+WRT102
+Intermediate Writing Workshop A
+22
+A
+14:30
+15:23
+MWF
+215021
+80191
+WRT102
+Intermediate Writing Workshop A
+24
+A
+08:30
+09:50
+MW
+63265080193
+WRT102
+Intermediate Writing Workshop A
+26
+A
+14:30
+15:50
+MW
+40209580193
+WRT102
+Intermediate Writing Workshop A
+27
+A
+14:30
+15:50
+MW
+632650
+86058
+WRT102
+Intermediate Writing Workshop A
+36
+A
+17:30
+18:50
+MW402095
+86273
+WRT102
+Intermediate Writing Workshop A
+41
+A
+19:00
+20:20
+MW
+1522677
+86274
+WRT102
+Intermediate Writing Workshop A
+42
+A
+08:30
+09:50
+TUTH
+632650
+86505
+WRT102
+Intermediate Writing Workshop A
+44
+A
+10:00
+11:20
+TUTH
+210310
+86506
+WRT102
+Intermediate Writing Workshop A
+45
+A
+10:00
+11:20
+TUTH
+377112
+87317
+WRT102
+Intermediate Writing Workshop A
+46
+A
+10:00
+11:20
+TUTH
+1252184
+87550
+WRT102
+Intermediate Writing Workshop A
+49
+A
+11:30
+12:50
+TUTH
+1252184
+87561
+WRT102
+Intermediate Writing Workshop A
+50
+A
+11:30
+12:50
+TUTH
+623654
+87562
+WRT102
+Intermediate Writing Workshop A
+51
+A
+11:30
+12:50
+TUTH
+54187987563
+WRT102
+Intermediate Writing Workshop A
+52
+A
+11:30
+12:50
+TUTH
+127618187565
+WRT102
+Intermediate Writing Workshop A
+54
+A
+13:00
+14:20
+TUTH210310
+88109
+WRT102
+Intermediate Writing Workshop A
+55
+A
+13:00
+14:20
+TUTH377112
+88110
+WRT102
+Intermediate Writing Workshop A
+56
+A
+13:00
+14:20
+TUTH
+1091216
+88113
+WRT102
+Intermediate Writing Workshop A
+59
+A
+13:00
+14:20
+TUTH
+541879
+88114
+WRT102
+Intermediate Writing Workshop A
+60
+A
+14:30
+15:50
+TUTH
+1091216
+88301
+WRT102
+Intermediate Writing Workshop A
+64
+A
+16:00
+17:20
+TUTH
+541879

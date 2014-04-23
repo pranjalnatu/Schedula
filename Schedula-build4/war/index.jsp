@@ -2,6 +2,7 @@
     Document   : Login
     Created on : Mar 14, 2014, 10:38:30 AM
     Author     : sanoussysangary
+<a href="/schedula_build1" class="link1">New Advisor?</a>
 --%>
 
 
@@ -12,50 +13,49 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Conencting the .css files to the .jsp file.-->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <title>JSP Page</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/stylesheet.css" rel="stylesheet">
-   
-     <!-- The background image of schedula -->
-      
+   <script type="text/javascript" src="js/asynch1.js"></script>
+
         <style>
-      body{
-                 background-image: url(img/sch.png);
-               background-repeat: no-repeat;
-                background-size:  cover;
-             
+            body{
+                background-image: url(img/sch.png);
+                background-repeat: no-repeat;
+                background-size: cover;
             }  
-               
+                       
         </style>
     </head>
     <body>
-    <!-- Start of the body tag, putting the input fields for username and password -->
         <div class="container">
             <div class="row">
-                <div class="col-sm-offset-5 ">
-                <div class=" col-sm-5  a">
+                <div class="col-sm-offset-5">
+                <div class=" col-sm-5 a">
+                
                     <center><h3> Login</h3></center>
+                 
                     <br>
-                    <form >
-                    <!-- This is where the username is entered -->
+                    <form id = "form1" action = "/sign_in">
+                        <div class = "form-group" ><p style="color:red" id = "result"> </p></div>
                         <div class="form-group">
-                            <input type="email" class="form-control"  placeholder="SBU Email ID">
+                            <input name = "Id" type="email" class="form-control"  placeholder="SBU Email ID">
                         </div>
-                        <!-- This is where the password is entered -->
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input name = "Password"type="password" class="form-control" placeholder="Password">
                         </div>
                          
           
-          <!-- These are the links that help a new advisor and student create an account -->
                         <center>
-                            <a href="classinfo.jsp"> <button type="submit" class="btn button">Submit</button> </a><br>
+                           <button type="submit" class="btn button">Submit</button> </a><br>
                             <br><br><br>
                         <a href="newstudent.jsp" class="link1">New Student?</a><br>
-                        <a href="newAdvisor.jsp" class="link1">New Advisor?</a>
-                       
+                        <a href="newAdvisor.jsp" class="link1">New Advisor?</a><br>
+                         <a href="Help.jsp" class="link1">About</a>
+                        
+                         </form>
                         </center>
                     </form>
 
@@ -67,6 +67,41 @@
         
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+         
+<script type="text/javascript">
+ 
+var form = $('#form1');
+form.submit(function () {
+ 
+$.ajax({
+type: form.attr('method'),
+url: form.attr('action'),
+data: form.serialize(),
+success: function (data) {
+var result = data;
+var l = result.length;
+//var comp = "1";
+if (result < 2 )
+{
+  
+	window.location= "studenthomepage.jsp";
+   //$("#form1").attr("action","/log_in");	
+   //alert)
+   //form.submit(function(){$.ajax({async:false,url: form.attr('action')});});	
+}
+else
+ $('#result').html(result);        //attr("value",result);
+ }
+});
+ 
+
+
+return false;
+
+
+});
+
+</script>
 
     </body>
 

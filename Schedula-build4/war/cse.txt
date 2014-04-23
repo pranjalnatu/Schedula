@@ -1,0 +1,60 @@
+CSE114
+Computer Science I
+CSE214
+Computer Science II
+CSE215
+Foundations of Computer Science or CSE 150 Foundations of Computer Science: Honors
+CSE219 
+Computer Science III
+CSE220 
+Computer Organization and Systems
+CSE303 
+Introduction to the Theory of Computation
+CSE350 
+Theory of Computation: Honors
+CSE373 
+Analysis of Algorithms
+CSE308 
+Software Engineering
+CSE320 
+Computer Organization and Architecture
+CSE304
+Compiler Design
+CSE334
+Introduction to Multimedia Systems
+CSE337 
+Scripting Languages
+CSE352 
+Artificial Intelligence
+CSE355 
+Computational Geometry
+CSE364
+Advanced Multimedia Techniques
+CSE375
+Concurrency
+CSE376 
+Advanced Programming in UNIX/C
+CSE408
+Network Security
+CSE327
+Fundamentals of Computer Vision
+CSE328
+Fundamentals of Computer Graphics
+CSE332
+Introduction to Scientific Visualization
+CSE333
+User Interface Development
+CSE334
+Introduction to Multimedia Systems
+CSE336
+Internet Programming
+CSE352
+Artificial Intelligence
+CSE364
+Advanced Multimedia Techniques
+CSE366
+Introduction to Virtual Reality
+CSE378
+Introduction to Robotics
+CSE390
+Special Topics in Computer Science

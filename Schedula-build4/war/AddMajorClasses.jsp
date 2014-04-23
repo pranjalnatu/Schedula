@@ -21,9 +21,9 @@
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.datatables.net/1.9.4/css/jquery.dataTables.css">
        
-            <style>
+        <style>
             body{
-                background-image: url(img/background.png);
+                background-image: url(img/screen.png);
                 background-repeat: no-repeat;
                 background-size:  cover;
             }  
@@ -67,14 +67,17 @@
                 <div class=" col-sm-10">
                      <center>
                     <a href="AddMajorClasses.jsp" class="btn btn-default button1 active">Add Major Classes</a>
-                     &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                  
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                            <a href="AddDecClasses.jsp" class="btn btn-default button1">Add DEC Classes</a>
                     </center><br>
                     <div class="col-sm-12">
-                    <table class="table table-bordered table-responsive" id="richBoys">
+                    <table class="  table table-bordered table-responsive" id="richBoys">
+                            <tHEAD>
+                                <th>Course Code</th>
+                                <th><input type="text" placeholder="search"></th>
+                            </tHEAD> 
                             <thead>
-                            <tr>
                             <th>SELECT</th> 
                             <th>CODE</th>
                             <th>DEPT</th> 
@@ -85,7 +88,7 @@
                            <th>START</th> 
                             <th>END</th> 
                            <th>REVIEW</th> 
-                            </tr>
+                            
                             </thead>
                              <tbody>
                                  <tr>
@@ -205,7 +208,7 @@
                     <button class="btn btn-default button1">Preview</button>
                     &nbsp;&nbsp;&nbsp;&nbsp;.
 
-
+                    
                     <button class="btn btn-default button1">Done</button>
                     </center>
                 </div>
@@ -224,15 +227,10 @@
                     
                     
                 });
-
             });
         </script>
-
-       
-        
-        
-                <script src="js/bootstrap.min.js"></script>
- 
+         
+        <script src="js/bootstrap.min.js"></script>
 
     </body>
 

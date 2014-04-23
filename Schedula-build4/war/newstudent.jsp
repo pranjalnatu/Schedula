@@ -2,6 +2,7 @@
     Document   : index
     Created on : Mar 14, 2014, 10:09:20 AM
     Author     : sanoussysangary
+href="classinfo.jsp" 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -18,12 +19,13 @@
    
  <style>
         body{
-                  background-image: url(img/sch.png);
-                background-repeat: no-repeat;
-                background-size:  cover;
-             
+                 background-image: url(img/sch.png);
+                 background-repeat: no-repeat;
+                 background-size:cover;
+                
             }  
-   </style>
+   
+ </style>
        </head>
     <body>
         <div class="container">
@@ -31,32 +33,33 @@
                 <div class="col-sm-offset-5">
                 <div class=" col-sm-5 a">
                 <center>
-                    <h3>Create an account</h3>
-                    </center>
+               		 <h3>Create an account</h3>
+                </center>
+                    
                     <br>
-                    <form >
+                    <form  action = "/sign_up" >
                         <div class="form-group">
-                            <input type="text" class="form-control"  placeholder="First Name">
+                            <input name = "First_Name" type="text" class="form-control"  placeholder="First Name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Last Name">
+                            <input name = "Last_Name" type="text" class="form-control" placeholder="Last Name">
                         </div>
                          <div class="form-group">
-                            <input type="email" class="form-control"  placeholder="SBU Email ID">
+                            <input name  = "Id" type="email" class="form-control"  placeholder="SBU Email ID">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control"  placeholder="Password">
+                            <input name = "Password" type="password" class="form-control"  placeholder="Password">
                         </div>
                            <div class="form-group">
-                            <input type="password" class="form-control"  placeholder="Comfirm Password">
+                            <input name = "Confirm" type="password" class="form-control"  placeholder="Comfirm Password">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Phone">
+                            <input name = "Phone" type="text" class="form-control" placeholder="Phone">
                         </div>
 
           
                         <center>
-                       <a href="classinfo.jsp" class="link2 btn button">Next</a>
+                        <button type="submit" class="btn  button"><a class="link2 btn button">Next</a></button>
                         </center>
                     </form>
 
