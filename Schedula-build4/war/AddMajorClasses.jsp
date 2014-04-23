@@ -18,9 +18,10 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/post.css" rel="stylesheet">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//cdn.datatables.net/1.9.4/css/jquery.dataTables.css">
        
-
-        <style>
+            <style>
             body{
                 background-image: url(img/background.png);
                 background-repeat: no-repeat;
@@ -66,17 +67,14 @@
                 <div class=" col-sm-10">
                      <center>
                     <a href="AddMajorClasses.jsp" class="btn btn-default button1 active">Add Major Classes</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+                     &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                  
                            <a href="AddDecClasses.jsp" class="btn btn-default button1">Add DEC Classes</a>
                     </center><br>
                     <div class="col-sm-12">
-                    <table class="  table table-bordered table-responsive">
-                            <tHEAD>
-                                <th>Course Code</th>
-                                <th><input type="text" placeholder="search"></th>
-                            </tHEAD> 
+                    <table class="table table-bordered table-responsive" id="richBoys">
                             <thead>
+                            <tr>
                             <th>SELECT</th> 
                             <th>CODE</th>
                             <th>DEPT</th> 
@@ -87,7 +85,7 @@
                            <th>START</th> 
                             <th>END</th> 
                            <th>REVIEW</th> 
-                            
+                            </tr>
                             </thead>
                              <tbody>
                                  <tr>
@@ -207,20 +205,34 @@
                     <button class="btn btn-default button1">Preview</button>
                     &nbsp;&nbsp;&nbsp;&nbsp;.
 
-                    
+
                     <button class="btn btn-default button1">Done</button>
                     </center>
                 </div>
             </div>
             </div>
+        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+        <script src="//cdn.datatables.net/1.10.0-beta.2/js/jquery.dataTables.js"></script>
+        <script>
+            $(function() {
+                
+                $('#richBoys').dataTable( {
+                    "bPaginate":true,
+                    "iDisplayLength": 1,
+                    "sPaginationType": "full_numbers"
+                    
+                    
+                    
+                });
+
+            });
+        </script>
+
+       
         
-          <script src="js/response.min.js"></script>      
-
-
-        <script src="js/validation.js"></script>      
-
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        
+                <script src="js/bootstrap.min.js"></script>
+ 
 
     </body>
 

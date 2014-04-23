@@ -151,7 +151,8 @@
                         </tbody>
                     </table></div>
                     <center>
-                    <button class="btn btn-default button1">Preview</button>
+                    <button class="btn btn-default button1">Preview</button> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                  
                     <button class="btn btn-default button1">Done</button>
                     </center>
                 </div>

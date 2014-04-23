@@ -66,7 +66,7 @@
             
             <div class="row row1">
                 <div class=" col-sm-2">
-                <a href="#AddMajorClasses.jsp" class="btn btn-default button link3">Make a new<br> schedule </a>
+                <a href="AddMajorClasses.jsp" class="btn btn-default button link3">Make a new<br> schedule </a>
             
                 </div>
                </div>
