@@ -124,7 +124,7 @@ public class Sign_inServlet extends HttpServlet {
 
       		 
       			
-      	     resp.sendRedirect("studenthomepage.jsp");	
+      	    // resp.sendRedirect("studenthomepage.jsp");	
       		
       	
       	

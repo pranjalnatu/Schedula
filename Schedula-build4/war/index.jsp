@@ -13,8 +13,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <title>JSP Page</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/stylesheet.css" rel="stylesheet">
@@ -39,7 +39,7 @@
                  
                     <br>
                     <form id = "form1" action = "/sign_in">
-                        <div class = "form-group" ><p style="color:red" id = "result"> </p></div>
+                        <div class = "form-group" ><p id = "result"> </p></div>
                         <div class="form-group">
                             <input name = "Id" type="email" class="form-control"  placeholder="SBU Email ID">
                         </div>
@@ -53,7 +53,7 @@
                             <br><br><br>
                         <a href="newstudent.jsp" class="link1">New Student?</a><br>
                         <a href="newAdvisor.jsp" class="link1">New Advisor?</a><br>
-                         <a href="Help.jsp" class="link1">About</a>
+         
                         
                          </form>
                         </center>
@@ -62,8 +62,15 @@
 
                 </div>
                 </div>
-            </div>
+            </div><br><br><br><br><br><br>
         </div>
+        
+        <footer>
+        <div class = "pull-right">
+        <a href = "Help.jsp" class = "link1">About</a>&nbsp;&nbsp;
+         <a href = "#author.jsp" class = "link1">Author</a>
+        </div>
+        </footer>
         
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -84,7 +91,7 @@ var l = result.length;
 if (result < 2 )
 {
   
-	window.location= "studenthomepage.jsp";
+	window.location= "/studenthomepage.jsp";
    //$("#form1").attr("action","/log_in");	
    //alert)
    //form.submit(function(){$.ajax({async:false,url: form.attr('action')});});	

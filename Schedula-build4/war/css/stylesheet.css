@@ -57,6 +57,14 @@
             #logout1{
             margin-top:-13px
             }
+            #result
+            {
+            	font-size: 17px;
+                font-family: Century Gothic;
+                text-align: center;
+               	background-color:transparent;
+               	color:#801200;
+            }
          
           /*#chat{
           background-image:url(img/chat.png);

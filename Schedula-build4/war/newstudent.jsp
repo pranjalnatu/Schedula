@@ -13,7 +13,7 @@ href="classinfo.jsp"
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>JSP Page</title>
+        <title>Create a Student Account - Schedula</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
           <link href="css/stylesheet.css" rel="stylesheet">
    
@@ -59,7 +59,7 @@ href="classinfo.jsp"
 
           
                         <center>
-                        <button type="submit" class="btn  button"><a class="link2 btn button">Next</a></button>
+                        <button type="submit" class="link2 btn  button">Next</button>
                         </center>
                     </form>
 
