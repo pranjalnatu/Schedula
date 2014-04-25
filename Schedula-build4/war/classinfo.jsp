@@ -22,17 +22,11 @@
    
         <style>
         	select{
-        	width: 300px;}
-            body{
-                background-image: url(img/sch.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-            }  
-                       
+        	width: 300px;}                       
         </style>
    
            </head>
-    <body>
+    <body class="main1">
     <script src="js/asynch1.js"></script>
         <div class="container">
             <div class="row">

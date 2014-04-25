@@ -18,10 +18,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
-        <style>
-            body{
-                background-image: url(img/Login.png);
-            }  
+        <style> 
             .a{
                 padding-top: 30%;
             }
@@ -33,7 +30,7 @@
             }
         </style>
     </head>
-    <body>
+    <body class="main1">
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-4">

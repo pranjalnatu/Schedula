@@ -19,54 +19,24 @@
         <link href="css/post.css" rel="stylesheet">
         <link href="css/stylesheet.css" rel="stylesheet">
           
-         
-        <style>
-            body{
-                background-image: url(img/screen.png);
-                background-repeat: no-repeat;
-                background-size:  cover;
-            }  
-            .row1{
-                padding-top: 10%;
-            }
-            .button{
-                background-color: transparent;
-                border-color: white;
-                color: white;
-               }
-               .button1{
-                background-color: transparent;
-                border-color: black;
-                color:black;
-               }
-               .container{
-               padding-left:0px;
-               }
-             .container{
-                size:
-                
-             }
-        
-               
-        </style>
+ 
     </head>
-    <body>
+    <body class="main2">
     <div class="container">
         <div class="row">
         
             <div class=" pull-right">
-            <li><span>${Name}</span></li>
             <br>
                <ul class="nav navbar-nav">
               <li id="logout1"><a href="index.jsp"><img src="img/chat.png"></a></li>
               <li id="logout1"><a href="index.jsp"><img src="img/profile.png"></a></li>
-               <li id="logout"> <a href="index.jsp"><img src="img/logout.png"></a></li>
+               <li id="logout"> <a href="index.jsp"><img src="img/logout.png"></a>&nbsp;<strong><span class="name">${Name}</span></strong></li>
                   </ul>
+                  
                 </div>            
                 <div class="row row1">
                 <div class=" col-sm-2">
-                <a href="AddMajorClasses.jsp" class="btn btn-default button link3">Make a new<br> schedule </a>           
-                <a href ="classinfo.jsp" >classinfo</a>
+                <a href="AddMajorClasses.jsp" class="btn btn-default button2 link3">Make a new<br> schedule </a>           
                 
                 </div>
                </div>

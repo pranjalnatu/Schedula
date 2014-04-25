@@ -15,17 +15,9 @@
         <title>JSP Page</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/post.css" rel="stylesheet">
-       
+       	<link href="css/stylesheet.css" rel="stylesheet">
 
-        <style>
-            body{
-                background-image: url(img/screen.png);
-                background-repeat: no-repeat;
-                background-size:  cover;
-            }  
-            .row1{
-                padding-top: 10%;
-            }
+        <style>  
             .button{
                 background-color: transparent;
                 border-color: white;
@@ -36,12 +28,10 @@
                 border-color: black;
                 color:black;
                }
-               .container{
-               padding-left:0px;
-               }
+ 
         </style>
     </head>
-    <body>
+    <body class="main2">
         <div class="container">
             <div class=" pull-right">
                 <ul class=" nav navbar-nav">
