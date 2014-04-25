@@ -44,6 +44,7 @@
                padding-left:0px;
                padding-rigth:0px;
                }
+               
         </style>
     </head>
     <body>
@@ -58,13 +59,15 @@
             
             
             <div class="row row1">
-                <div class=" col-sm-2">
+                <div class="col-sm-2">
                 <a href="calendar.jsp" class="btn btn-default button">Schedule 1 </a><br><br>
                 <button class="btn btn-default button">Schedule 2 </button><br><br>
                   <a  href="AddMajorClasses.jsp"class="btn btn-default button"> <span class="glyphicon glyphicon-edit "></span> </a>
             
                 </div>
                 <div class=" col-sm-10">
+                 <div class=" col-sm-offset-1 col-sm-11">
+               
                      <center>
                     <a href="AddMajorClasses.jsp" class="btn btn-default button1 active">Add Major Classes</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -72,22 +75,18 @@
                            <a href="AddDecClasses.jsp" class="btn btn-default button1">Add DEC Classes</a>
                     </center><br>
                     <div class="col-sm-12">
-                    <table class="  table table-bordered table-responsive" id="richBoys">
-                            <tHEAD>
-                                <th>Course Code</th>
-                                <th><input type="text" placeholder="search"></th>
-                            </tHEAD> 
+                    <table class="table table-bordered table-responsive" id="richBoys"> 
                             <thead>
-                            <th>SELECT</th> 
+                            <tr>
+                            <th></th> 
                             <th>CODE</th>
                             <th>DEPT</th> 
                            <th>NAME</th> 
                             <th>NUM</th> 
-                           <th>INSTRUCTOR</th> 
+                           <th class="instructor">INSTRUCTOR</th> 
                             <th>DAYS</th> 
                            <th>START</th> 
-                            <th>END</th> 
-                           <th>REVIEW</th> 
+                            <th>END</th>  </tr>
                             
                             </thead>
                              <tbody>
@@ -103,7 +102,6 @@
                                 <td>MW</td>
                                  <td>02:30 pm</td>
                                   <td>03:50 pm</td>
-                                 <td>yes</td>
                     
                                  </tr>
                                   <tr>
@@ -118,7 +116,6 @@
                                 <td>TuTh</td>
                                  <td>02:30 pm</td>
                                   <td>03:50 pm</td>
-                                 <td>No</td>
                     
                                  </tr>
                         <tr>
@@ -133,7 +130,6 @@
                                 <td>Mf</td>
                                  <td>01:00 pm</td>
                                   <td>02:20 pm</td>
-                                 <td>yes</td>
                     
                                  </tr>
                        
@@ -149,7 +145,6 @@
                                 <td>MWF</td>
                                  <td>08:00 am</td>
                                   <td>08:53 am</td>
-                                 <td>yes</td>
                     
                                  </tr>
                                      <tr>
@@ -164,7 +159,6 @@
                                 <td>MWF</td>
                                  <td>10:00 am</td>
                                   <td>10:53 am</td>
-                                 <td>yes</td>
                     
                                  </tr>
                                      <tr>
@@ -179,7 +173,7 @@
                                 <td>MF</td>
                                  <td>01:00 pm</td>
                                   <td>02:20 pm</td>
-                                 <td>yes</td>
+
                     
                                  </tr>
                        
@@ -196,7 +190,6 @@
                                 <td>MWF</td>
                                  <td>12:00 pm</td>
                                   <td>12:53 pm</td>
-                                 <td>yes</td>
                     
                                  </tr>
                        
@@ -206,11 +199,12 @@
                     </div>
                     <center>
                     <button class="btn btn-default button1">Preview</button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;.
+                    &nbsp;&nbsp;&nbsp;&nbsp;
 
                     
                     <button class="btn btn-default button1">Done</button>
                     </center>
+                </div>
                 </div>
             </div>
             </div>

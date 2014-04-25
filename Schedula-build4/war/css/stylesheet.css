@@ -1,5 +1,10 @@
 @CHARSET "US-ASCII";
 
+            #richBoys th{
+            text-align:center;}
+              th.instructor{
+              width:170px;
+              }
             .a{
                 padding-top:34%;
                padding-left:2%
