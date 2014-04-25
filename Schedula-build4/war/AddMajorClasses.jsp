@@ -20,16 +20,9 @@
         <link href="css/post.css" rel="stylesheet">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.datatables.net/1.9.4/css/jquery.dataTables.css">
-       
-        <style>
-            body{
-                background-image: url(img/screen.png);
-                background-repeat: no-repeat;
-                background-size:  cover;
-            }  
-            .row1{
-                padding-top: 10%;
-            }
+         <link href="css/stylesheet.css" rel="stylesheet">
+         
+        <style> 
             .button{
                 background-color: transparent;
                 border-color: white;
@@ -40,30 +33,28 @@
                 border-color: black;
                 color:black;
                }
-               .container{
-               padding-left:0px;
-               padding-rigth:0px;
-               }
                
         </style>
     </head>
-    <body>
-        <div class="container">
+    <body class="main2">
+    <div class="container">
+        <div class="row">
+        
             <div class=" pull-right">
-               <ul class=" nav navbar-nav">
-                    <li><span class=" glyphicon glyphicon-comment btn-lg"></span> </li>
-                    <li><span class=" glyphicon glyphicon-user btn-lg"></span> </li>
-                    <li><span class=" glyphicon glyphicon-off btn-lg"></span> </li>
-                </ul>
-                </div>
+            <br>
+              <ul class="nav navbar-nav">
+              <li id="logout1"><a href="index.jsp"><img src="img/chat.png"></a></li>
+              <li id="logout1"><a href="index.jsp"><img src="img/profile.png"></a></li>
+               <li id="logout"> <a href="index.jsp"><center></center><img src="img/logout.png"></center></a></li>
+                  </ul>
+                  <div class="name1">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span class="name">${Name}</span></strong></div>
+                </div>             
             
             
             <div class="row row1">
                 <div class="col-sm-2">
-                <a href="calendar.jsp" class="btn btn-default button">Schedule 1 </a><br><br>
-                <button class="btn btn-default button">Schedule 2 </button><br><br>
-                  <a  href="AddMajorClasses.jsp"class="btn btn-default button"> <span class="glyphicon glyphicon-edit "></span> </a>
-            
+                <a href="calendar.jsp" class="btn btn-default button2 link3">Schedule 1 </a><br><br>
+            	<a href="AddMajorClasses.jsp" class="btn btn-default button2 link3">Make a new<br> schedule </a>           
                 </div>
                 <div class=" col-sm-10">
                  <div class=" col-sm-offset-1 col-sm-11">
@@ -208,6 +199,12 @@
                 </div>
             </div>
             </div>
+             <footer>
+        <div class = "pull-right">
+        <strong><a href = "Help.jsp" class = "links">About</a></strong>&nbsp;&nbsp;
+         <strong><a href = "#author.jsp" class = "links">Author</a></strong>&nbsp;&nbsp;
+        </div>
+        </footer>
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
         <script src="//cdn.datatables.net/1.10.0-beta.2/js/jquery.dataTables.js"></script>
         <script>
