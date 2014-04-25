@@ -32,14 +32,29 @@ public class Schedula_build1Servlet extends HttpServlet {
 		
 		PrintWriter out = resp.getWriter();  
 	 	  // resp.setContentType("application/json");
-			
+		/**	
+		String t = req.getParameter("selectClass");
+		String temp ;
+		if (t.equals("Computer Science"))
+		{temp = "CSE"; }
+		else if ((t).equals("Applied Mathematics and Statistics"))
+		{temp = "AMS";}
+		else if ((t).equals("Mechanical Engineering"))
+		{
+			temp = "MEC";
+		}
+		**/
 		
-	        //resp.setContentType("text/plain");
+		String[] valueList = req.getParameterValues("selectClass");
+		
+		String demo = req.getParameter("majorVal");
+	     
+		//resp.setContentType("text/plain");
 		//resp.getWriter().println("Hello, world");
 		
 	 	   DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 	       
-		 Filter classFilter = new FilterPredicate("Category", FilterOperator.EQUAL,"CSE");
+		 Filter classFilter = new FilterPredicate("Category", FilterOperator.EQUAL,demo);
   
     		Query q = new Query("Classes").setFilter(classFilter);
 
@@ -60,7 +75,9 @@ public class Schedula_build1Servlet extends HttpServlet {
         	  //Long height = (Long) result.getProperty("height");
               classList.add(Courses);
         	     }
-        out.println("rrrrr");
+        
+        String json = helper.writeJSON(pq.asIterable());
+        out.println(json);
 		 
 		req.getSession().setAttribute("ClassList",classList); 
 		   

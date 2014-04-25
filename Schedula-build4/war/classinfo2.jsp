@@ -45,10 +45,10 @@
                         <form >
                             <div class="form-group col-sm-offset-2 col-sm-6">
                                 <select id = "major" class="form-control">
-                                    <option>Select a Major</option>
-                                    <option>Computer Science</option>
-                                    <option>Applied Mathematics and Statistics</option>
-                                    <option>Mechanical Engineering</option>
+                                    <option value = "s">Select a Major</option>
+                                    <option value = "CSE">Computer Science</option>
+                                    <option value = "AMS">Applied Mathematics and Statistics</option>
+                                    <option value = "MEC">Mechanical Engineering</option>
                                </select>
 
                             </div>

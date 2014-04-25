@@ -12,7 +12,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+          <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+          <%@taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
         <title>JSP </title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -81,9 +82,25 @@
                             
                             </thead>
                              <tbody>
+                    <c:forEach items="${List}" var="current">
+                     <tr>
+                     <td>
+                                <input type="checkbox">   
+            </td>
+          <td><c:out value="${current.category}" /><td>
+          <td><c:out value="${current.courseCode}" /><td>
+          <td><c:out value="${current.courseName}" /><td>
+          <td><c:out value="${current.sectionNo}" /><td>
+          <td><c:out value="${current.days}" /><td>    
+          <td><c:out value="${current.startTime}" /><td>
+          <td><c:out value="${current.endTime}" /><td>
+             
+          
+        </tr>
+                             </c:forEach>
                                  <tr>
                                  <td>
-                             <input type="checkbox">   
+                                <input type="checkbox">   
                                  </td>
                                  <td>CSE</td>
                                  <td>101</td>
@@ -95,6 +112,7 @@
                                   <td>03:50 pm</td>
                     
                                  </tr>
+                                  
                                   <tr>
                                  <td>
                              <input type="checkbox">   
