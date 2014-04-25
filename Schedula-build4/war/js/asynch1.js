@@ -25,7 +25,7 @@ if (a === "Computer Science")
 {
 	var p = "CSE";
 	$("#classes").empty();
-	$("#classes").append('<option value=9>My option</option>');
+	//$("#classes").append('<option value=>My option</option>');
 
 	$.ajax({  
 	    type: "GET",  
@@ -35,10 +35,9 @@ if (a === "Computer Science")
 	   success: function(data){  
 	      //alert(a);
 	    	var result  = data;
-	    	$("#classes").append("<option value=9>" + result + "</option>");
+	    	$("#classes").append("<input type = 'checkbox' name = 'vv' value ='something'>" + result + "<br>");
 	       
-	    	String[] mylist = 
-	    	var Arraly = (ArrayList) 
+	    	//String[] mylist = var Arraly = (ArrayList) 
 	    	
 	    	
 	    },

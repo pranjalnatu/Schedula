@@ -31,7 +31,7 @@ public class Schedula_build1Servlet extends HttpServlet {
 	      //  User user = userService.getCurrentUser();
 		
 		PrintWriter out = resp.getWriter();  
-	 	   resp.setContentType("application/json");
+	 	  // resp.setContentType("application/json");
 			
 		
 	        //resp.setContentType("text/plain");
