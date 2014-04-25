@@ -1,10 +1,8 @@
 @CHARSET "US-ASCII";
-<<<<<<< HEAD
 
             th{
             text-align:center;
             }
-=======
 			body.main1{
                 background-image: url(../img/sch.png);
                 background-repeat: no-repeat;
@@ -43,7 +41,6 @@
             
             #richBoys th{
             text-align:center;}
->>>>>>> 14ac80c6b7649b10a1427e2a0a2665d3d506c912
             
               th.instructor{
               width:170px;
@@ -98,11 +95,7 @@
                 -webkit-text-fill-color:transparent;
                 -moz-text-decoration-color: transparent;
              } 
-<<<<<<< HEAD
-        
-=======
->>>>>>> 14ac80c6b7649b10a1427e2a0a2665d3d506c912
-             
+                     
               a.link3 {font-size: 15px;
                 font-family: Century Gothic;
                 

@@ -20,7 +20,7 @@
          <link href="css/post.css" rel="stylesheet">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.datatables.net/1.9.4/css/jquery.dataTables.css">
-<<<<<<< HEAD
+
           <link href="css/stylesheet.css" rel="stylesheet">
      
         <style>
@@ -32,11 +32,10 @@
             .row1{
                 padding-top: 10%;
             }
-=======
+
          <link href="css/stylesheet.css" rel="stylesheet">
          
         <style> 
->>>>>>> 14ac80c6b7649b10a1427e2a0a2665d3d506c912
             .button{
                 background-color: transparent;
                 border-color: white;
