@@ -41,14 +41,14 @@
         <div class="row">
         
             <div class=" pull-right">
-            <li><span>${Name}</span></li>
             <br>
-               <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav">
               <li id="logout1"><a href="index.jsp"><img src="img/chat.png"></a></li>
               <li id="logout1"><a href="index.jsp"><img src="img/profile.png"></a></li>
-               <li id="logout"> <a href="index.jsp"><img src="img/logout.png"></a></li>
+               <li id="logout"> <a href="index.jsp"><center></center><img src="img/logout.png"></center></a></li>
                   </ul>
-                </div>            
+                  <div class="name1">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span class="name">${Name}</span></strong></div>
+                </div>             
             
             
             <div class="row row1">
@@ -199,6 +199,12 @@
                 </div>
             </div>
             </div>
+             <footer>
+        <div class = "pull-right">
+        <strong><a href = "Help.jsp" class = "links">About</a></strong>&nbsp;&nbsp;
+         <strong><a href = "#author.jsp" class = "links">Author</a></strong>&nbsp;&nbsp;
+        </div>
+        </footer>
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
         <script src="//cdn.datatables.net/1.10.0-beta.2/js/jquery.dataTables.js"></script>
         <script>

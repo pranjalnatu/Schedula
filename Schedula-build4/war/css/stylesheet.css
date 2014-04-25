@@ -7,7 +7,13 @@
             .name
             {
             	font-size: 15px;
-                font-family: Century Gothic;
+                font-family: Century Gothic;   
+            }
+            .name1
+            {
+               margin-left:-60px;
+               margin-top:11px;
+               position:absolute;
             }
             body.main2{
                 background-image: url(../img/screen.png);
@@ -51,6 +57,21 @@
                 color:#A0A0A0;
                 
             }
+            p.para{
+            	font-size: 15px;
+                font-family: Century Gothic;
+                 background:-webkit-linear-gradient(#F0F0F0 ,#606060 );
+                 -webkit-background-clip:text;
+                
+                -webkit-text-fill-color:transparent;
+                -moz-text-decoration-color: transparent;
+            }
+            a.links
+            {
+            	font-size: 15px;
+                font-family: Century Gothic;
+                color: black;
+            }
              a.link1 {font-size: 15px;
                 font-family: Century Gothic;
                 
@@ -85,10 +106,15 @@
             #logout{
             margin-top:-10px;
             margin-right:-5px;
+            width:55px;
+            height:30px;
             }
             
             #logout1{
-            margin-top:-13px
+            margin-top:-13px;
+            margin-right:-5px;
+            width:55px;
+            height:30px;
             }
             
             #result

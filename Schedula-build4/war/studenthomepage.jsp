@@ -30,9 +30,9 @@
                <ul class="nav navbar-nav">
               <li id="logout1"><a href="index.jsp"><img src="img/chat.png"></a></li>
               <li id="logout1"><a href="index.jsp"><img src="img/profile.png"></a></li>
-               <li id="logout"> <a href="index.jsp"><img src="img/logout.png"></a>&nbsp;<strong><span class="name">${Name}</span></strong></li>
+               <li id="logout"> <a href="index.jsp"><center></center><img src="img/logout.png"></center></a></li>
                   </ul>
-                  
+                  <div class="name1">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span class="name">${Name}</span></strong></div>
                 </div>            
                 <div class="row row1">
                 <div class=" col-sm-2">
@@ -41,6 +41,13 @@
                 </div>
                </div>
                </div></div>
+               <footer>
+        <div class = "pull-right">
+        <strong><a href = "Help.jsp" class = "links">About</a></strong>&nbsp;&nbsp;
+         <strong><a href = "#author.jsp" class = "links">Author</a></strong>&nbsp;&nbsp;
+        </div>
+        </footer>
+        
              <script src="js/response.min.js"></script>      
        <script src="js/validation.js"></script>      
 
