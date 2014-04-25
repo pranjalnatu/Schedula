@@ -20,16 +20,8 @@
         <link href="css/stylesheet.css" rel="stylesheet">
    <script type="text/javascript" src="js/asynch1.js"></script>
 
-        <style>
-            body{
-                background-image: url(img/sch.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-            }  
-                       
-        </style>
     </head>
-    <body>
+    <body class="main1">
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-5">
@@ -62,13 +54,13 @@
 
                 </div>
                 </div>
-            </div><br><br><br><br><br><br>
+            </div><br><br>
         </div>
         
         <footer>
         <div class = "pull-right">
         <a href = "Help.jsp" class = "link1">About</a>&nbsp;&nbsp;
-         <a href = "#author.jsp" class = "link1">Author</a>
+         <a href = "#author.jsp" class = "link1">Author</a>&nbsp;&nbsp;
         </div>
         </footer>
         

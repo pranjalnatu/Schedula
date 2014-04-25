@@ -149,10 +149,14 @@ public class Sign_inServlet extends HttpServlet {
                        
                       String name = (String)result.getProperty("FirstName");
                        if(retPass.equals(pass))
+                    	   
+                         
                        
                        {    
-                    	  // req.get.setAttribute("Name",name);
+                    	   String major = (String)result.getProperty("Major");	
+                    	  //req.get.setAttribute("Name",name);
                     	  session.setAttribute("Name", name);
+                    	  session.setAttribute("major", major);
                     	   //req.setAttribute("ID", retId);
                             out.println(1);
                     	  

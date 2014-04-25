@@ -1,12 +1,54 @@
 @CHARSET "US-ASCII";
+<<<<<<< HEAD
 
             th{
             text-align:center;
             }
+=======
+			body.main1{
+                background-image: url(../img/sch.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            } 
+            .name
+            {
+            	font-size: 15px;
+                font-family: Century Gothic;   
+            }
+            .name1
+            {
+               margin-left:-60px;
+               margin-top:11px;
+               position:absolute;
+            }
+            body.main2{
+                background-image: url(../img/screen.png);
+                background-repeat: no-repeat;
+                background-size:  cover;
+            }
+            .button2{
+                background-color: transparent;
+                border-color: white;
+                color: white;
+               }
+                .row1{
+                padding-top: 10%;
+            }
+           .container{
+               padding-left:0px;
+               }
+               
+            td{
+            text-align:center;}
+            
+            #richBoys th{
+            text-align:center;}
+>>>>>>> 14ac80c6b7649b10a1427e2a0a2665d3d506c912
             
               th.instructor{
               width:170px;
               }
+              
             .a{
                 padding-top:34%;
                padding-left:2%
@@ -22,6 +64,21 @@
                 color:#A0A0A0;
                 
             }
+            p.para{
+            	font-size: 15px;
+                font-family: Century Gothic;
+                 background:-webkit-linear-gradient(#F0F0F0 ,#606060 );
+                 -webkit-background-clip:text;
+                
+                -webkit-text-fill-color:transparent;
+                -moz-text-decoration-color: transparent;
+            }
+            a.links
+            {
+            	font-size: 15px;
+                font-family: Century Gothic;
+                color: black;
+            }
              a.link1 {font-size: 15px;
                 font-family: Century Gothic;
                 
@@ -31,9 +88,6 @@
                 -webkit-text-fill-color:transparent;
                 -moz-text-decoration-color: transparent;
                   text-decoration:underline;
-              
-             
-             
              } 
            a.link2 {font-size: 15px;
                 font-family: Century Gothic;
@@ -43,11 +97,11 @@
                 
                 -webkit-text-fill-color:transparent;
                 -moz-text-decoration-color: transparent;
-                 
-             
-             
              } 
+<<<<<<< HEAD
         
+=======
+>>>>>>> 14ac80c6b7649b10a1427e2a0a2665d3d506c912
              
               a.link3 {font-size: 15px;
                 font-family: Century Gothic;
@@ -55,6 +109,7 @@
                background-color:#FFFAE6;
                color:black;
              } 
+             
              a.link3:hover{
              background-color:#F0F0F0;
              }
@@ -62,10 +117,17 @@
             #logout{
             margin-top:-10px;
             margin-right:-5px;
+            width:55px;
+            height:30px;
             }
+            
             #logout1{
-            margin-top:-13px
+            margin-top:-13px;
+            margin-right:-5px;
+            width:55px;
+            height:30px;
             }
+            
             #result
             {
             	font-size: 17px;

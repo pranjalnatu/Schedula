@@ -12,13 +12,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+          <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+          <%@taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
         <title>JSP </title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
          <link href="css/post.css" rel="stylesheet">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.datatables.net/1.9.4/css/jquery.dataTables.css">
+<<<<<<< HEAD
           <link href="css/stylesheet.css" rel="stylesheet">
      
         <style>
@@ -30,6 +32,11 @@
             .row1{
                 padding-top: 10%;
             }
+=======
+         <link href="css/stylesheet.css" rel="stylesheet">
+         
+        <style> 
+>>>>>>> 14ac80c6b7649b10a1427e2a0a2665d3d506c912
             .button{
                 background-color: transparent;
                 border-color: white;
@@ -40,33 +47,31 @@
                 border-color: black;
                 color:black;
                }
-               .container{
-               padding-left:0px;
-               padding-rigth:0px;
-               }
                
                
         </style>
          <link href="css/bootstrap.css" rel="stylesheet">
        
     </head>
-    <body>
-        <div class="container">
+    <body class="main2">
+    <div class="container">
+        <div class="row">
+        
             <div class=" pull-right">
-               <ul class=" nav navbar-nav">
-                    <li><span class=" glyphicon glyphicon-comment btn-lg"></span> </li>
-                    <li><span class=" glyphicon glyphicon-user btn-lg"></span> </li>
-                    <li><span class=" glyphicon glyphicon-off btn-lg"></span> </li>
-                </ul>
-                </div>
+            <br>
+              <ul class="nav navbar-nav">
+              <li id="logout1"><a href="index.jsp"><img src="img/chat.png"></a></li>
+              <li id="logout1"><a href="index.jsp"><img src="img/profile.png"></a></li>
+               <li id="logout"> <a href="index.jsp"><center></center><img src="img/logout.png"></center></a></li>
+                  </ul>
+                  <div class="name1">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span class="name">${Name}</span></strong></div>
+                </div>             
             
             
             <div class="row row1">
                 <div class="col-sm-2">
-                <a href="calendar.jsp" class="btn btn-default button">Schedule 1 </a><br><br>
-                <button class="btn btn-default button">Schedule 2 </button><br><br>
-                  <a  href="AddMajorClasses.jsp"class="btn btn-default button"> <span class="glyphicon glyphicon-edit "></span> </a>
-            
+                <a href="calendar.jsp" class="btn btn-default button2 link3">Schedule 1 </a><br><br>
+            	<a href="AddMajorClasses.jsp" class="btn btn-default button2 link3">Make a new<br> schedule </a>           
                 </div>
                 <div class=" col-sm-10">
                  <div class=" col-sm-offset-1 col-sm-11">
@@ -93,9 +98,25 @@
                             
                             </thead>
                              <tbody>
+                    <c:forEach items="${List}" var="current">
+                     <tr>
+                     <td>
+                                <input type="checkbox">   
+            </td>
+          <td><c:out value="${current.category}" /><td>
+          <td><c:out value="${current.courseCode}" /><td>
+          <td><c:out value="${current.courseName}" /><td>
+          <td><c:out value="${current.sectionNo}" /><td>
+          <td><c:out value="${current.days}" /><td>    
+          <td><c:out value="${current.startTime}" /><td>
+          <td><c:out value="${current.endTime}" /><td>
+             
+          
+        </tr>
+                             </c:forEach>
                                  <tr>
                                  <td>
-                             <input type="checkbox">   
+                                <input type="checkbox">   
                                  </td>
                                  <td>CSE</td>
                                  <td>101</td>
@@ -107,6 +128,7 @@
                                   <td>03:50 pm</td>
                     
                                  </tr>
+                                  
                                   <tr>
                                  <td>
                              <input type="checkbox">   
@@ -211,6 +233,12 @@
                 </div>
             </div>
             </div>
+             <footer>
+        <div class = "pull-right">
+        <strong><a href = "Help.jsp" class = "links">About</a></strong>&nbsp;&nbsp;
+         <strong><a href = "#author.jsp" class = "links">Author</a></strong>&nbsp;&nbsp;
+        </div>
+        </footer>
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
         <script src="//cdn.datatables.net/1.10.0-beta.2/js/jquery.dataTables.js"></script>
         <script>

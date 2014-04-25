@@ -10,15 +10,9 @@
         <title>JSP Page</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
           <link href="css/stylesheet.css" rel="stylesheet">
-          
-          <style>
-        	body{
-                 background-image: url(img/schedulabgd.png);
-                 background-size:100% 100% 100% 100%;
-            	}     
- 	</style>
+
 </head>
-<body>
+<body class="main1">
 	<div class="container">
             <div class="row">
                 <div class="col-sm-offset-4">
