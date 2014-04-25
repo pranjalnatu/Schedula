@@ -23,10 +23,6 @@
    
    
         <style>
-<<<<<<< HEAD
-            body{
-                background-image: url(img/sch.png);
-            }  
             
             .thumbnail{
                width:250px;
@@ -42,7 +38,7 @@
            </head>
     <body>
 
-=======
+
         	select{
         	width: 300px;}                       
         </style>
@@ -50,7 +46,6 @@
            </head>
     <body class="main1">
     <script src="js/asynch1.js"></script>
->>>>>>> 57abbc2bd02523159e39eee4ad6e031efc353915
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-4">
