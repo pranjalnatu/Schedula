@@ -16,11 +16,11 @@
         <title>JSP </title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/post.css" rel="stylesheet">
+         <link href="css/post.css" rel="stylesheet">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.datatables.net/1.9.4/css/jquery.dataTables.css">
-       
+          <link href="css/stylesheet.css" rel="stylesheet">
+     
         <style>
             body{
                 background-image: url(img/screen.png);
@@ -45,7 +45,10 @@
                padding-rigth:0px;
                }
                
+               
         </style>
+         <link href="css/bootstrap.css" rel="stylesheet">
+       
     </head>
     <body>
         <div class="container">
@@ -75,7 +78,7 @@
                            <a href="AddDecClasses.jsp" class="btn btn-default button1">Add DEC Classes</a>
                     </center><br>
                     <div class="col-sm-12">
-                    <table class="table table-bordered table-responsive" id="richBoys"> 
+                    <table class="table table-bordered table-responsive" id="example"> 
                             <thead>
                             <tr>
                             <th></th> 
@@ -195,7 +198,7 @@
                        
                        
                         </tbody>
-                    </table>
+                    </table><br><br>
                     </div>
                     <center>
                     <button class="btn btn-default button1">Preview</button>
@@ -211,17 +214,18 @@
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
         <script src="//cdn.datatables.net/1.10.0-beta.2/js/jquery.dataTables.js"></script>
         <script>
-            $(function() {
-                
-                $('#richBoys').dataTable( {
-                    "bPaginate":true,
-                    "iDisplayLength": 1,
-                    "sPaginationType": "full_numbers"
-                    
-                    
-                    
-                });
-            });
+           
+        $(document).ready(function() {
+            $('#example').dataTable( {
+                "bPaginate": false,
+                "bLengthChange": false,
+                "bFilter": true,
+                "bSort": false,
+                "bInfo": false,
+                "bAutoWidth": false
+            } );
+        } );
+        
         </script>
          
         <script src="js/bootstrap.min.js"></script>

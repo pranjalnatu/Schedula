@@ -1,7 +1,9 @@
 @CHARSET "US-ASCII";
 
-            #richBoys th{
-            text-align:center;}
+            th{
+            text-align:center;
+            }
+            
               th.instructor{
               width:170px;
               }
@@ -45,6 +47,8 @@
              
              
              } 
+        
+             
               a.link3 {font-size: 15px;
                 font-family: Century Gothic;
                 
@@ -146,4 +150,35 @@ input:-ms-input-placeholder {
 	padding: 0px 10px;
 	text-align: left;
 	text-decoration: blink;
+}
+
+
+<!------------------------------->
+div.dataTables_length label {
+    width: 460px;
+    float: left;
+    text-align: left;
+}
+ 
+div.dataTables_length select {
+    width: 75px;
+}
+ 
+div.dataTables_filter label {
+    float: right;
+    width: 460px;
+}
+ 
+div.dataTables_info {
+    padding-top: 8px;
+}
+ 
+div.dataTables_paginate {
+    float: right;
+    margin: 0;
+}
+ 
+table {
+    margin: 1em 0;
+    clear: both;
 }
