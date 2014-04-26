@@ -18,7 +18,9 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/post.css" rel="stylesheet">
         <link href="css/stylesheet.css" rel="stylesheet">
-          
+        <script type="text/javascript" src="/_ah/channel/jsapi"></script>
+        <script src="./js/AjaxUtil.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>	  
  
     </head>
     <body class="main2">
@@ -30,7 +32,7 @@
                <ul class="nav navbar-nav">
               <li id="logout1"><a href="index.jsp"><img src="img/chat.png"></a></li>
               <li id="logout1"><a href="index.jsp"><img src="img/profile.png"></a></li>
-               <li id="logout"> <a href="index.jsp"><img src="img/logout.png"></a>&nbsp;<strong><span class="name">${Name}</span></strong></li>
+               <li id="logout"> <a href="index.jsp"><img src="img/logout.png"></a>&nbsp;<strong><span id="userid" class="name">${Name}</span></strong></li>
                   </ul>
                   
                 </div>            
@@ -41,6 +43,8 @@
                 </div>
                </div>
                </div></div>
+               <div id="chatMessagesPage"></div>
+               <div id="friendsListPage"></div>
              <script src="js/response.min.js"></script>      
        <script src="js/validation.js"></script>      
 
