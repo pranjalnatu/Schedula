@@ -39,7 +39,22 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<url-pattern>/log_in</url-pattern>
 	</servlet-mapping>
 	
-	
+	<servlet>
+		<servlet-name>Additional_info</servlet-name>
+		<servlet-class>schedula.AdditionalInfo_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Additional_info</servlet-name>
+		<url-pattern>/additional_info</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Display_class</servlet-name>
+		<servlet-class>schedula.DisplayClass_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Display_class</servlet-name>
+		<url-pattern>/display_class</url-pattern>
+	</servlet-mapping>
 	
 	<servlet>
 		<servlet-name>TokenServlet</servlet-name>

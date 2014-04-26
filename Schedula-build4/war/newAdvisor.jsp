@@ -55,12 +55,17 @@
                         <button type="submit" class="btn  button">Submit</button>
                         </center>
                     </form>
-
-
                 </div>
                 </div>
             </div>
         </div>
+        <footer>
+        <div class = "pull-right">
+        <a href = "Help.jsp" class = "link1">About</a>&nbsp;&nbsp;
+         <a href = "#author.jsp" class = "link1">Author</a>&nbsp;&nbsp;
+        </div>
+        </footer>
+        
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 

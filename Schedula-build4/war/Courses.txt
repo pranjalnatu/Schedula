@@ -1,356 +1,2610 @@
-93175CSE101Introduction to Computers01CSE14:3015:50MW52063090714CSE102Introduction to Web Design & Programming01CSE14:3015:50TUTH00000089433CSE110Introduction to Computer Science01CSE13:0014:20MF52063089437CSE114Computer Science I01CSE08:0008:53MWF161488191162CSE114Computer Science I02CSE11:0011:53MWF161488191064CSE130Intro to Programming in C01CSE10:0010:53MWF8602090716CSE150Foundations of Comp Sci: Honors01CSE13:0014:20MF69057089314CSE214Computer Science II01CSE12:0012:53MWF8602090895CSE215Foundations of Comp Sci01CSE14:3015:50MW95083589318CSE219Computer Science III01CSE13:0014:20MF26689391234CSE219Computer Science III02CSE16:0017:20TUTH161488189320CSE220Systems-Level Programming01CSE08:3009:50TUTH104712290749CSE260Computer Science B: Honors01CSE11:3012:50TUTH92657789323CSE300Technical Communications01CSE13:0014:20TUTH53447890805CSE300Technical Communications02CSE14:3015:50TUTH40650189106CSE300Technical Communications03CSE11:3012:50TUTH148833290643CSE301History of Computing01CSE13:0014:20TUTH33830989324CSE303Intro to Theory of Computation01CSE08:3009:50MW61268190914CSE305Principles of Database Systems01CSE16:0017:20MW83506589325CSE306Operating Systems01CSE14:3015:50TUTH92657789326CSE307Principles of Programming Lang01CSE16:0017:20MW33895989327CSE308Software Engineering01CSE17:3018:50TUTH148833291235CSE308Software Engineering02CSE19:3020:20MW9965089169CSE310Computer Networks01CSE14:3015:50TUTH148833291089CSE312Legal Issues in Info Systems01CSE14:3015:50MW40650189118CSE312Legal Issues in Info Systems02CSE11:3012:50TUTH104712291063CSE320Computer Org & Architecture01CSE17:3018:50TUTH1892289098CSE325Computers and Sculpture01CSE16:0017:20TUTH00189328CSE334Intro to Multimedia Systems01CSE11:3012:50TUTH40650190849CSE352Artificial Intelligence01CSE14:3015:50MW33830791096CSE355Computational Geometry01CSE11:3012:50TUTH25290789713CSE371Logic01CSE17:3018:50MW33830789329CSE373Analysis of Algorithms01CSE16:0017:20TUTH53447891236CSE376Adv Sys Programming in UNIX/C01CSE08:3009:50TUTH78850590851CSE381Advanced Game Programming01CSE10:0011:20TUTH26689391237CSE390Topics in Computer Science01CSE08:3009:50MW00293044CSE391Topics in Computer Science01CSE08:3011:53F104712291238CSE392Topics in Computer Science01CSE13:0014:20TUTH00393105CSE393Topics in Computer Science01CSE11:3012:50266893
-91091CSE409Computer System Security01CSE10:0011:20TUTH116852180153
-WRT101
-Introductory Writing Workshop
-02
-A
-10:0010:53
-MWF
-403846
-80155
-WRT101
-Introductory Writing Workshop
-04
-A
-11:0011:53
-MWF
-307173
-80156
-WRT101
-Introductory Writing Workshop
-05
-A
-12:0012:53
-MWF
-40384680159
-WRT101
-Introductory Writing Workshop
-08
-A
-16:0017:20
-MW
-62301180161
-WRT101
-Introductory Writing Workshop
-10
-A
-17:3018:50
-MW
-623011
-80164
-WRT101
-Introductory Writing Workshop
-13
-A
-08:3009:50
-TUTH
-888622
-80165
-WRT101
-Introductory Writing Workshop
-14
-A
-10:0011:20
-TUTH
-88862288994
-WRT101Introductory Writing Workshop
-21
-A
-16:0017:20
-TUTH
-539222
-89001
-WRT101Introductory Writing Workshop
-23
-A
-17:3018:50
-TUTH
-539222
-89042
-WRT101
-Introductory Writing Workshop
-25
-A
-19:0020:20
-TUTH
-539222
-80168
-WRT102
-Intermediate Writing Workshop A
+93175
+CSE101
+Introduction to Computers
 01
-A
+CSE
+14:30
+15:50
+MW
+520630
+90714
+CSE102
+Introduction to Web Design & Programming
+01
+CSE
+14:30
+15:50
+TUTH
+000000
+89433
+CSE110
+Introduction to Computer Science
+01
+CSE
+13:00
+14:20
+MF
+520630
+89437
+CSE114
+Computer Science I
+01
+CSE
 08:00
 08:53
 MWF
-933335
-80169
-WRT102
-Intermediate Writing Workshop A
+1614881
+91162
+CSE114
+Computer Science I
 02
-A
-09:00
-09:53
-MWF
-933335
-80170
-WRT102
-Intermediate Writing Workshop A
-03
-A
-09:00
-09:53
-MWF
-139247580173
-WRT102
-Intermediate Writing Workshop A
-06
-A
-10:00
-10:53
-MWF
-933335
-80174
-WRT102
-Intermediate Writing Workshop A
-07
-A
-10:00
-10:53
-MWF
-1392475
-80175
-WRT102
-Intermediate Writing Workshop A
-08
-A
-10:00
-10:53
-MWF
-1211057
-80178
-WRT102
-Intermediate Writing Workshop A
-11
-A
+CSE
 11:00
 11:53
 MWF
-1392475
-80179
-WRT102
-Intermediate Writing Workshop A
-12
-A
-11:00
-11:53
+1614881
+91064
+CSE130
+Intro to Programming in C
+01
+CSE
+10:00
+10:53
 MWF
-215021
-80180
-WRT102
-Intermediate Writing Workshop A
-13
-A
-11:00
-11:53
-MWF
-375989
-80183
-WRT102
-Intermediate Writing Workshop A
-16
-A
+86020
+90716
+CSE150
+Foundations of Comp Sci: Honors
+01
+CSE
+13:00
+14:20
+MF
+690570
+89314
+CSE214
+Computer Science II
+01
+CSE
 12:00
 12:53
 MWF
-215021
-80184
-WRT102
-Intermediate Writing Workshop A
-17
-A
-12:00
-12:53
-MWF
-375989
-80185
-WRT102
-Intermediate Writing Workshop A
-21
-A
-14:30
-15:23
-MWF
-1211057
-80189
-WRT102
-Intermediate Writing Workshop A
-22
-A
-14:30
-15:23
-MWF
-215021
-80191
-WRT102
-Intermediate Writing Workshop A
-24
-A
-08:30
-09:50
-MW
-63265080193
-WRT102
-Intermediate Writing Workshop A
-26
-A
+86020
+90895
+CSE215
+Foundations of Comp Sci
+01
+CSE
 14:30
 15:50
 MW
-40209580193
-WRT102
-Intermediate Writing Workshop A
-27
-A
-14:30
-15:50
-MW
-632650
-86058
-WRT102
-Intermediate Writing Workshop A
-36
-A
-17:30
-18:50
-MW402095
-86273
-WRT102
-Intermediate Writing Workshop A
-41
-A
-19:00
-20:20
-MW
-1522677
-86274
-WRT102
-Intermediate Writing Workshop A
-42
-A
-08:30
-09:50
-TUTH
-632650
-86505
-WRT102
-Intermediate Writing Workshop A
-44
-A
-10:00
-11:20
-TUTH
-210310
-86506
-WRT102
-Intermediate Writing Workshop A
-45
-A
-10:00
-11:20
-TUTH
-377112
-87317
-WRT102
-Intermediate Writing Workshop A
-46
-A
-10:00
-11:20
-TUTH
-1252184
-87550
-WRT102
-Intermediate Writing Workshop A
-49
-A
-11:30
-12:50
-TUTH
-1252184
-87561
-WRT102
-Intermediate Writing Workshop A
-50
-A
-11:30
-12:50
-TUTH
-623654
-87562
-WRT102
-Intermediate Writing Workshop A
-51
-A
-11:30
-12:50
-TUTH
-54187987563
-WRT102
-Intermediate Writing Workshop A
-52
-A
-11:30
-12:50
-TUTH
-127618187565
-WRT102
-Intermediate Writing Workshop A
-54
-A
+950835
+89318
+CSE219
+Computer Science III
+01
+CSE
 13:00
 14:20
-TUTH210310
-88109
-WRT102
-Intermediate Writing Workshop A
-55
-A
-13:00
-14:20
-TUTH377112
-88110
-WRT102
-Intermediate Writing Workshop A
-56
-A
-13:00
-14:20
-TUTH
-1091216
-88113
-WRT102
-Intermediate Writing Workshop A
-59
-A
-13:00
-14:20
-TUTH
-541879
-88114
-WRT102
-Intermediate Writing Workshop A
-60
-A
-14:30
-15:50
-TUTH
-1091216
-88301
-WRT102
-Intermediate Writing Workshop A
-64
-A
+MF
+266893
+91234
+CSE219
+Computer Science III
+02
+CSE
 16:00
 17:20
 TUTH
+1614881
+89320
+CSE220
+Systems-Level Programming
+01
+CSE
+08:30
+09:50
+TUTH
+1047122
+90749
+CSE260
+Computer Science B: Honors
+01
+CSE
+11:30
+12:50
+TUTH
+926577
+89323
+CSE300
+Technical Communications
+01
+CSE
+13:00
+14:20
+TUTH
+534478
+90805
+CSE300
+Technical Communications
+02
+CSE
+14:30
+15:50
+TUTH
+406501
+89106
+CSE300
+Technical Communications
+03
+CSE
+11:30
+12:50
+TUTH
+1488332
+90643
+CSE301
+History of Computing
+01
+CSE
+13:00
+14:20
+TUTH
+338309
+89324
+CSE303
+Intro to Theory of Computation
+01
+CSE
+08:30
+09:50
+MW
+612681
+90914
+CSE305
+Principles of Database Systems
+01
+CSE
+16:00
+17:20
+MW
+835065
+89325
+CSE306
+Operating Systems
+01
+CSE
+14:30
+15:50
+TUTH
+926577
+89326
+CSE307
+Principles of Programming Lang
+01
+CSE
+16:00
+17:20
+MW
+338959
+89327
+CSE308
+Software Engineering
+01
+CSE
+17:30
+18:50
+TUTH
+1488332
+91235
+CSE308
+Software Engineering
+02
+CSE
+19:30
+20:20
+MW
+99650
+89169
+CSE310
+Computer Networks
+01
+CSE
+14:30
+15:50
+TUTH
+1488332
+91089
+CSE312
+Legal Issues in Info Systems
+01
+CSE
+14:30
+15:50
+MW
+406501
+89118
+CSE312
+Legal Issues in Info Systems
+02
+CSE
+11:30
+12:50
+TUTH
+1047122
+91063
+CSE320
+Computer Org & Architecture
+01
+CSE
+17:30
+18:50
+TUTH
+18922
+89098
+CSE325
+Computers and Sculpture
+01
+CSE
+16:00
+17:20
+TUTH
+001
+89328
+CSE334
+Intro to Multimedia Systems
+01
+CSE
+11:30
+12:50
+TUTH
+406501
+90849
+CSE352
+Artificial Intelligence
+01
+CSE
+14:30
+15:50
+MW
+338307
+91096
+CSE355
+Computational Geometry
+01
+CSE
+11:30
+12:50
+TUTH
+252907
+89713
+CSE371
+Logic
+01
+CSE
+17:30
+18:50
+MW
+338307
+89329
+CSE373
+Analysis of Algorithms
+01
+CSE
+16:00
+17:20
+TUTH
+534478
+91236
+CSE376
+Adv Sys Programming in UNIX/C
+01
+CSE
+08:30
+09:50
+TUTH
+788505
+90851
+CSE381
+Advanced Game Programming
+01
+CSE
+10:00
+11:20
+TUTH
+266893
+91237
+CSE390
+Topics in Computer Science
+01
+CSE
+08:30
+09:50
+MW
+002
+93044
+CSE391
+Topics in Computer Science
+01
+CSE
+08:30
+11:53
+F
+1047122
+91238
+CSE392
+Topics in Computer Science
+01
+CSE
+13:00
+14:20
+TUTH
+003
+93105
+CSE393
+Topics in Computer Science
+01
+CSE
+11:30
+12:50
+MW
+266893 
+91091
+CSE409
+Computer System Security
+01
+CSE
+10:00
+11:20
+TUTH
+1168521
+80153 
+WRT101
+Introductory Writing Workshop 
+02 
+A 
+10:00
+10:53 
+MWF 
+403846 
+80155 
+WRT101 
+Introductory Writing Workshop 
+04 
+A 
+11:00
+11:53 
+MWF 
+307173 
+80156 
+WRT101 
+Introductory Writing Workshop 
+05 
+A 
+12:00
+12:53 
+MWF 
+403846
+80159 
+WRT101 
+Introductory Writing Workshop 
+08 
+A 
+16:00
+17:20 
+MW 
+623011
+80161 
+WRT101 
+Introductory Writing Workshop 
+10 
+A 
+17:30
+18:50 
+MW 
+623011 
+80164 
+WRT101 
+Introductory Writing Workshop 
+13 
+A 
+08:30
+09:50 
+TUTH 
+888622 
+80165 
+WRT101 
+Introductory Writing Workshop 
+14 
+A 
+10:00
+11:20 
+TUTH 
+888622
+88994 
+WRT101
+Introductory Writing Workshop 
+21 
+A 
+16:00
+17:20 
+TUTH 
+539222 
+89001 
+WRT101
+Introductory Writing Workshop 
+23 
+A 
+17:30
+18:50 
+TUTH 
+539222 
+89042 
+WRT101 
+Introductory Writing Workshop 
+25 
+A 
+19:00
+20:20 
+TUTH 
+539222 
+80168 
+WRT102 
+Intermediate Writing Workshop A 
+01 
+A 
+08:00 
+08:53 
+MWF 
+933335 
+80169 
+WRT102 
+Intermediate Writing Workshop A 
+02 
+A 
+09:00 
+09:53 
+MWF 
+933335 
+80170 
+WRT102 
+Intermediate Writing Workshop A 
+03 
+A 
+09:00 
+09:53 
+MWF 
+1392475
+80173 
+WRT102 
+Intermediate Writing Workshop A 
+06 
+A 
+10:00 
+10:53 
+MWF 
+933335 
+80174 
+WRT102 
+Intermediate Writing Workshop A 
+07 
+A 
+10:00 
+10:53 
+MWF 
+1392475 
+80175 
+WRT102 
+Intermediate Writing Workshop A 
+08
+A
+10:00 
+10:53 
+MWF 
+1211057 
+80178 
+WRT102 
+Intermediate Writing Workshop A 
+11 
+A 
+11:00 
+11:53 
+MWF 
+1392475 
+80179 
+WRT102 
+Intermediate Writing Workshop A 
+12 
+A 
+11:00 
+11:53 
+MWF 
+215021 
+80180 
+WRT102 
+Intermediate Writing Workshop A 
+13 
+A 
+11:00 
+11:53 
+MWF 
+375989 
+80183 
+WRT102 
+Intermediate Writing Workshop A 
+16 
+A 
+12:00 
+12:53 
+MWF 
+215021 
+80184 
+WRT102 
+Intermediate Writing Workshop A 
+17 
+A 
+12:00 
+12:53 
+MWF 
+375989 
+80185 
+WRT102 
+Intermediate Writing Workshop A 
+21 
+A 
+14:30 
+15:23 
+MWF 
+1211057 
+80189 
+WRT102 
+Intermediate Writing Workshop A 
+22 
+A 
+14:30 
+15:23 
+MWF 
+215021 
+80191 
+WRT102 
+Intermediate Writing Workshop A 
+24 
+A 
+08:30 
+09:50 
+MW 
+632650
+80193 
+WRT102 
+Intermediate Writing Workshop A 
+26 
+A 
+14:30 
+15:50 
+MW 
+402095
+80193 
+WRT102 
+Intermediate Writing Workshop A 
+27 
+A 
+14:30 
+15:50 
+MW 
+632650 
+86058 
+WRT102 
+Intermediate Writing Workshop A 
+36 
+A 
+17:30 
+18:50 
+MW
+402095 
+86273 
+WRT102 
+Intermediate Writing Workshop A 
+41 
+A 
+19:00 
+20:20 
+MW 
+1522677 
+86274 
+WRT102 
+Intermediate Writing Workshop A 
+42 
+A 
+08:30 
+09:50 
+TUTH 
+632650 
+86505 
+WRT102 
+Intermediate Writing Workshop A 
+44 
+A 
+10:00 
+11:20 
+TUTH 
+210310 
+86506 
+WRT102 
+Intermediate Writing Workshop A 
+45 
+A 
+10:00 
+11:20 
+TUTH 
+377112 
+87317 
+WRT102 
+Intermediate Writing Workshop A 
+46 
+A 
+10:00 
+11:20 
+TUTH 
+1252184 
+87550 
+WRT102 
+Intermediate Writing Workshop A 
+49 
+A 
+11:30 
+12:50 
+TUTH 
+1252184 
+87561 
+WRT102 
+Intermediate Writing Workshop A 
+50 
+A 
+11:30 
+12:50 
+TUTH 
+623654 
+87562 
+WRT102 
+Intermediate Writing Workshop A 
+51 
+A 
+11:30 
+12:50 
+TUTH 
 541879
+87563 
+WRT102 
+Intermediate Writing Workshop A 
+52 
+A 
+11:30 
+12:50 
+TUTH 
+1276181
+87565 
+WRT102 
+Intermediate Writing Workshop A 
+54 
+A 
+13:00 
+14:20 
+TUTH
+210310 
+88109 
+WRT102 
+Intermediate Writing Workshop A 
+55 
+A 
+13:00 
+14:20 
+TUTH
+377112 
+88110 
+WRT102
+Intermediate Writing Workshop A
+56 
+A 
+13:00 
+14:20 
+TUTH 
+1091216 
+88113 
+WRT102
+Intermediate Writing Workshop A 
+59 
+A 
+13:00 
+14:20 
+TUTH 
+541879 
+88114 
+WRT102 
+Intermediate Writing Workshop A 
+60 
+A 
+14:30 
+15:50 
+TUTH 
+1091216 
+88301 
+WRT102 
+Intermediate Writing Workshop A 
+64 
+A 
+16:00 
+17:20 
+TUTH 
+541879  
+85924
+AAS102
+Eastern Religions
+01
+B
+16:00
+17:20
+MW
+220715
+87636
+CCS101
+Intro To Cinema & Cultural Stud
+01
+B
+12:00
+12:53
+MW
+004
+82181
+CLS113
+Greek & Latin Literature
+01
+B
+12:00
+12:53
+MWF
+340208
+92616
+CLT109
+Phil & Lit in Social Context
+01
+B
+11:30
+12:50
+TUTH
+004
+81022
+CLT121
+Death & Afterlife in Lit
+01
+B
+14:30
+15:50
+TUTH
+005
+81023
+CLT123
+Sexuality in Literature
+01
+B
+10:00
+11:20
+TUTH
+339789
+92923
+EGL111
+World Lit: Ancient to Modern
+01
+B
+13:00
+14:20
+TUTH
+1774663
+92922
+EGL111
+World Lit: Ancient to Modern
+02
+B
+08:30
+09:50
+TUTH
+1774663
+92911
+EGL112
+World Lit: Modern/Contemporary
+01
+B
+14:30
+15:50
+MW
+334814
+81158
+EGL191
+Introduction to Poetry
+01
+B
+16:00
+17:20
+MW
+006
+82054
+EGL192
+Introduction to Fiction
+01
+B
+08:30
+09:50
+MW
+007
+81159
+EGL193
+Introduction to Drama
+01
+B
+13:00
+14:20
+MF
+008
+92927
+EGL194
+Introduction to Film
+01
+B
+11:30
+12:50
+TUTH
+1358332
+81024
+HUR141
+The Age of Empire
+01
+B
+14:30
+15:50
+MW
+009
+80625
+PHI100
+Concepts of Person
+01
+B
+13:00
+14:20
+TUTH
+1841372
+93391
+PHI103
+Philosophic Problems
+01
+B
+14:30
+15:20
+MW
+339766
+80629
+PHI104
+Moral Reasoning
+01
+B
+17:30
+18:50
+MW
+339763
+80637
+PHI108
+Logical & Critical Reasoning
+02
+B
+11:30
+12:50
+TUTH
+1830052
+93352
+PHI110
+Arts and Ideas
+01
+B
+14:30
+15:50
+MW
+010
+93354
+PHI111
+Into to Eastern Philosophy
+01
+B
+08:30
+09:50
+MW
+93549
+80254
+THR104
+Play Analysis
+01
+B
+08:30
+09:50
+MW
+011
+86249
+THR104
+Play Analysis
+02
+B
+13:00
+14:50
+TUTH
+611314
+86250
+THR104
+Play Analysis
+03
+B
+10:00
+11:20
+TUTH
+012
+87712
+THR104
+Play Analysis
+04
+B
+16:00
+17:20
+MW
+1809875
+87525
+THR201
+Theatre History I
+01
+B
+14:30
+15:50
+MW
+611314
+89492
+AMS102
+Elements Of Statistics
+01
+C
+10:00
+11:20
+TUTH
+013
+89491
+AMS102
+Elements Of Statistics
+02
+C
+11:30
+12:50
+TUTH
+013
+90807
+AMS161
+Applied Calculus II
+01
+C
+17:30
+18:50
+TUTH
+208823
+94865
+ANP230
+Computer-based Biostatistics
+01
+C
+14:30
+15:50
+TUTH
+014
+90744
+EST194
+Patterns Of Problem Solving
+01
+C
+13:00
+14:20
+TUTH
+686661
+80852
+MAT131
+Calculus I
+01
+C
+17:30
+18:50
+MW
+208823
+93032
+POL201
+Intro to Stat Meth in Pol Sci
+02
+C
+17:30
+18:50
+MW
+015
+80306
+PSY201
+Statistical Methods in Psych
+01
+C
+11:00
+11:53
+MWF
+016
+80307
+PSY201
+Statistical Methods in Psych
+02
+C
+10:00
+10:53
+MWF
+1870616
+80437
+SOC202
+Statistical Methods in Sociology
+01
+C
+12:00
+12:53
+MWF
+017
+92586
+ARH201
+Arts of Africa Oceania & America
+01
+D
+08:30
+09:50
+MW
+1844951
+94815
+ARH202
+Arts of the Ancient World
+01
+D
+17:30
+18:50
+MW
+018
+94817
+ARH204
+Arts in the Age of Exploration
+01
+D
+08:30
+09:50
+TUTH
+1855878
+94819
+ARH206
+Modern Art
+03
+D
+16:00
+17:20
+TUTH
+019
+82048
+ARS154
+Foundations of Drawing
+01
+D
+16:00
+17:20
+MW
+836686
+81512
+ARS201
+Photography for Non-Majors
+01
+D
+14:30
+15:50
+MW
+020
+86229
+ARS205
+Foundations: Idea & Form
+01
+D
+16:00
+17:20
+TUTH
+021
+88765
+CCS202
+Film Genres
+01
+D
+11:30
+12:50
+TUTH
+1709710
+84864
+CCS205
+Cinema History: 19th C-WW2
+01
+D
+11:00
+11:53
+MW
+022
+86348
+DAN102
+Into to World Dance Cultures
+01
+D
+17:30
+18:50
+TUTH
+799143
+92774
+DAN166
+Ballet Technique I
+01
+D
+09:30
+12:55
+MW
+023
+92111
+SBC117
+Design Drawing
+01
+D
+12:00
+12:53
+MW
+1177698
+80253
+THR101
+Introduction to Theatre Arts
+01
+D
+08:30
+09:50
+TUTH
+024
+80255
+THR105
+Acting I
+01
+D
+11:00
+12:50
+TUTH
+025
+80256
+THR105
+Acting I
+02
+D
+13:00
+14:50
+TUTH
+024
+80257
+THR105
+Acting I
+03
+D
+16:00
+17:50
+TUTH
+025
+86151
+THR216
+Intro to Visual Interpretation
+01
+D
+11:30
+12:50
+MW
+310367
+87691
+ANP120
+Intro to Bio Anthropology
+01
+E
+13:00
+14:20
+MF
+1063307
+81366
+ANP300
+Human Anatomy
+01
+E
+08:30
+09:50
+TUTH
+267575
+81528
+AST101
+Intro to Astronomy
+01
+E
+11:00
+11:53
+MWF
+026
+92248
+ATM102
+Weather & Climate
+01
+E
+16:00
+17:20
+TUTH
+1854533
+92249
+ATM205
+Intro to Atmospheric Sciences
+01
+E
+13:00
+14:20
+TUTH
+027
+81411
+BIO101
+Human Biology
+01
+E
+19:00
+20:20
+TUTH
+104160
+85769
+BIO103
+Intro to Biotechnology
+01
+E
+16:00
+17:20
+TUTH
+328328
+81413
+BIO202
+Molecular & Cellular Biology
+01
+E
+12:00
+12:53
+MWF
+521386
+87312
+BIO202
+Molecular & Cellular Biology
+02
+E
+09:00
+09:53
+MWF
+1170066
+88538
+BIO203
+Cellular & Organ Physiology
+01
+E
+11:30
+12:50
+TUTH
+336017
+81077
+GEO107
+Natural Hazards
+01
+E
+11:30
+12:50
+TUTH
+913141
+93101
+MAR304
+Waves, Tides & Beaches
+01
+E
+10:00
+11:20
+TUTH
+1130252
+92114
+SBC204
+Population Studies
+01
+E
+10:00
+11:20
+TUTH
+1563873
+93385
+AAS118
+Introduction to Asian Studies
+01
+F
+11:30
+12:50
+TUTH
+1752707
+81352
+AFS101
+Themes in Black Experience I
+01
+F
+16:00
+17:20
+MW
+1827889
+87754
+AFS319
+Politics Of Race
+01
+F
+17:30
+18:50
+MW
+93106
+93168
+ANP200
+Evolution of human behavior
+01
+F
+14:30
+15.23
+MWF
+364525
+81378
+ANT102
+Intro to Cultural Anthropology
+01
+F
+11:00
+11:53
+MWF
+346736
+92591
+ANT270
+Great Archaeological Discoveries
+01
+F
+16:00
+17:20
+TUTH
+338348
+92788
+ANT357
+Agricultural Revolution
+01
+F
+08:30
+09:50
+MW
+566961
+80568
+POL101
+World Politics
+01
+F
+14:30
+15:50
+MW
+1073305
+80569
+POL102
+Intro to American Government
+01
+F
+08:30
+09:50
+TUTH
+170846
+80571
+POL103
+Into to Comparitive Politics
+01
+F
+08:30
+09:50
+TUTH
+1721518
+88102
+AAS110
+Appreciating Indian Music
+01
+G
+11:30
+12:50
+TUTH
+795435
+92917
+AAS300
+Intellectual History East Asia
+01
+G
+13:00
+14:20
+TUTH
+530579
+88701
+AAS320
+Literature of India
+01
+G
+10:00
+10:53
+MWF
+616474
+86219
+AAS327
+Great Epics of India
+01
+G
+13:00
+14:20
+MF
+433076
+88504
+AAS366
+Feminine Spirituality
+01
+G
+14:30
+16:50
+MW
+342811
+92918
+AAS380
+Islamic Classics
+01
+G
+17:30
+18:50 
+MW
+342816
+85908
+AAS382
+Japanese Buddhism
+01
+G
+17:30
+18:50
+MW
+342811
+87576
+ARH344
+Performance Art II
+01
+G
+14:30
+15:50
+TUTH
+1831964
+94823
+ARH348
+Contemporary Art
+01
+G
+16:00
+17:20
+MW
+1331923
+88478
+CCS326
+Social & Cultural Theory
+01
+G
+16:00
+17:20
+MW
+905356
+88769
+CCS327
+Topics in Histories of Culture
+01
+G
+14:30
+16:50
+TUTH
+028
+87757
+CLT266
+20th Century Novel
+01
+G
+14:30
+15:50
+MW
+029
+92611
+CLT334
+Other Literary Genres
+01
+G
+16:00
+17:20
+TUTH
+339782
+92762
+EGL362
+Drama in English
+01
+G
+11:30
+12:50
+TUTH
+1821206
+81169
+EGL345
+Shakespeare I
+01
+G
+19:00
+20:20
+TUTH
+339742
+92760
+EGL346
+Shakespeare II
+01
+G
+11:00
+11:53
+MWF
+261846
+87316
+ANP220
+Controversies in Human Biology
+01
+H
+16:00
+17:20
+MW
+030
+92642
+ARS327
+Web Art, Design, and Culture
+01
+H
+13:00
+14:20
+TUTH
+031
+81531
+AST248
+Search for Life in the Universe
+01
+H
+13:00
+14:20
+TUTH
+032
+87729
+BIO336
+Conservation Biology
+01
+H
+17:30
+18:50
+TUTH
+033
+81429
+BIO350
+Darwinian Medicine
+01
+H
+13:00
+14:20
+TUTH
+034
+81430
+BIO351
+Ecology
+01
+H
+11:30
+12:50
+TUTH
+688880
+89493
+BME303
+Biomechanics
+01
+H
+08:30
+09:50
+MW
+035
+87313
+CCS313
+Television Studies
+01
+H
+13:00
+14:20
+TUTH
+036
+88886
+CCS395
+Digital Cultural Studies
+01
+H
+14:30
+15:50
+MW
+003
+84876
+CHE310
+Chem in Technology & Environment
+01
+H
+14:30
+15:50
+TUTH
+037
+92189
+EHI340
+Ecological Dimensions & Disease
+01
+H
+11:30
+12:50
+MW
+1563873
+93395
+EHI342
+Materials in the Human World
+01
+H
+13:00
+14:20
+MW
+1563873
+92932
+EHI343
+Sustainable Natural Resources
+01
+H
+14:30
+15:50
+TUTH
+038
+81371
+ARH300
+Greek Art & Architecture
+01
+I
+08:30
+09:50
+TUTH
+525208
+88099
+ARH307
+Age of Michelangelo Cent Italy
+01
+I
+16:00
+17:20
+TUTH
+039
+88073
+ARH316
+Baroque Art & Architecture
+01
+I
+13:00
+14:20
+TUTH
+1748441
+87315
+CCS393
+Topics in European Cinema
+01
+I
+14:30
+15:23
+MW
+1860107
+87634
+CLL215
+Classical Mythology
+01
+I
+14:30
+15:50
+MW
+040
+81164
+EGL105
+Survey British Literature I
+01
+I
+10:00
+11:20
+TUTH
+261846
+81166
+EGL231
+Saints & Fools
+01
+I
+16:00
+17:20
+MW
+623655
+86381
+EUR201
+Development of European Culture
+01
+I
+16:00
+17:20
+TUTH
+470726
+92700
+HIS202
+Ancient Greece
+01
+I
+17:30
+16:50
+MW
+661494
+92701
+HIS210
+Soviet Russia
+01
+I
+08:30
+09:50
+TUTH
+13131
+88548
+HIS312
+Germany, 1890-1945
+01
+I
+13:00
+14:20
+MF
+199352
+88564
+HUF216
+French Civ Thru the Ages
+01
+I
+17:30
+18:50
+MW
+490552
+85762
+HUG229
+Germany Today
+01
+I
+14:30
+15:50
+MW
+041
+81019
+HUI239
+Modern Italy
+01
+I
+14:30
+15:50
+TUTH
+196363
+80423
+AAS201
+Intro to Civ of Indian Subcont
+01
+J
+12:00
+12:53
+MWF
+616474
+92913
+AAS217
+Intro to Korean Culture
+01
+J
+14:30
+15:50
+MW
+042
+85890
+AAS220
+China: Language & Culture
+01
+J
+08:30
+09:50
+TUTH
+343682
+88751
+AAS236
+Korean Religions
+01
+J
+10:00
+11:20
+TUTH
+043
+88450
+AAS256
+Hinduism
+01
+J
+13:00
+14:20
+MF
+915899
+85988
+AAS260
+Buddhism
+01
+J
+10:00
+11:20
+TUTH
+044
+92928
+AAS307
+Women in US Asian Relations
+01
+J
+14:30
+15:50
+MW
+1752707
+86383
+AAS371
+Ancient China
+01
+J
+14:30
+15:50
+MW
+905356
+81351
+AFS239
+Intro Caribbean Experience
+01
+J
+14:30
+15:50
+MW
+1646431
+88768
+AAS337
+History of Korea
+01
+J
+16:00
+17:20
+TUTH
+530579
+86382
+AAS339
+Contemporary China
+01
+J
+13:00
+14:20
+TUTH
+845362
+93382
+AAS351
+Revolutionary China
+01
+J
+16:00
+17:20
+MW
+1752707
+86347
+DAN369
+World Dance II
+01
+J
+13:30
+16:55
+TUTH
+1175236
+88148
+DAN369
+World Dance II
+02
+J
+10:20
+12:20
+TUTH
+1375155
+87568
+AAS328
+Race, Humor & Asian America
+01
+K
+14:30
+15:50
+TUTH
+045
+81349
+AFS325
+Civil Rights Movement
+01
+K
+13:00
+14:20
+TUTH
+352815
+87311
+AFS339
+Recent African American History
+01
+K
+19:00
+20:20
+MW
+1827889
+92645
+ARH333
+Arts for the Public
+01
+K
+08:30
+09:50
+MW
+638628
+87698
+ECO316
+US Class Structure
+01
+K
+11:30
+12:50
+TUTH
+216489
+87002
+EGL217
+American Literature I
+01
+K
+11:30
+12:50
+TUTH
+339740
+88801
+EGL274
+Black American Literature
+01
+K
+17:30
+18:50
+MW
+349251
+80937
+LIN200
+Language in the US
+01
+K
+11:30
+12:50
+TUTH
+401229
+82080
+LIN307
+Sociolinguistics
+01
+K
+14:30
+15:50
+TUTH
+497254
+93033
+POL327
+Urban Politics
+01
+K
+19:00
+20:20
+MW
+340875
+92117
+SBC307
+American Envir History
+01
+K
+08:30
+09:50
+TUTH
+1006248
+92118
+SBC308
+American Envir Politics
+01
+K
+10:00
+11:20
+TUTH
+046
+80440
+SOC247
+Sociology of Gender
+01
+K
+11:30
+12:50
+TUTH
+047
+90635
+MEC101
+Engrg Computing & Prob Solvg I
+01
+MEC
+13:00
+14:20
+TUTH
+853860
+89126
+MEC104
+Pratical Science of Things
+01
+MEC
+11:30
+12:50
+TUTH
+1272347
+91165
+MEC203
+Eng Graphics and CAD
+01
+MEC
+16:00
+17:20
+TUTH
+048
+91199
+MEC214
+Probability and Statistics
+01
+MEC
+19:00
+19:55
+TH
+1124857
+91100
+MEC220
+Practical Electronics MechEng
+01
+MEC
+09:00
+09:53
+MWF
+1236451
+89129
+MEC280
+Pollution and Human Health
+01
+MEC
+16:00
+17:20
+MW
+1272347
+89130
+MEC301
+Thermodynamics
+01
+MEC
+11:00
+11:53
+MWF
+269085
+91198
+MEC310
+Intro to Machine Design
+01
+MEC
+17:30
+18:50
+TUTH
+049
+91099
+MEC316
+Mech Engr Lab I
+01
+MEC
+12:00
+12:53
+MW
+1589076
+90712
+MEC364
+Intro to Fluid Mechanics
+01
+MEC
+13:00
+14:20
+MF
+1124857
+90755
+MEC411
+Control Syst Analysis & Design
+01
+MEC
+16:30
+17:20
+MW
+050
+90747
+MEC422
+Thermal System Design
+01
+MEC
+08:00
+08:53
+TUTH
+051
+89134
+MEC440
+Mech Engr Design I
+01
+MEC
+10:00
+11:20
+TUTH
+049
+91301
+MEC456
+Intro Engr Composites
+01
+MEC
+17:30
+20:30
+TU
+1813729
+91141
+MEC500
+Modeling and Control of Manufa
+01
+MEC
+16:00
+18:50
+TH
+052
+89136
+MEC502
+Conduc and Radia Heat Transfer
+01
+MEC
+16:00
+18:50
+M
+053
+89137
+MEC507
+Mathematical Methods I
+01
+MEC
+19:00
+21:50
+TH
+1473325
+89099
+MEC509
+Transport Phenomena
+01
+MEC
+16:00
+18:50
+W
+1733181
+91061
+MEC516
+Energy Technologies Lab.I
+01
+MEC
+17:30
+20:20
+TU
+054
+89123
+MEC520
+Energy Tech. Thermodynamics
+01
+MEC
+19:00
+21:50
+M
+1272347
+91144
+MEC524
+Comp Meth for Fluid Mech/Trans
+01
+MEC
+14:30
+17:20
+TU
+1473325
+89138
+MEC525
+Prod Design Con Deve Opt
+01
+MEC
+19:00
+21:50
+M
+1026159
+91148
+MEC526
+Modern Power Cycles
+01
+MEC
+19:00
+21:50
+TH
+054
+90109
+MEC532
+Vibration & Control
+01
+MEC
+17:30
+20:20
+W
+453741
+89139
+MEC536
+Mechanics of Solids
+01
+MEC
+14:30
+17:20
+TU
+779926
+91175
+MEC539
+Intro to Finite Element Meth
+01
+MEC
+16:00
+18:50
+TH
+055
+91309
+MEC556
+Intro to Eng. Composites
+01
+MEC
+17:30
+20:30
+TU
+1813729
+89492
+AMS102
+Elements of Statistics
+01
+AMS
+10:00
+11:20
+TUTH
+056
+89491
+AMS102
+Elements of Statistics
+02
+AMS
+11:30
+12:50
+TUTH
+056
+89488
+AMS110
+Prob & Stat Life Science
+01
+AMS
+08:30
+09:50
+TUTH
+056
+89487
+AMS110
+Prob & Stat Life Science
+02
+AMS
+08:30
+09:50
+056
+MW
+90807
+AMS161
+Applied Calculus II
+01
+AMS
+17:30
+18:50
+TUTH
+208823
+89485
+AMS210
+Applied Linear Algebra
+01
+AMS
+08:30
+09:50
+MW
+545956
+89484
+AMS210
+Applied Linear Algebra
+02
+AMS
+14:30
+15:50
+TUTH
+545956
+89478
+AMS301
+Finite Mathematical Structures
+01
+AMS
+10:00
+11:20
+TUTH
+199776
+89476
+AMS310
+Survey of Prob & Stat
+01
+AMS
+11:30
+12:50
+TUTH
+421979
+89475
+AMS310
+Survey of Prob & Stat
+02
+AMS
+14:30
+15:50
+TUTH
+057
+89474
+AMS311
+Probability Theory
+01
+AMS
+13:00
+14:20
+TUTH
+252907
+89473
+AMS315
+Data Analysis
+01
+AMS
+16:00
+17:50
+TUTH
+336011
+90901
+AMS316
+Time Series Analysis
+01
+AMS
+13:00
+14:20
+TUTH
+237540
+91303
+AMS333
+Mathematical Biology
+01
+AMS
+16:00
+17:20
+TUTH
+058
+94776
+AMS335
+Game Theory
+01
+AMS
+14:30
+15:50
+MW
+059
+91085
+AMS345
+Computational Geometry
+01
+AMS
+11:30
+12:50
+TUTH
+252907
+89116
+AMS501
+Diff Eqn & Boundary Val Pr I
+01
+AMS
+14:30
+15:50
+TUTH
+1636773
+89465
+AMS510
+Analytical Methods for AMS
+01
+AMS
+19:00
+20:20
+MW
+060
+90756
+AMS511
+Foundations of Quantitative Fi
+01
+AMS
+14:30
+17:20
+M
+061
+90812
+AMS513
+Fin Derivatives & Stoch Calcul
+01
+AMS
+17:30
+18:50
+MW
+614539
+90899
+AMS514
+Computational Finance
+01
+AMS
+16:00
+17:20
+MW
+062
+91086
+AMS516
+Statistical Methods in Finance
+01
+AMS
+10:00
+11:20
+TUTH
+237540
+89103
+AMS518
+Advanced Stochastic Models, Ri
+01
+AMS
+17:30
+20:20
+TH
+063
+89102
+AMS523
+Mathematics of High Frequency
+01
+AMS
+14:20
+17:20
+F
+064
+89464
+AMS526
+Numerical Analysis I
+01
+AMS
+16:00
+17:20
+MW
+1267280
+90750
+AMS535
+Intro to Comp Structural Bio
+01
+AMS
+16:00
+17:20
+MW
+065
+89549
+AMS540
+Linear Programming
+01
+AMS
+14:30
+15:50
+TUTH
+066
+89463
+AMS542
+Analysis of Algorithms
+01
+AMS
+11:30
+12:50
+TUTH
+1168269
+90916
+AMS542
+Analysis of Algorithms
+02
+AMS
+10:00
+11:20
+TUTH
+067
+91087
+AMS553
+NSLS Simulation and Modeling
+02
+AMS
+17:30
+18:50
+MW
+896581
+91299
+AMS556
+Dynamic Programming
+01
+AMS
+17:30
+18:50
+TUTH
+572086
+90713
+AMS571
+Mathematical Statistics
+01
+AMS
+08:30
+09:50
+TUTH
+068
+89462
+AMS572
+Data Analysis I
+01
+AMS
+08:30
+09:50
+TUTH
+069
+89460
+AMS582
+Design of Experiments
+01
+AMS
+13:00
+14:20
+TUTH
+336011
+91024
+AMS595
+Fundamentals of Computing
+02
+AMS
+10:00
+11:20
+M
+070
+91293
+AMS600
+Socially Responsible Investing
+01
+AMS
+17:30
+20:20
+F
+071  

@@ -32,19 +32,34 @@
                <ul class="nav navbar-nav">
               <li id="logout1"><a href="index.jsp"><img src="img/chat.png"></a></li>
               <li id="logout1"><a href="index.jsp"><img src="img/profile.png"></a></li>
+<<<<<<< HEAD
                <li id="logout"> <a href="index.jsp"><img src="img/logout.png"></a>&nbsp;<strong><span id="userid" class="name">${Name}</span></strong></li>
+=======
+               <li id="logout"> <a href="index.jsp"><center></center><img src="img/logout.png"></center></a></li>
+>>>>>>> FETCH_HEAD
                   </ul>
-                  
+                  <div class="name1">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span class="name">${Name}</span></strong></div>
                 </div>            
                 <div class="row row1">
                 <div class=" col-sm-2">
-                <a href="AddMajorClasses.jsp" class="btn btn-default button2 link3">Make a new<br> schedule </a>           
+                <a href="/display_class" class="btn btn-default button2 link3">Make a new<br> schedule </a>           
+                 <a href="classinfo.jsp" class="btn btn-default button2 link3">Class<br> Info </a>           
                 
                 </div>
                </div>
                </div></div>
+<<<<<<< HEAD
                <div id="chatMessagesPage"></div>
                <div id="friendsListPage"></div>
+=======
+               <footer>
+        <div class = "pull-right">
+        <strong><a href = "Help.jsp" class = "links">About</a></strong>&nbsp;&nbsp;
+         <strong><a href = "#author.jsp" class = "links">Author</a></strong>&nbsp;&nbsp;
+        </div>
+        </footer>
+        
+>>>>>>> FETCH_HEAD
              <script src="js/response.min.js"></script>      
        <script src="js/validation.js"></script>      
 

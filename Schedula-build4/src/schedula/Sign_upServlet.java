@@ -51,12 +51,12 @@ public class Sign_upServlet extends HttpServlet {
                if (result == null)
                {
 		
-		    Key studentId = KeyFactory.createKey("Id",ID);	        
+		    //Key studentId = KeyFactory.createKey("Id",ID);	        
 	        Date date = new Date();
 	        
 	        
 	        
-	        Entity students = new Entity("Student",studentId);
+	        Entity students = new Entity("Student",ID);
 	        
 
 	        
@@ -70,7 +70,8 @@ public class Sign_upServlet extends HttpServlet {
 	        students.setProperty("Password", pass);
             students.setProperty("Phone",phone);
 	        
-	        datastore.put(students);
+	        req.getSession().setAttribute("newUser",students);
+            //datastore.put(students);
 	        
 	        resp.sendRedirect("classinfo.jsp");
 	        }
