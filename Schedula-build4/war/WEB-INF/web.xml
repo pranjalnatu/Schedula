@@ -15,6 +15,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>Sign_upAdvisor</servlet-name>
+		<servlet-class>schedula.Sign_upAdvisorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sign_upAdvisor</servlet-name>
+		<url-pattern>/sign_upAdvisor</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
 		<servlet-name>Sign_up</servlet-name>
 		<servlet-class>schedula.Sign_upServlet</servlet-class>
 	</servlet>

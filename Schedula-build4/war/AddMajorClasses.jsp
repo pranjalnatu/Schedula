@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           <%@taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
-        <title>JSP </title>
+        <title>Add Major Classes Page - Schedula </title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
          <link href="css/post.css" rel="stylesheet">

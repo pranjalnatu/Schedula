@@ -80,7 +80,7 @@ success: function (data) {
 var result = data;
 var l = result.length;
 //var comp = "1";
-if (result < 2 )
+if (result > 0 )
 {
   
 	window.location= "/studenthomepage.jsp";
@@ -88,6 +88,10 @@ if (result < 2 )
    //alert)
    //form.submit(function(){$.ajax({async:false,url: form.attr('action')});});	
 }
+else if (result < 0)
+	{
+	window.location= "/advisorhomepage.jsp";
+	}
 else
  $('#result').html(result);        //attr("value",result);
  }

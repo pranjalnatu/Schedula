@@ -42,7 +42,7 @@ href="classinfo.jsp"
                             <input name = "Password" type="password" class="form-control"  placeholder="Password">
                         </div>
                            <div class="form-group">
-                            <input name = "Confirm" type="password" class="form-control"  placeholder="Comfirm Password">
+                            <input name = "Confirm" type="password" class="form-control"  placeholder="Confirm Password">
                         </div>
                         <div class="form-group">
                             <input name = "Phone" type="text" class="form-control" placeholder="Phone">

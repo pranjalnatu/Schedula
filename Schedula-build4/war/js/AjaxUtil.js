@@ -107,9 +107,9 @@ onSocketMessage = function(message) {
 
 
 displayFriendList =function(){
-	var txt = document.createElement("div");
-	txt.innerHTML = "<p> Logged in as <b>"+userid+"</b><p>";
-	document.getElementById("friendsListPage").appendChild(txt);	
+	//var txt = document.createElement("div");
+	//txt.innerHTML = "<p> Logged in as <b>"+userid+"</b><p>";
+	//document.getElementById("friendsListPage").appendChild(txt);	
 	var getFriendListURI = 'getFriendList?userid='+ userid;
 	var httpRequest = makeRequest(getFriendListURI,false);
 	if (httpRequest.readyState === 4) {
@@ -143,6 +143,9 @@ addToFriends = function(friend){
 		
 		var a = "<a id='"+friend+"'>"+friend+"</a>";
 		var txt = document.createElement("div");
+		//txt.style.marginTop = "50px";
+		//txt.style.marginLeft = "110px";
+		//txt.style.align = right;
 		txt.innerHTML = a;
 		txt.style.cursor="pointer";
 		txt.setAttribute("onclick","openChat(\""+friend+"\");");
@@ -150,7 +153,11 @@ addToFriends = function(friend){
 
 		//adding chat boxes 
 		var chatBox = document.createElement("div");
-		chatBox.style.display = "none";
+		//chatBox.style.display = "none";
+		//chatBox.style.marginLeft = "1040px";
+		//chatBox.style.marginTop = "380px";
+		//chatBox.style.position = "fixed";
+		
 		chatBox.setAttribute("id",friend+"chatBox");
 		chatBox.setAttribute("class","chatbox");
 
@@ -165,13 +172,18 @@ addToFriends = function(friend){
 
 		var headerMessage = document.createElement("p");
 		headerMessage.setAttribute("class","headerMessage");
-		headerMessage.innerHTML = "<b>"+friend+"</b><br /><br />";
+		headerMessage.innerHTML = "<b>"+friend+"</b><br />";
+		//headerMessage.style.backgroundColor = "white";
 		headerContainer.appendChild(headerMessage);
 
 		chatBox.appendChild(headerContainer);
 		var chatBoxMessagesContainer = document.createElement("div");
 		chatBoxMessagesContainer.setAttribute("id",friend+"chatBoxMessageContainer");
 		chatBoxMessagesContainer.setAttribute("class","chatBoxMessagesContainer");
+		//chatBoxMessagesContainer.style.height = "150px";
+		//chatBoxMessagesContainer.style.width = "170px";
+		//chatBoxMessagesContainer.style.overflow = "scroll";
+		//chatBoxMessagesContainer.style.backgroundColor = "white";
 		chatBox.appendChild(chatBoxMessagesContainer);
 
 		var chatBoxMessagesTextarea = document.createElement("div");
@@ -179,7 +191,7 @@ addToFriends = function(friend){
 			"onkeydown=\"if(event.keyCode == 13){sendMessage('"+friend+"') }\"" +
 			"class=\"chatTextArea\"" +
 			" ></textarea>";
-		chatBox.innerHTML += textareaStr ;
+		chatBox.innerHTML += textareaStr;
 
 		var submitButton = document.createElement("input");
 		submitButton.setAttribute("type","button");

@@ -38,193 +38,195 @@ import com.google.appengine.api.datastore.Query.SortDirection;
 public class Sign_inServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException, ServletException {
+		
 		PrintWriter out = resp.getWriter();  
- 	   resp.setContentType("text/html");
+		resp.setContentType("text/html");
+		
+		DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
+
+		String ID = req.getParameter("Id");
+		String pass = req.getParameter("Password");
+
+		Filter studentFilter = new FilterPredicate("ID", FilterOperator.EQUAL, ID);
+		Filter advisorFilter = new FilterPredicate("ID", FilterOperator.EQUAL, ID);
+
+		Query q = new Query("Student").setFilter(studentFilter);
+		Query q2 = new Query("Advisor").setFilter(advisorFilter);
 		
 		
-		  DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
+		PreparedQuery pq = datastore.prepare(q);
+		Entity result = pq.asSingleEntity();
 
-		  
-		  String ID = req.getParameter("Id");
-		  String pass = req.getParameter("Password");
-		  
+		PreparedQuery pq2 = datastore.prepare(q2);
+		Entity result2 = pq2.asSingleEntity();
+
+		HttpSession session = req.getSession();
+
+
+		BufferedReader br = null;
+		
+		try {
+
+			br = new BufferedReader(new FileReader("Courses.txt"));
+			String sCurrentLine = br.readLine();
+
+			do {
+				// sCurrentLine = 	br.readLine();
+				//CourseID
+				//CourseCode
+				//CourseName
+				//SectionNo.
+				//Category
+				//StartTime
+				//EndTime
+				//Days
+				//ProfessorID
+				String courseId = sCurrentLine;
+				String courseCode = br.readLine();
+				String courseName = br.readLine();
+				String sectionNo = br.readLine();
+				String category = br.readLine();
+				String startTime = br.readLine();
+				String endTime = br.readLine();
+				String days = br.readLine();
+				String professorId = br.readLine();
+
+				// Key cseKey = KeyFactory.createKey("Course",courseId);
+				//String content = req.getParameter("content");
+				//Date date = new Date();
+				//
+				Entity cse = new Entity("Classes",courseId);
+				cse.setProperty("CourseNum", courseId);
+				cse.setProperty("CourseCode",courseCode);
+				cse.setProperty("CourseName",courseName);
+				cse.setProperty("SectionNo", sectionNo);
+				cse.setProperty("Category",category);
+				cse.setProperty("StartTime",startTime);
+				cse.setProperty("EndTime",endTime);
+				cse.setProperty("Days",days);
+				cse.setProperty("ProfessorId",professorId);
+				datastore.put(cse);
+				sCurrentLine = br.readLine();
+
+			}while ((sCurrentLine) != null); 
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+
+
+
+		// resp.sendRedirect("studenthomepage.jsp");	
+
+
+		if (result != null) 
+		{
+			String retId = (String)result.getProperty("ID");
+			String retPass = (String)result.getProperty("Password");
+			String name = (String)result.getProperty("FirstName");
+			
+			if(retPass.equals(pass))
+			{    
+				String major = (String)result.getProperty("Major");	
+				//req.get.setAttribute("Name",name);
+				session.setAttribute("Name", name);
+				session.setAttribute("major", major);
+				//req.setAttribute("ID", retId);
+				out.println(1);
+
+				//req.getSession().setAttribute("firstName",name);
+
+				// req.getRequestDispatcher("/log_in").forward(req,resp);
+				//resp.sendRedirect("studenthomepage.jsp");
+
+			}
+			else
+			{
+
+				//resp.sendRedirect("index.jsp");
+
+
+				out.println("Invalid Password"); 
+			}
+
+	     }
 		
 		
-		    //Key studentId = KeyFactory.createKey("Id",ID);	        
-	        
-	        
-		    Filter studentFilter = new FilterPredicate("ID", FilterOperator.EQUAL,ID);
+		else if(result2 != null)
+		{
+			String retId = (String)result2.getProperty("ID");
+			String retPass = (String)result2.getProperty("Password");
+			String name = (String)result2.getProperty("FirstName");
+			
+			if(retPass.equals(pass))
+			{
+				session.setAttribute("Name", name);
+				//System.out.println("got here! hello");
+				out.println(-1);
+				//resp.sendRedirect("/index.jsp");
+			}
+			
+			else
+			{
+				out.println("Invalid Password");
+			}
+			
+			
+		}
+		
+		
+		
+		else
+		{
 
-		    		Query q = new Query("Student").setFilter(studentFilter);
+			//req.getRequestDispatcher("/index.jsp").include(req, resp);
 
-                   PreparedQuery pq = datastore.prepare(q);
-                   Entity result = pq.asSingleEntity();
-                   
-                                
-                   HttpSession session = req.getSession();
-      		     
-      		     
-      		     BufferedReader br = null;
-      				try {
-      					 
-      					
-      		 
-      					br = new BufferedReader(new FileReader("Courses.txt"));
-      					String sCurrentLine = br.readLine();
-      					
-      					do {
-      					  // sCurrentLine = 	br.readLine();
-      						//CourseID
-      						//CourseCode
-      						//CourseName
-      						//SectionNo.
-      						//Category
-      						//StartTime
-      						//EndTime
-      						//Days
-      						//ProfessorID
-      						   String courseId = sCurrentLine;
-      						   String courseCode = br.readLine();
-      						   String courseName = br.readLine();
-      						   String sectionNo = br.readLine();
-      						   String category = br.readLine();
-      						   String startTime = br.readLine();
-      						   String endTime = br.readLine();
-      						   String days = br.readLine();
-      						   String professorId = br.readLine();
-      						    
-      					       // Key cseKey = KeyFactory.createKey("Course",courseId);
-      					        //String content = req.getParameter("content");
-      					        //Date date = new Date();
-      					        //
-      						    Entity cse = new Entity("Classes",courseId);
-      					        cse.setProperty("CourseNum", courseId);
-      					        cse.setProperty("CourseCode",courseCode);
-      					        cse.setProperty("CourseName",courseName);
-      					        cse.setProperty("SectionNo", sectionNo);
-      					        cse.setProperty("Category",category);
-      					        cse.setProperty("StartTime",startTime);
-      					        cse.setProperty("EndTime",endTime);
-      					        cse.setProperty("Days",days);
-      					        cse.setProperty("ProfessorId",professorId);
-                                  datastore.put(cse);
-                                  sCurrentLine = br.readLine();
-      	 
-      					}while ((sCurrentLine) != null); 
-      		 
-      				} catch (IOException e) {
-      					e.printStackTrace();
-      				} finally {
-      					try {
-      						if (br != null)br.close();
-      					} catch (IOException ex) {
-      						ex.printStackTrace();
-      					}
-      				}
+			//out.println("<script type=\"text/javascript\">");  
+			//out.println("alert('Invalid Id or Password');");  
+			//out.println("logout();");
+			//out.println("</script>");  
+			out.println("Invalid user name");
+			//resp.sendRedirect("/index.jsp");
 
-      		 
-      			
-      	    // resp.sendRedirect("studenthomepage.jsp");	
-      		
-      	
-      	
-      	
-             
-     
-        
-       	
-          
-                   
-                   
-                  
-                   
-                   
-                   
-                   if (result != null) 
-                   {
-                	
-                	   
-                	   String retId = (String)result.getProperty("ID");
-                       String retPass = (String)result.getProperty("Password");
-                       
-                      String name = (String)result.getProperty("FirstName");
-                       if(retPass.equals(pass))
-                    	   
-                         
-                       
-                       {    
-                    	   String major = (String)result.getProperty("Major");	
-                    	  //req.get.setAttribute("Name",name);
-                    	  session.setAttribute("Name", name);
-                    	  session.setAttribute("major", major);
-                    	   //req.setAttribute("ID", retId);
-                            out.println(1);
-                    	  
-                          //req.getSession().setAttribute("firstName",name);
-                         
-                         // req.getRequestDispatcher("/log_in").forward(req,resp);
-                    	//resp.sendRedirect("studenthomepage.jsp");
-                       
-                       }
-                       else
-                    	   {
-                    	   
-                    	   //resp.sendRedirect("index.jsp");
-                    	   
-                    	                	                    	   
-                    	   out.println("Invalid Password"); 
-                    	   }
-                   
-                   }     
-                	   else
-                   {
-                	 
-                    
-                    
-                  
-               		
-                    //req.getRequestDispatcher("/index.jsp").include(req, resp);
-                      
-                    //out.println("<script type=\"text/javascript\">");  
-               		//out.println("alert('Invalid Id or Password');");  
-               		//out.println("logout();");
-               		//out.println("</script>");  
-               		out.println("Invalid user name");
-               		//resp.sendRedirect("/index.jsp");
-               		
-                	   
-                	   
-                   }
-                	   //String a = (String) result.getProperty("FirstName");
-	    
-	        
-	        //if (pass == confirm)
-	        {
-	        
-	        
-	      
-	        
-	      
-	        
-             
-	      //  RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(req.getPathInfo());
 
-	     /**   try {
+
+		}
+		//String a = (String) result.getProperty("FirstName");
+
+
+		//if (pass == confirm)
+		{
+
+
+
+
+
+
+
+			//  RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(req.getPathInfo());
+
+			/**   try {
 				dispatcher.forward(req,resp);
 			} catch (ServletException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	 **/       
-	        }
-	        
-/**	        else 
+			 **/       
+		}
+
+		/**	        else 
 	        {
-	        	
+
 	        	resp.sendRedirect("/");
-	        	
+
 	        }**/
-	
+
 	}
 
 

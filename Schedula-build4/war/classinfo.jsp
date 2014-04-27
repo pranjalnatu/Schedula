@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <script src="js/asynch1.js"></script>
           <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <title>JSP Page</title>
+        <title>Class Information Page - Schedula</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/stylesheet.css" rel="stylesheet">
         
