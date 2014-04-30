@@ -33,7 +33,6 @@ function makeRequest(url,async) {
 function init(){
 	//document.getElementById("initLoginBtn").onclick = showLoginPage;
 	//document.getElementById("loginBtn").onclick = loginUser;
-	userid = ${Name};
 	loginUser();
 }
 
@@ -41,9 +40,9 @@ showLoginPage = function(){
 	//document.getElementById("loginPage").style.display = "block";
 	//document.getElementById("welcomePage").style.display = "none";
 	//document.getElementById("userid").onkeydown = function(event){
-		//if (event.keyCode == 13){
-			//loginUser();
-		//}
+		if (event.keyCode == 13){
+			loginUser();
+		}
 	//}
 	//document.getElementById("userid").focus();
 };

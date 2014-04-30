@@ -33,7 +33,6 @@ function makeRequest(url,async) {
 function init(){
 	//document.getElementById("initLoginBtn").onclick = showLoginPage;
 	//document.getElementById("loginBtn").onclick = loginUser;
-	userid = ${Name};
 	loginUser();
 }
 
@@ -53,7 +52,7 @@ loginUser = function(){
 	document.getElementById("chatMessagesPage").style.display = "block";
 	userid = document.getElementById("userid").innerHTML;
 	//document.getElementById("leftPanelInit").style.display = "none";
-	document.getElementById("friendsListPage").style.display = "block";
+	//document.getElementById("friendsListPage").style.display = "block";
 	requestToken();
 	displayFriendList();
 };
@@ -108,9 +107,9 @@ onSocketMessage = function(message) {
 
 
 displayFriendList =function(){
-	var txt = document.createElement("div");
+	//var txt = document.createElement("div");
 	//txt.innerHTML = "<p> Logged in as <b>"+userid+"</b><p>";
-	document.getElementById("friendsListPage").appendChild(txt);	
+	//document.getElementById("friendsListPage").appendChild(txt);	
 	var getFriendListURI = 'getFriendList?userid='+ userid;
 	var httpRequest = makeRequest(getFriendListURI,false);
 	if (httpRequest.readyState === 4) {

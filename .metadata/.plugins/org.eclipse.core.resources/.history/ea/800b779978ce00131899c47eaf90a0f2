@@ -10,8 +10,8 @@
   margin-right:-160px;
   float:right;
   background:#fff;
-  }
   
+  }
  .chatTextArea{
   border:1px solid #bbb;
   margin-top:10px;

@@ -10,16 +10,15 @@
   margin-right:-160px;
   float:right;
   background:#fff;
-  }
   
+  }
  .chatTextArea{
   border:1px solid #bbb;
   margin-top:10px;
-  width: 228px;
  }
   
  .closeButton{
-  color:#000;
+  color:#fff;
   float:right; 
   cursor:pointer;
   padding:2px 4px;
@@ -47,7 +46,6 @@
  
  .headerContainer{
   padding:4px;
-  background:#F5D0A9;
-  font-family: Century Gothic;
-  color:#000;
+  background:#FFCC33;
+   color:#fff;
  }

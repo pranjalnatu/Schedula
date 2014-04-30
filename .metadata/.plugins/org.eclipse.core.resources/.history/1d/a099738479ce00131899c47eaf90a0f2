@@ -33,7 +33,6 @@ function makeRequest(url,async) {
 function init(){
 	//document.getElementById("initLoginBtn").onclick = showLoginPage;
 	//document.getElementById("loginBtn").onclick = loginUser;
-	userid = ${Name};
 	loginUser();
 }
 
@@ -53,7 +52,7 @@ loginUser = function(){
 	document.getElementById("chatMessagesPage").style.display = "block";
 	userid = document.getElementById("userid").innerHTML;
 	//document.getElementById("leftPanelInit").style.display = "none";
-	document.getElementById("friendsListPage").style.display = "block";
+	/document.getElementById("friendsListPage").style.display = "block";
 	requestToken();
 	displayFriendList();
 };
