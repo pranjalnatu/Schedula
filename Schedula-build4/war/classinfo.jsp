@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <script src="js/asynch1.js"></script>
           <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <title>JSP Page</title>
+        <title>Class Information Page - Schedula</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/stylesheet.css" rel="stylesheet">
         
@@ -50,7 +50,7 @@
                      <div class="col-sm-12 col-sm-offset-2">
                        <h3>Additional Information</h3><br>
                        </div>
-                       
+                        <div class="col-sm-12">
                         <form action = "/additional_info">
                             <div class="form-group col-sm-offset-2 col-sm-6">
                                 <select name = "selectClass" id = "major" class="form-control">
@@ -78,14 +78,14 @@
                             
                             
                             <input type="checkbox" name="vehicle" value="Bike"> CSE310 <br>
-                             <input type="checkbox" name="vehicle" value="Car"> AMS301 <br>
-                               <input type="checkbox" name="vehicle" value="Bike">MEC325<br>
-                             <input type="checkbox" name="vehicle" value="Car">MAT131<br>
-                               <input type="checkbox" name="vehicle" value="Bike">CHEM132<br>
-                             <input type="checkbox" name="vehicle" value="Car">PHY 131<br>
-                            <input type="checkbox" name="vehicle" value="Bike">CSE390<br>
-                             <input type="checkbox" name="vehicle" value="Car">AMS310<br>
-                            <input type="checkbox" name="vehicle" value="Bike">WRT102<br>
+                           <input type="checkbox" name="vehicle" value="Car">  AMS301 <br>
+                           <input type="checkbox" name="vehicle" value="Bike"> MEC325<br>
+                           <input type="checkbox" name="vehicle" value="Car"> MAT131<br>
+                           <input type="checkbox" name="vehicle" value="Bike"> CHEM132<br>
+                           <input type="checkbox" name="vehicle" value="Car"> PHY 131<br>
+                           <input type="checkbox" name="vehicle" value="Bike"> CSE390<br>
+                            <input type="checkbox" name="vehicle" value="Car"> AMS310<br>
+                           <input type="checkbox" name="vehicle" value="Bike"> WRT102<br>
                             
                             
                          </div>
@@ -93,7 +93,7 @@
                             <div class="col-sm-12">
                             <h4>What DEC requirements have you finished?*</h4>
 </div>
-                            <div class="form-group thumbnail col-sm-offset-2 col-sm-6">
+                            <div class="form-group thumbnail col-sm-offset-2 col-sm-7">
                             
                             
                              <input type="checkbox" name="vehicle" value="A"> DEC A <br>
@@ -109,7 +109,7 @@
                             </center>
                         </form>
 
-
+</div>
                     </div>
                 </div>
             </div>

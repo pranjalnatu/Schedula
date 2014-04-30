@@ -1,5 +1,10 @@
 
 
+
+
+
+
+
 function load(){
 
 document.location.href = "/schedula_build1";
@@ -46,9 +51,11 @@ function loadClass(a)
 	    	
 	    	for (i = 0;i < len; i++)
 	    		{
+
 	    		var data1 = parsedJSON.data[i]["CourseCode"];
 	    	  $("#classes").append("<input type = 'checkbox' name = 'vv' value = '"+ data1 +"'>" +  data1 + "<br>");
-		      // $("#classes").append("<input type = 'checkbox' name = 'vv' value = '"+data+"'>"+data+"<br>");
+
+	    		
 	    		}
 	    	
 	    	

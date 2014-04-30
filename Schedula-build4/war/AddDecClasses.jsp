@@ -12,7 +12,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>JSP Page</title>
+        <title>Add DEC Classes Page - Schedula</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/post.css" rel="stylesheet">
        	<link href="css/stylesheet.css" rel="stylesheet">

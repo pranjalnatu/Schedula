@@ -15,17 +15,49 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          
-        <title>JSP </title>
+        <title>Add Major Classes Page - Schedula </title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/post.css" rel="stylesheet">
+         <link href="css/post.css" rel="stylesheet">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.datatables.net/1.9.4/css/jquery.dataTables.css">
+     <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="//datatables.net/download/build/nightly/jquery.dataTables.js"></script>
+
+        <link href="css/stylesheet.css" rel="stylesheet">
+     
+        <style>
+            body{
+                background-image: url(img/screen.png);
+                background-repeat: no-repeat;
+                background-size:  cover;
+            }  
+            .row1{
+                padding-top: 10%;
+            }
+
          <link href="css/stylesheet.css" rel="stylesheet">
          
         <style> 
+        
+       body {
+	font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #red;
+	background-color: #red;
+}
+
+
+div.container {
+	min-width: 980px;
+	margin: 0 auto;
+}
+        
+        
+        
             .button{
                 background-color: transparent;
                 border-color: white;
@@ -37,7 +69,10 @@
                 color:black;
                }
                
+               
         </style>
+         <link href="css/bootstrap.css" rel="stylesheet">
+       
     </head>
     <body class="main2">
     <div class="container">
@@ -70,7 +105,7 @@
                     </center><br>
                     <form id = "schedule"  >
                     <div class="col-sm-12">
-                    <table class="table table-bordered table-responsive" id="richBoys"> 
+                    <table class="table table-bordered table-responsive" id="example"> 
                             <thead>
                             <tr>
                             <th></th> 
@@ -100,7 +135,7 @@
                                  </tr>
    
                         </tbody>
-                    </table>
+                    </table><br><br>
                     </div>
                     <center>
                     <button class="btn btn-default button1"  onclick= "index.jsp"'>Preview</button>
@@ -121,8 +156,6 @@
         </div>
         
         </footer>
-        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-        <script src="//cdn.datatables.net/1.10.0-beta.2/js/jquery.dataTables.js"></script>
         <script>
             $(function() {
                 
@@ -135,6 +168,20 @@
                     
                 });
             });
+
+           
+        $(document).ready(function() {
+            $('#example').dataTable( {
+                "bPaginate": false,
+                "bLengthChange": false,
+                "bFilter": true,
+                "bSort": false,
+                "bInfo": false,
+                "bAutoWidth": false
+            } );
+        } );
+        
+
         </script>
          
         <script src="js/bootstrap.min.js"></script>
