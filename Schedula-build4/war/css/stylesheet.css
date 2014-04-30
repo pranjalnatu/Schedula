@@ -1,6 +1,9 @@
 @CHARSET "US-ASCII";
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 82258229dd2455d206bde4c5789ea0e1123ad8fb
 th {
 	text-align: center;
 }
@@ -255,6 +258,7 @@ div.dataTables_paginate {
 table {
 	margin: 1em 0;
 	clear: both;
+<<<<<<< HEAD
 }
 
  .hint{
@@ -278,3 +282,6 @@ table {
         #phoneInfo{
          color:red;
         }
+=======
+}
+>>>>>>> 82258229dd2455d206bde4c5789ea0e1123ad8fb

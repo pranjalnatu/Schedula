@@ -47,9 +47,13 @@ href="classinfo.jsp"
                             <input name = "Password" type="password" class="form-control" id="pass"  placeholder="Password">
                         </div>
                            <div class="form-group">
+<<<<<<< HEAD
                            <span id="pass1Info"></span>
                            
                             <input name = "Confirm" type="password" class="form-control" id="pass1" placeholder="Confirm Password">
+=======
+                            <input name = "Confirm" type="password" class="form-control"  placeholder="Confirm Password">
+>>>>>>> 82258229dd2455d206bde4c5789ea0e1123ad8fb
                         </div>
                         <div class="form-group">
                         <span id="phoneInfo"></span>

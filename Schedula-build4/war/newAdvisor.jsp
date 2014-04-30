@@ -28,6 +28,7 @@
 					<br>
 					<form action="/sign_upAdvisor">
 						<div class="form-group">
+<<<<<<< HEAD
 						<span id="nameInfo"></span>
 							<input name="First_Name" type="text" id="firstName" class="form-control"
 								placeholder="First Name">
@@ -35,6 +36,13 @@
 						<div class="form-group">
 						<span id="lastInfo"></span>
 							<input name="Last_Name" type="text" id="lastName" class="form-control"
+=======
+							<input name="First_Name" type="text" class="form-control"
+								placeholder="First Name">
+						</div>
+						<div class="form-group">
+							<input name="Last_Name" type="text" class="form-control"
+>>>>>>> 82258229dd2455d206bde4c5789ea0e1123ad8fb
 								placeholder="Last Name">
 						</div>
 						<div class="form-group">
@@ -43,6 +51,7 @@
 						</div>
 
 						<div class="form-group">
+<<<<<<< HEAD
 						<span id="emailInfo"></span>
 							<input name="Id" type="email" id="email" class="form-control"
 								placeholder="SBU Email ID">
@@ -60,6 +69,21 @@
 						<div class="form-group">
 						<span id="phoneInfo"></span>
 							<input name="Phone" type="text" id="phone" class="form-control"
+=======
+							<input name="Id" type="email" class="form-control"
+								placeholder="SBU Email ID">
+						</div>
+						<div class="form-group">
+							<input name="Password" type="password" class="form-control"
+								placeholder="Password">
+						</div>
+						<div class="form-group">
+							<input name="Confirm" type="password" class="form-control"
+								placeholder="Confirm Password">
+						</div>
+						<div class="form-group">
+							<input name="Phone" type="text" class="form-control"
+>>>>>>> 82258229dd2455d206bde4c5789ea0e1123ad8fb
 								placeholder="Phone">
 						</div>
 						<center>
@@ -79,8 +103,12 @@
 
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+<<<<<<< HEAD
     <script type="text/javascript" src="/js/validation.js"></script>
        
+=======
+
+>>>>>>> 82258229dd2455d206bde4c5789ea0e1123ad8fb
 </body>
 
 </html>
