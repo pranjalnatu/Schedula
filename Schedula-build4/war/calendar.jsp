@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>JSP </title>
+        <title>My Calendar </title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -38,6 +38,18 @@
                padding-left:0px;
                padding-rigth:0px;
                }
+               td{
+   border-color: black;
+}
+               td.a {
+               background-color:#58ACF8;
+               }
+               td.b{
+               background-color:#8181F7;
+               }
+               td.c{
+               background-color:blue;
+               }
         </style>
     </head>
     <body>
@@ -62,15 +74,16 @@
                 <div class=" col-sm-10">
                      
                     <div class="col-sm-12">
-                     <div class="col-sm-12">
+                     <div class="col-sm-offset-1 col-sm-12">
                    
                       <h4 class="button1">Schedule 1</h4>
                     <br>
                   
-                    <table class="  table table-bordered table-striped table-hover">
-                             <th></th>
+                    <table class="  table table-bordered  table-condensed">
+                            <thead>
+                            <tr>
+                             <th>Time</th>
                             
-                            <th>SUNDAY</th> 
                             <th>MONDAY</th>
                             <th>TUESDAY</th> 
                            <th>WEDNESDAY</th> 
@@ -78,219 +91,459 @@
                            
                             <th>FRIDAY</th> 
                             
-                           <th>SATURDAY</th> 
+                          
+                           </tr>
                             </thead>
                              <tbody>
                                  <tr>
-                                 <td>
-                             7:00 AM   
-                                 </td>
+                                 <th rowspan="3">7:00 AM</th>
+                                 <td> </td>
+                                 <td ></td>
                                  <td></td>
                                  <td></td>
-                                 <td></td>
-                                 <td></td>
-                                 <td></td>
-                                <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <th rowspan="3">
                              8:00 AM   
-                                 </td>
+                                 </th>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                              
+                                 <td></td>
+                                 <td rowspan="4" class="c"></td>
+                               
+                                 <td></td>
+                                  <td rowspan="4" class="c"></td>
+                               
                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
-                             9:00 AM   
-                                 </td>
                                  <td></td>
                                  <td></td>
+                                  
+                               
+                                 <td></td>
+                                   
+                               
+                                <td></td>
+                                 
+                                      <tr>
+                                 <th rowspan="3">9:00 AM</th>
+                                 <td> </td>
                                  <td></td>
                                  <td></td>
+                                  <td></td>
                                  <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 
+                               
+                                 <td></td>
+                                   
+                               
                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <th rowspan="3">
                              10:00 AM   
-                                 </td>
+                                 </th>
+                                 
                                  <td></td>
+                                 <td rowspan="4" class="b"></td>
+                                
                                  <td></td>
-                                 <td></td>
-                                 <td></td>
-                                 <td></td>
+                                  <td rowspan="4" class="b"></td>
+                                
                                 <td></td>
+                                 <td></td>
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
-                             11:00 AM   
-                                 </td>
-                                 <td style="background-color:blue;"></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
-                                <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                        <tr>
+                                 <th rowspan="3">11:00 AM</th>
+                                 <td> </td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <th rowspan="3">
                              12:00 PM   
-                                 </td>
+                                 </th>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                      <tr>
+                                 <th rowspan="3">1:00 PM</th>
+                                 
+                                 <td rowspan=4 class="a"></td>
+                                 <td></td>
+                                  <td rowspan=4 class="a"></td>
+                                
                                  <td></td>
                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
-                             1:00 PM   
-                                 </td>
                                  <td></td>
+                                 
                                  <td></td>
+                                  
+                                
+                                
+                                <td></td>
                                  <td></td>
+                                 
+                                 </tr>
+                                 <tr>
                                  <td></td>
+                                
+                                 <td></td>
+                                
+                                
                                  <td></td>
                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
-                             2:00 PM 
-                                 </td>
+                                 <th rowspan="3">
+                             2:00 PM   
+                                 </th>
+                                 <td></td>
+                                
+                                 <td></td>
+                                  
+                                
+                                 <td></td>
+                                <td></td>
+                                 <td></td>
+                                 </tr>
+                                 <tr>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 
+                                 <td rowspan=4 class="b"></td>
+                                 <td></td>
+                                  <td rowspan=4 class="b"></td>
+                               
+                                 <td></td>
+                                <td></td>
+                                
+                                 
+                                 </tr>
+                                         <tr>
+                                 <th rowspan="3">3:00 PM</th>
+                                 <td> </td>
+                                
+                                 <td></td>
+                                 
+                               
                                  <td></td>
                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
-                             3:00 PM   
-                                 </td>
                                  <td></td>
+                                
                                  <td></td>
-                                 <td></td>
-                                 <td></td>
+                                  
+                               
                                  <td></td>
                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
-                             4:00 PM  
-                                 </td>
                                  <td></td>
+                                 
                                  <td></td>
-                                 <td></td>
-                                 <td></td>
+                                 
+                               
                                  <td></td>
                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
-                             5:00 PM  
-                                 </td>
+                                 <th rowspan="3">
+                             4:00 PM 
+                                 </th>
+                                
+                                 <td rowspan="4" class="a"></td>
                                  <td></td>
-                                 <td></td>
-                                 <td></td>
-                                 <td></td>
+                                 <td rowspan="4" class="a"></td>
+                                
                                  <td></td>
                                 <td></td>
+                                
+                                 
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
-                             6:00 PM
-                                 </td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
-                                <td></td>
+                                      <tr>
+                                 <th rowspan="3">5:00 PM</th>
+                                 <td> </td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <th rowspan="3">
+                             6:00 PM  
+                                 </th>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <th rowspan="3">
                              7:00 PM  
-                                 </td>
+                                 </th>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
-                                <td></td>
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
                                  <tr>
-                                 <td>
-                             8:00 PM   
-                                 </td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
-                                 <td></td>
-                                <td></td>
                                  <td></td>
                                  
+                                 </tr>
+                                    <tr>
+                                 <th rowspan="3">
+                             8:00 PM  
+                                 </th>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
                                  </tr>
                                 <tr>
-                                 <td>
-                             9:00 PM   
-                                 </td>
+                                 <th rowspan="3">
+                             9:00 PM  
+                                 </th>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
-                                <td></td>
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
-                                       
-                         <tr>
-                                 <td>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                     <tr>
+                                 <th rowspan="3">
                              10:00 PM  
-                                 </td>
+                                 </th>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
                                  <td></td>
-                                <td></td>
+                                 </tr>
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
                                  <td></td>
                                  
                                  </tr>
-                               
+                                 <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 
+                                 </tr>
+                   
                         </tbody>
                     </table>
                     </div>

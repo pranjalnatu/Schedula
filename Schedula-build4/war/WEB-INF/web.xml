@@ -15,6 +15,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>Sign_upAdvisor</servlet-name>
+		<servlet-class>schedula.Sign_upAdvisorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sign_upAdvisor</servlet-name>
+		<url-pattern>/sign_upAdvisor</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
 		<servlet-name>Sign_up</servlet-name>
 		<servlet-class>schedula.Sign_upServlet</servlet-class>
 	</servlet>
@@ -55,6 +65,60 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Display_class</servlet-name>
 		<url-pattern>/display_class</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>TokenServlet</servlet-name>
+		<servlet-class>schedula.TokenServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TokenServlet</servlet-name>
+		<url-pattern>/gettoken/*</url-pattern>
+	</servlet-mapping>
+  
+    <servlet>
+       <servlet-name>MessageServlet</servlet-name>
+       <servlet-class>schedula.MessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>MessageServlet</servlet-name>
+       <url-pattern>/message/*</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+       <servlet-name>FriendServlet</servlet-name>
+       <servlet-class>schedula.FriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>FriendServlet</servlet-name>
+       <url-pattern>/getFriendList/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	<welcome-file-list>

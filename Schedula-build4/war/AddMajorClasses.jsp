@@ -14,14 +14,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
           <%@taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
-        <title>JSP </title>
+        <title>Add Major Classes Page - Schedula </title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
          <link href="css/post.css" rel="stylesheet">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.datatables.net/1.9.4/css/jquery.dataTables.css">
+     <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
 
-          <link href="css/stylesheet.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="//datatables.net/download/build/nightly/jquery.dataTables.js"></script>
+
+        <link href="css/stylesheet.css" rel="stylesheet">
      
         <style>
             body{
@@ -36,6 +40,23 @@
          <link href="css/stylesheet.css" rel="stylesheet">
          
         <style> 
+        
+       body {
+	font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #red;
+	background-color: #red;
+}
+
+
+div.container {
+	min-width: 980px;
+	margin: 0 auto;
+}
+        
+        
+        
             .button{
                 background-color: transparent;
                 border-color: white;
@@ -238,8 +259,6 @@
          <strong><a href = "#author.jsp" class = "links">Author</a></strong>&nbsp;&nbsp;
         </div>
         </footer>
-        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-        <script src="//cdn.datatables.net/1.10.0-beta.2/js/jquery.dataTables.js"></script>
         <script>
            
         $(document).ready(function() {
