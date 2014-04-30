@@ -16,7 +16,7 @@ href="classinfo.jsp"
         <title>Create a Student Account - Schedula</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
           <link href="css/stylesheet.css" rel="stylesheet">
-   
+       
        </head>
     <body class="main1">
         <div class="container">
@@ -26,26 +26,36 @@ href="classinfo.jsp"
                 <center>
                		 <h3>Create an account</h3>
                 </center>
-                    
                     <br>
-                    <form  action = "/sign_up" >
+                    <form  action = "/sign_up" id="myform" name="myform" method="post" >
                         <div class="form-group">
-                            <input name = "First_Name" type="text" class="form-control"  placeholder="First Name">
+                          <span id="nameInfo"></span>
+                          <input name = "First_Name" type="text" id="firstName" class="form-control"  placeholder="First Name">
                         </div>
                         <div class="form-group">
-                            <input name = "Last_Name" type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                         <div class="form-group">
-                            <input name  = "Id" type="email" class="form-control"  placeholder="SBU Email ID">
+                        <span id="lastInfo"></span>
+                           
+                            <input name = "Last_Name" type="text" id="lastName" class="form-control" placeholder="Last Name">
                         </div>
                         <div class="form-group">
-                            <input name = "Password" type="password" class="form-control"  placeholder="Password">
+                         <span id="emailInfo"></span>
+	                     <input name ="Id" type="email" class="form-control" id="email" placeholder="SBU Email ID" required>
+                       </div>
+                        <div class="form-group">
+                        <span id="passInfo"></span>
+                           
+                            <input name = "Password" type="password" class="form-control" id="pass"  placeholder="Password">
                         </div>
                            <div class="form-group">
+                           <span id="pass1Info"></span>
+                           
+                            <input name = "Confirm" type="password" class="form-control" id="pass1" placeholder="Confirm Password">
                             <input name = "Confirm" type="password" class="form-control"  placeholder="Confirm Password">
                         </div>
                         <div class="form-group">
-                            <input name = "Phone" type="text" class="form-control" placeholder="Phone">
+                        <span id="phoneInfo"></span>
+                           
+                            <input name = "Phone" type="text" class="form-control" id="phone" placeholder="Phone">
                         </div>
 
           
@@ -53,8 +63,6 @@ href="classinfo.jsp"
                         <button type="submit" class="link2 btn  button">Next</button>
                         </center>
                     </form>
-
-					
                 </div>
                 </div>
             </div>
@@ -65,9 +73,7 @@ href="classinfo.jsp"
          <a href = "#author.jsp" class = "link1">Author</a>&nbsp;&nbsp;
         </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-
-    </body>
-
+         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+       <script type="text/javascript" src="/js/validation.js"></script>
+          </body>
 </html>
