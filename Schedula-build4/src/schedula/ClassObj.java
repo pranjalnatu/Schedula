@@ -1,6 +1,10 @@
 package schedula;
 
-public class ClassObj {
+import java.io.Serializable;
+
+
+
+public class ClassObj implements Serializable {
 	   
 	   String courseId ;
 	   String courseCode ;
@@ -16,15 +20,15 @@ public class ClassObj {
 
 public ClassObj(String cId,String cCode, String cName,String secNo, String cat, String start, String end, String d, String profId)
 {	
-	   String courseId = cId ;
-	   String courseCode = cCode;
-	   String courseName= cName ;
-	   String sectionNo  = secNo;
-	   String category  =  cat ;
-	   String startTime = start;
-	   String endTime  = end;
-	   String days = d;
-	   String professorId = profId ;
+	    courseId = cId ;
+	   courseCode = cCode;
+	   courseName= cName ;
+	   sectionNo  = secNo;
+	   category  =  cat ;
+	   startTime = start;
+	   endTime  = end;
+	   days = d;
+	   professorId = profId ;
 }
 
 

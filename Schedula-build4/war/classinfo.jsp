@@ -96,12 +96,12 @@
                             <div class="form-group thumbnail col-sm-offset-2 col-sm-6">
                             
                             
-                             <input type="checkbox" name="vehicle" value="Bike"> DEC A <br>
-                            <input type="checkbox" name="vehicle" value="Bike"> DEC B <br>
-                            <input type="checkbox" name="vehicle" value="Bike"> DEC C <br>
-                            <input type="checkbox" name="vehicle" value="Bike"> DEC D <br>
-                            <input type="checkbox" name="vehicle" value="Bike"> DEC E <br>
-                            <input type="checkbox" name="vehicle" value="Bike"> DEC F <br>
+                             <input type="checkbox" name="vehicle" value="A"> DEC A <br>
+                            <input type="checkbox" name="vehicle"  value="B"> DEC B <br>
+                            <input type="checkbox" name="vehicle" value="C"> DEC C <br>
+                            <input type="checkbox" name="vehicle" value="D"> DEC D <br>
+                            <input type="checkbox" name="vehicle" value="E"> DEC E <br>
+                            <input type="checkbox" name="vehicle" value="F"> DEC F <br>
                            
                            </div>
                             <center class="col-sm-10 ">

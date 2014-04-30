@@ -40,7 +40,7 @@ public class DisplayClass_servlet extends HttpServlet {
 		
 		
 		  DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
-		 
+		  
 		  String major = (String)req.getSession().getAttribute("Major");
 		  
 		  
@@ -51,6 +51,8 @@ public class DisplayClass_servlet extends HttpServlet {
                  PreparedQuery pq = datastore.prepare(q);
                  ArrayList<ClassObj> list = new ArrayList<ClassObj>();
 		         
+                 
+                 ClassObj o = new ClassObj() ;
                  for (Entity result : pq.asIterable()) {
                	  
                 	 String coursesCode = (String)result.getProperty("CourseCode");
@@ -75,8 +77,10 @@ public class DisplayClass_servlet extends HttpServlet {
                     // classList.add(Courses);
                	  }
                  
+                 String s = list.get(0).getCourseCode();
+                req.getSession().setAttribute("S",s);
                  req.getSession().setAttribute("List", list);
-               
+                 //req.getSession().setAttribute("O",o);
                 //String json = helper.writeJSON(pq.asIterable());
                // out.println(json);
        		 
@@ -84,7 +88,7 @@ public class DisplayClass_servlet extends HttpServlet {
        		   
        		
                  
-                     
+                  //   req.getSession().setAttribute("ruzin", "dbs");
                  
 		  
 	       resp.sendRedirect("AddMajorClasses.jsp");	

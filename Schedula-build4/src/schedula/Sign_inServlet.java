@@ -156,7 +156,8 @@ public class Sign_inServlet extends HttpServlet {
                     	   String major = (String)result.getProperty("Major");	
                     	  //req.get.setAttribute("Name",name);
                     	  session.setAttribute("Name", name);
-                    	  session.setAttribute("major", major);
+                    	  session.setAttribute("Major", major);
+                    	  session.setAttribute("signedId",ID);
                     	   //req.setAttribute("ID", retId);
                             out.println(1);
                     	  
