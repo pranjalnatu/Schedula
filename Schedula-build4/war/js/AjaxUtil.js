@@ -1,4 +1,5 @@
 var userid;
+var activeBox = "";
 window.onload= init;
 
 //general ajax function for all requests 
@@ -31,28 +32,12 @@ function makeRequest(url,async) {
 
 
 function init(){
-	//document.getElementById("initLoginBtn").onclick = showLoginPage;
-	//document.getElementById("loginBtn").onclick = loginUser;
-	loginUser();
+	registerUser();
 }
 
-showLoginPage = function(){
-	//document.getElementById("loginPage").style.display = "block";
-	//document.getElementById("welcomePage").style.display = "none";
-	//document.getElementById("userid").onkeydown = function(event){
-		//if (event.keyCode == 13){
-			//loginUser();
-		//}
-	//}
-	//document.getElementById("userid").focus();
-};
-
-loginUser = function(){
-	//document.getElementById("loginPage").style.display = "none";
+registerUser = function(){
 	document.getElementById("chatMessagesPage").style.display = "block";
 	userid = document.getElementById("userid").innerHTML;
-	//document.getElementById("leftPanelInit").style.display = "none";
-	//document.getElementById("friendsListPage").style.display = "block";
 	requestToken();
 	displayFriendList();
 };
@@ -64,10 +49,9 @@ requestToken = function(){
 		if (httpRequest.readyState === 4) {
 			if (httpRequest.status === 200) {
 				openChannel(httpRequest.responseText);
-			}else {
-				alert(httpRequest.status + ' ');
-				alert('There was a problem with the request.');
 			}
+			
+			else {}
 		}
 	}
 };
@@ -81,17 +65,11 @@ openChannel = function(token) {
 	socket.onclose = onSocketClose;
 };
 
-onSocketError = function(error){
-	alert("Error is <br/>"+error.description+" <br /> and HTML code"+error.code);
-};
+onSocketError = function(error){};
 
-onSocketOpen = function() {
-	// socket opened
-};
+onSocketOpen = function() {};
 
-onSocketClose = function() {
-	alert("Socket Connection closed");
-};
+onSocketClose = function() {};
 
 onSocketMessage = function(message) {
 	var messageXML =  ((new DOMParser()).parseFromString(message.data, "text/xml"));
@@ -107,9 +85,6 @@ onSocketMessage = function(message) {
 
 
 displayFriendList =function(){
-	//var txt = document.createElement("div");
-	//txt.innerHTML = "<p> Logged in as <b>"+userid+"</b><p>";
-	//document.getElementById("friendsListPage").appendChild(txt);	
 	var getFriendListURI = 'getFriendList?userid='+ userid;
 	var httpRequest = makeRequest(getFriendListURI,false);
 	if (httpRequest.readyState === 4) {
@@ -119,9 +94,9 @@ displayFriendList =function(){
 			for( var i =0 ; i < friendListXML.length ; i++){
 				addToFriends(friendListXML[i].getElementsByTagName("name")[0].firstChild.nodeValue);
 			}	
-		}else {
-			alert('There was a problem with the request.');
 		}
+		
+		else {}
 	}
 };
 
@@ -131,6 +106,7 @@ var friendsList= new Array();
 
 addToFriends = function(friend){
 	//check if the user already added
+	//alert(friend + "1");
 	var contains = false;
 	for(var i = 0 ; i < friendsList.length ; i++){
 		if(friendsList[i]==friend){
@@ -140,24 +116,14 @@ addToFriends = function(friend){
 	}
 	if(!contains){
 		friendsList.push(friend);
+		var friendDisplay = document.getElementById("friendDisplay");
+		friendDisplay.innerHTML = friendDisplay.innerHTML + "<br>" + "<a class='friendLinks' id='"+friend+"'>"+friend+"</a>";
+		friendDisplay.style.cursor="pointer";
+		friendDisplay.setAttribute("onclick","openChat(\""+friend+"\");");
+		//alert(friend + "2");
 		
-		var a = "<a id='"+friend+"'>"+friend+"</a>";
-		var txt = document.createElement("div");
-		//txt.style.marginTop = "50px";
-		//txt.style.marginLeft = "110px";
-		//txt.style.align = right;
-		txt.innerHTML = a;
-		txt.style.cursor="pointer";
-		txt.setAttribute("onclick","openChat(\""+friend+"\");");
-		document.getElementById("friendsListPage").appendChild(txt);
-
 		//adding chat boxes 
 		var chatBox = document.createElement("div");
-		//chatBox.style.display = "none";
-		//chatBox.style.marginLeft = "1040px";
-		//chatBox.style.marginTop = "380px";
-		//chatBox.style.position = "fixed";
-		
 		chatBox.setAttribute("id",friend+"chatBox");
 		chatBox.setAttribute("class","chatbox");
 
@@ -173,17 +139,12 @@ addToFriends = function(friend){
 		var headerMessage = document.createElement("p");
 		headerMessage.setAttribute("class","headerMessage");
 		headerMessage.innerHTML = "<b>"+friend+"</b><br />";
-		//headerMessage.style.backgroundColor = "white";
 		headerContainer.appendChild(headerMessage);
 
 		chatBox.appendChild(headerContainer);
 		var chatBoxMessagesContainer = document.createElement("div");
 		chatBoxMessagesContainer.setAttribute("id",friend+"chatBoxMessageContainer");
 		chatBoxMessagesContainer.setAttribute("class","chatBoxMessagesContainer");
-		//chatBoxMessagesContainer.style.height = "150px";
-		//chatBoxMessagesContainer.style.width = "170px";
-		//chatBoxMessagesContainer.style.overflow = "scroll";
-		//chatBoxMessagesContainer.style.backgroundColor = "white";
 		chatBox.appendChild(chatBoxMessagesContainer);
 
 		var chatBoxMessagesTextarea = document.createElement("div");
@@ -210,6 +171,8 @@ closeWindow = function(friend){
 }
 
 openChat = function(friend){
+	//alert(friend + "3");
+	activeBox = friend+"chatBox";
 	document.getElementById(friend+"chatBox").style.display = "block";
 	document.getElementById(friend+"textarea").focus();
 }
@@ -227,6 +190,7 @@ sendMessage = function(friend){
 		}
 	}
 	var mesgDiv = document.createElement("a");
+	mesgDiv.style.color = "black";
 	mesgDiv.innerHTML ="<b>me</b>:  "+ message+"<br />";
 	var abc = document.getElementById(friend+"chatBoxMessageContainer");
 	if(abc)
@@ -238,6 +202,7 @@ sendMessage = function(friend){
 
 updateChatBox = function(message,from){
 	var mesgDiv = document.createElement("a");
+	mesgDiv.style.color = "black";
 	mesgDiv.innerHTML ="<b>"+from+"</b>:  "+ message+"<br />";
 	var abc = document.getElementById(from+"chatBoxMessageContainer");
 	if(abc)
