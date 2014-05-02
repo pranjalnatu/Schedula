@@ -1,0 +1,265 @@
+@CHARSET "US-ASCII";
+
+th {
+	text-align: center;
+}
+
+body.main1 {
+	background-image: url(../img/sch.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.name {
+	font-size: 15px;
+	font-family: Century Gothic;
+}
+
+.name1 {
+	margin-left: -60px;
+	margin-top: 15px;
+	position: absolute;
+}
+
+body.main2 {
+	background-image: url(../img/screen.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.buttons{
+	background: transparent;
+	border-color: #A4A4A4;
+	font-family: Century Gothic;
+	font-size: 15px;
+	color: #A4A4A4;
+}
+
+.button2 {
+	background-color: transparent;
+	border-color: white;
+	color: white;
+}
+
+.row1 {
+	padding-top: 10%;
+}
+
+.container {
+	padding-left: 0px;
+}
+
+td {
+	text-align: center;
+}
+
+#richBoys th {
+	text-align: center;
+}
+
+th.instructor {
+	width: 170px;
+}
+
+.a {
+	padding-top: 34%;
+	padding-left: 2%
+}
+
+.b {
+	padding-top: 27%;
+}
+
+.button {
+	background: transparent;
+	border-color: #A0A0A0;
+	font-family: Century Gothic;
+	font-size: 15px;
+	color: #A0A0A0;
+}
+
+p.para {
+	font-size: 15px;
+	font-family: Century Gothic;
+	background: -webkit-linear-gradient(#F0F0F0, #606060);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-decoration-color: transparent;
+}
+
+a.links {
+	font-size: 15px;
+	font-family: Century Gothic;
+	color: black;
+}
+
+a.link1 {
+	font-size: 15px;
+	font-family: Century Gothic;
+	background: -webkit-linear-gradient(#F0F0F0, #606060);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-decoration-color: transparent;
+	text-decoration: underline;
+}
+
+a.link2 {
+	font-size: 15px;
+	font-family: Century Gothic;
+	background: -webkit-linear-gradient(#F0F0F0, #606060);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-decoration-color: transparent;
+}
+
+a.link3 {
+	font-size: 15px;
+	font-family: Century Gothic;
+	background-color: #FFFAE6;
+	color: black;
+}
+
+a.link3:hover {
+	background-color: #F0F0F0;
+}
+
+#logout {
+	margin-top: -5px;
+	margin-right: -5px;
+	width: 55px;
+	height: 30px;
+}
+
+#profile {
+	margin-top: -10px;
+	margin-right: -5px;
+	width: 55px;
+	height: 30px;
+}
+
+#chat {
+	margin-top: -10px;
+	margin-right: -5px;
+	width: 55px;
+	height: 30px;
+}
+
+#result {
+	font-size: 17px;
+	font-family: Century Gothic;
+	text-align: center;
+	background-color: transparent;
+	color: #801200;
+}
+
+#chatMessagesPage {
+	margin-right:200px;
+}
+
+#friendsListPage {
+	
+}
+
+/*#chat{
+          background-image:url(img/chat.png);
+          }*/
+h3 {
+	font-size: 23px;
+	font-family: Century Gothic;
+	background: -webkit-linear-gradient(#F0F0F0, #606060);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-decoration-color: transparent;
+}
+
+h4 {
+	font-size: 18px;
+	font-family: Century Gothic;
+	background: -webkit-linear-gradient(#F0F0F0, #606060);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-decoration-color: transparent;
+}
+
+input::-webkit-input-placeholder {
+	color: rgba(216, 216, 216, 1);
+	/* white color with alpha = 1 (alpha = opacity varies on a scale of 0 to 1 with decimal values in between) */
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 18px;
+	font-family: Courier New;
+	padding: 0px 10px;
+	text-align: center;
+}
+
+input::-moz-placeholder {
+	color: rgba(255, 0, 255, 1);
+	text-transform: capitalize;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	line-height: 25px;
+	padding: 0px 10px;
+	text-align: left;
+	text-decoration: blink;
+}
+
+input:-moz-placeholder { /* Older versions of Firefox */
+	color: rgba(255, 0, 255, 1);
+	/* alpha property doesn't properly work Firefox */
+	text-transform: capitalize;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	line-height: 18px;
+	padding: 0px 10px;
+	text-align: left;
+	text-decoration: blink;
+}
+
+input:-ms-input-placeholder {
+	color: rgba(255, 0, 255, 1);
+	text-transform: capitalize;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	line-height: 18px;
+	padding: 0px 10px;
+	text-align: left;
+	text-decoration: blink;
+}
+
+<!--
+---------------------------
+-->
+div.dataTables_length label {
+	width: 460px;
+	float: left;
+	text-align: left;
+}
+
+div.dataTables_length select {
+	width: 75px;
+}
+
+div.dataTables_filter label {
+	float: right;
+	width: 460px;
+}
+
+div.dataTables_info {
+	padding-top: 8px;
+}
+
+div.dataTables_paginate {
+	float: right;
+	margin: 0;
+}
+
+table {
+	margin: 1em 0;
+	clear: both;
+}

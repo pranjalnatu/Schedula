@@ -48,9 +48,7 @@
 				<div class=" col-sm-2">
 					<a href="/display_class" class="btn btn-default button2 link3">Make
 						a new<br> schedule
-					</a> <a href="classinfo.jsp" class="btn btn-default button2 link3">Class<br>
-						Info
-					</a>
+					</a> 
 
 				</div>
 			</div>

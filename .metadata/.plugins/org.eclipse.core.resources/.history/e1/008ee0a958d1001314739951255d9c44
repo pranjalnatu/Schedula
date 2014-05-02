@@ -1,3 +1,5 @@
+
+
 <%-- 
     Document   : AddMajorClasses
     Created on : Mar 14, 2014, 11:21:43 AM
@@ -20,8 +22,12 @@
          <link href="css/post.css" rel="stylesheet">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.datatables.net/1.9.4/css/jquery.dataTables.css">
+     <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
 
-          <link href="css/stylesheet.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="//datatables.net/download/build/nightly/jquery.dataTables.js"></script>
+
+        <link href="css/stylesheet.css" rel="stylesheet">
      
         <style>
             body{
@@ -36,6 +42,23 @@
          <link href="css/stylesheet.css" rel="stylesheet">
          
         <style> 
+        
+       body {
+	font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #red;
+	background-color: #red;
+}
+
+
+div.container {
+	min-width: 980px;
+	margin: 0 auto;
+}
+        
+        
+        
             .button{
                 background-color: transparent;
                 border-color: white;
@@ -57,15 +80,21 @@
         <div class="row">
         
             <div class=" pull-right">
-            <br>
-              <ul class="nav navbar-nav">
-              <li id="logout1"><a href="index.jsp"><img src="img/chat.png"></a></li>
-              <li id="logout1"><a href="index.jsp"><img src="img/profile.png"></a></li>
-               <li id="logout"> <a href="index.jsp"><center></center><img src="img/logout.png"></center></a></li>
-                  </ul>
-                  <div class="name1">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span class="name">${Name}</span></strong></div>
-                </div>             
-            
+				<br>
+				<ul class="nav navbar-nav">
+					<li id="chat"><a href="index.jsp"><img src="img/chat.png"></a></li>
+					<li id="profile"><a href="index.jsp"><img
+							src="img/profile.png"></a></li>
+					<li id="logout"><a href="index.jsp"><img
+							src="img/logout.png"></a>&nbsp;
+					<!--<strong><span id="userid" class="name">${Name}</span></strong></li>-->
+				</ul>
+				<div class="name1">
+					&nbsp;&nbsp;&nbsp;&nbsp;<strong><span id="userid"
+						class="name">${Name}</span></strong>
+				</div>
+			</div>
+			
             
             <div class="row row1">
                 <div class="col-sm-2">
@@ -76,10 +105,10 @@
                  <div class=" col-sm-offset-1 col-sm-11">
                
                      <center>
-                    <a href="AddMajorClasses.jsp" class="btn btn-default button1 active">Add Major Classes</a>
+                    <a href="AddMajorClasses.jsp" class="btn btn-default button1 ">Add Major Classes</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                           <a href="AddDecClasses.jsp" class="btn btn-default button1">Add DEC Classes</a>
+                           <a href="AddDecClasses.jsp" class="btn btn-default button1 active">Add DEC Classes</a>
                     </center><br>
                     <div class="col-sm-12">
                     <table class="table table-bordered table-responsive" id="example"> 
@@ -113,111 +142,69 @@
           
         </tr>
                              </c:forEach>
-                                 <tr>
+
+          <tr>
                                  <td>
-                                <input type="checkbox">   
+                             <input type="checkbox">   
                                  </td>
-                                 <td>CSE</td>
-                                 <td>101</td>
-                                 <td>Introduction to Computers</td>
+                                 <td>SOC</td>
+                                 <td>105</td>
+                                 <td>Introduction Sociology</td>
                                  <td>01</td>
-                                 <td>Michael Tashbook</td>
+                                 <td>Linda Wicks</td>
                                 <td>MW</td>
                                  <td>02:30 pm</td>
                                   <td>03:50 pm</td>
+                                
                     
                                  </tr>
-                                  
                                   <tr>
                                  <td>
                              <input type="checkbox">   
                                  </td>
-                                 <td>CSE</td>
+                                 <td>POL</td>
                                  <td>102</td>
-                                 <td>Intro to Web Design and programming</td>
-                                 <td>01</td>
-                                 <td>TBA</td>
-                                <td>TuTh</td>
-                                 <td>02:30 pm</td>
-                                  <td>03:50 pm</td>
+                                 <td>Intro to American Gvment</td>
+                                 <td>02</td>
+                                 <td>Mathew lebo</td>
+                                <td>MF</td>
+                                 <td>01:00 pm</td>
+                                  <td>02:20 pm</td>
+                                
                     
                                  </tr>
                         <tr>
                                  <td>
                              <input type="checkbox">   
                                  </td>
-                                 <td>CSE</td>
-                                 <td>110</td>
-                                 <td>Introduction to Computer Science</td>
+                                 <td>WST</td>
+                                 <td>102</td>
+                                 <td>Intro Women Stds in Soc Sci</td>
                                  <td>01</td>
-                                 <td>Michael Tashbook</td>
-                                <td>Mf</td>
-                                 <td>01:00 pm</td>
-                                  <td>02:20 pm</td>
-                    
+                                 <td>Choonib Lee</td>
+                                <td>TuTh</td>
+                                 <td>10:00 am</td>
+                                  <td>11:20 am</td>
+                                 
                                  </tr>
                        
                                   <tr>
                                  <td>
                              <input type="checkbox">   
                                  </td>
-                                 <td>CSE</td>
-                                 <td>114</td>
-                                 <td>Computer Science I</td>
+                                 <td>ANT</td>
+                                 <td>102</td>
+                                 <td>Intro to Cultural Anthro</td>
                                  <td>01</td>
-                                 <td>Paul Fodor</td>
+                                 <td>David Hicks</td>
                                 <td>MWF</td>
                                  <td>08:00 am</td>
                                   <td>08:53 am</td>
+                                 
                     
                                  </tr>
-                                     <tr>
-                                 <td>
-                             <input type="checkbox">   
-                                 </td>
-                                 <td>CSE</td>
-                                 <td>130</td>
-                                 <td>Intro to Programming in C</td>
-                                 <td>01</td>
-                                 <td>Ahmad Esmaili</td>
-                                <td>MWF</td>
-                                 <td>10:00 am</td>
-                                  <td>10:53 am</td>
-                    
-                                 </tr>
-                                     <tr>
-                                 <td>
-                             <input type="checkbox">   
-                                 </td>
-                                 <td>CSE</td>
-                                 <td>150</td>
-                                 <td>Fondation of Computer Science Honors</td>
-                                 <td>01</td>
-                                 <td>Michael Bender</td>
-                                <td>MF</td>
-                                 <td>01:00 pm</td>
-                                  <td>02:20 pm</td>
+                                     
 
-                    
-                                 </tr>
-                       
-                            <tr>
-                                
-                                 <td>
-                             <input type="checkbox">   
-                                 </td>
-                                 <td>CSE</td>
-                                 <td>214</td>
-                                 <td>Computer Science II</td>
-                                 <td>01</td>
-                                 <td>Ahmad Esmaili</td>
-                                <td>MWF</td>
-                                 <td>12:00 pm</td>
-                                  <td>12:53 pm</td>
-                    
-                                 </tr>
-                       
-                       
                         </tbody>
                     </table><br><br>
                     </div>
@@ -238,12 +225,25 @@
          <strong><a href = "#author.jsp" class = "links">Author</a></strong>&nbsp;&nbsp;
         </div>
         </footer>
-        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-        <script src="//cdn.datatables.net/1.10.0-beta.2/js/jquery.dataTables.js"></script>
         <script>
+        
+        $(function() {
+            
+            $('#example').dataTable( {
+               "bPaginate":true,
+               "iDisplayLength": 10,
+                "sPaginationType": "full_numbers"
+                
+                
+                
+            });
+        });
+
+      
+        
            
         $(document).ready(function() {
-            $('#example').dataTable( {
+            $('#exam').dataTable( {
                 "bPaginate": false,
                 "bLengthChange": false,
                 "bFilter": true,
