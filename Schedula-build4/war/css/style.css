@@ -1,34 +1,53 @@
 #chatMessagesPage,#friendsListPage{
 	display:none;
+	position: absolute; 
+	width: 90%; 
+  	width: calc(100% - 5em); 
+  	bottom: 10px; 
+  	right: 10px;	 
+}
+
+.friendLinks{
+	color:#fff;
+	font-size:16px;
+	font-family: Century Gothic;
+}
+
+a.friendLinks:hover {
+  color:#fff;
 }
 
 .chatbox{
+  display:none;
   border:1px solid #bbb;
   width:230px;
-  padding:0; /* 10px 10px 10px ;*/
-  margin-top:320px;
-  margin-right:-160px;
+  padding:0; 
   float:right;
   background:#fff;
-  
   }
+  
  .chatTextArea{
   border:1px solid #bbb;
   margin-top:10px;
- }
-  
+  width: 228px;
+ }  
+
  .closeButton{
-  color:#fff;
+  color:#000;
   float:right; 
   cursor:pointer;
   padding:2px 4px;
   font-weight:bold;
  }
+ 
  p.headerMessage{
   line-height: 100%;
   padding:1px  0;
   height:1em;
+  color: #000;
+  font-family: Century Gothic;
  }
+ 
  .chatBoxMessagesContainer{
   padding-left:5px;
   height:225px;
@@ -46,6 +65,7 @@
  
  .headerContainer{
   padding:4px;
-  background:#357EC7;
-   color:#fff;
+  background:#F5D0A9;
+  font-family: Century Gothic;
+  color:#000;
  }

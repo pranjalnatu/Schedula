@@ -14,6 +14,7 @@
 	font-family: Century Gothic;
 }
 
+
 th {
 	text-align: center;
 }
@@ -170,17 +171,6 @@ a.link3:hover {
 	color: #FE2E2E;
 }
 
-#chatMessagesPage {
-	margin-right:200px;
-}
-
-#friendsListPage {
-	
-}
-
-/*#chat{
-          background-image:url(img/chat.png);
-          }*/
 h3 {
 	font-size: 23px;
 	font-family: Century Gothic;
@@ -328,3 +318,4 @@ table {
 	background-color: transparent;
 	color: #FE2E2E;
         }
+

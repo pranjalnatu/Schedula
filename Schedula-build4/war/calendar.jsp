@@ -30,6 +30,18 @@
                td.c{
                background-color:blue;
                }
+               td{
+   border-color: black;
+}
+               td.a {
+               background-color:#58ACF8;
+               }
+               td.b{
+               background-color:#8181F7;
+               }
+               td.c{
+               background-color:blue;
+               }
         </style>
     </head>
     <body class="main2">

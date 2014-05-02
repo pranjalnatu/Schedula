@@ -1,5 +1,3 @@
-
-
 <%-- 
     Document   : AddMajorClasses
     Created on : Mar 14, 2014, 11:21:43 AM
@@ -155,14 +153,3 @@
     </body>
 
 </html>
-                            
-
-
-
-
-
-
-
-
-
-
