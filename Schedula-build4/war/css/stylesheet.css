@@ -1,5 +1,6 @@
 @CHARSET "US-ASCII";
 
+
 th {
 	text-align: center;
 }
@@ -17,7 +18,7 @@ body.main1 {
 
 .name1 {
 	margin-left: -60px;
-	margin-top: 11px;
+	margin-top: 15px;
 	position: absolute;
 }
 
@@ -243,4 +244,27 @@ div.dataTables_paginate {
 table {
 	margin: 1em 0;
 	clear: both;
+}
+
+ .hint{
+            color: red;
+        }
+        #nameInfo {
+            color: red;
+        }
+        #lastInfo{
+         color:red;
+        }
+        #emailInfo {
+            color: red;
+        }
+        #pass1Info {
+            color: red;
+        }
+         #passInfo {
+            color: red;
+        }
+        #phoneInfo{
+         color:red;
+        }
 }
