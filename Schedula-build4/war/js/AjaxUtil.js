@@ -1,5 +1,4 @@
 var userid;
-var activeBox = "";
 window.onload= init;
 
 //general ajax function for all requests 
@@ -32,12 +31,15 @@ function makeRequest(url,async) {
 
 
 function init(){
-	registerUser();
+	loginUser();
 }
 
-registerUser = function(){
+showLoginPage = function(){};
+
+loginUser = function(){
 	document.getElementById("chatMessagesPage").style.display = "block";
 	userid = document.getElementById("userid").innerHTML;
+	document.getElementById("friendsListPage").style.display = "block";
 	requestToken();
 	displayFriendList();
 };
@@ -49,9 +51,7 @@ requestToken = function(){
 		if (httpRequest.readyState === 4) {
 			if (httpRequest.status === 200) {
 				openChannel(httpRequest.responseText);
-			}
-			
-			else {}
+			}else {}
 		}
 	}
 };
@@ -65,11 +65,15 @@ openChannel = function(token) {
 	socket.onclose = onSocketClose;
 };
 
-onSocketError = function(error){};
+onSocketError = function(error){
+};
 
-onSocketOpen = function() {};
+onSocketOpen = function() {
+	// socket opened
+};
 
-onSocketClose = function() {};
+onSocketClose = function() {
+};
 
 onSocketMessage = function(message) {
 	var messageXML =  ((new DOMParser()).parseFromString(message.data, "text/xml"));
@@ -89,14 +93,12 @@ displayFriendList =function(){
 	var httpRequest = makeRequest(getFriendListURI,false);
 	if (httpRequest.readyState === 4) {
 		if (httpRequest.status === 200) {
-			
+
 			var friendListXML = httpRequest.responseXML.getElementsByTagName("friend");
 			for( var i =0 ; i < friendListXML.length ; i++){
 				addToFriends(friendListXML[i].getElementsByTagName("name")[0].firstChild.nodeValue);
 			}	
-		}
-		
-		else {}
+		}else {}
 	}
 };
 
@@ -106,7 +108,6 @@ var friendsList= new Array();
 
 addToFriends = function(friend){
 	//check if the user already added
-	//alert(friend + "1");
 	var contains = false;
 	for(var i = 0 ; i < friendsList.length ; i++){
 		if(friendsList[i]==friend){
@@ -114,14 +115,17 @@ addToFriends = function(friend){
 			break;
 		}
 	}
+		
 	if(!contains){
 		friendsList.push(friend);
-		var friendDisplay = document.getElementById("friendDisplay");
-		friendDisplay.innerHTML = friendDisplay.innerHTML + "<br>" + "<a class='friendLinks' id='"+friend+"'>"+friend+"</a>";
-		friendDisplay.style.cursor="pointer";
-		friendDisplay.setAttribute("onclick","openChat(\""+friend+"\");");
-		//alert(friend + "2");
-		
+
+		var a = "<a class='friendList' id='"+friend+"'>"+friend+"</a>";
+		var txt = document.createElement("div");
+		txt.innerHTML = a;
+		txt.style.cursor="pointer";
+		txt.setAttribute("onclick","openChat(\""+friend+"\");");
+		document.getElementById("friendsListPage").appendChild(txt);
+
 		//adding chat boxes 
 		var chatBox = document.createElement("div");
 		chatBox.setAttribute("id",friend+"chatBox");
@@ -171,8 +175,6 @@ closeWindow = function(friend){
 }
 
 openChat = function(friend){
-	//alert(friend + "3");
-	activeBox = friend+"chatBox";
 	document.getElementById(friend+"chatBox").style.display = "block";
 	document.getElementById(friend+"textarea").focus();
 }
@@ -184,29 +186,26 @@ sendMessage = function(friend){
 	httpRequest.onreadystatechange = function(){
 		if (httpRequest.readyState === 4) {
 			if (httpRequest.status === 200) {
-				}else {
-				alert('There was a problem with the request.');
-			}
+				}else {}
 		}
 	}
 	var mesgDiv = document.createElement("a");
-	mesgDiv.style.color = "black";
 	mesgDiv.innerHTML ="<b>me</b>:  "+ message+"<br />";
+	mesgDiv.style.color = "black";
 	var abc = document.getElementById(friend+"chatBoxMessageContainer");
 	if(abc)
 		abc.appendChild(mesgDiv);
 	else
-		alert("error");
+	{}
 	document.getElementById(friend+"textarea").value="";
 }
 
 updateChatBox = function(message,from){
 	var mesgDiv = document.createElement("a");
-	mesgDiv.style.color = "black";
 	mesgDiv.innerHTML ="<b>"+from+"</b>:  "+ message+"<br />";
+	mesgDiv.style.color = "black";
 	var abc = document.getElementById(from+"chatBoxMessageContainer");
 	if(abc)
 		abc.appendChild(mesgDiv);
-	else
-		alert("error");
+	else {}
 };

@@ -44,9 +44,10 @@
 				</div>
 			</div>
 			
-					<div class="row row1">
+					<div class="row row1 ">
 				<div class=" col-sm-2">
-					<div id="friendDisplay" class="friendLinks"><strong> <u>People Online:</u> </strong> <br> </div>
+				<div class="friendList" id="friendsListPage">
+				<strong> <u id="peopleOnline">People Online:</u> </strong> <br> <br> </div>
 					<!-- <a href="classinfo.jsp" class="btn btn-default button2 link3">Class<br>
 						Info
 					</a> -->
@@ -62,7 +63,7 @@
 		</div>
 	</div>
 	<div id="chatMessagesPage"></div>
-	<div id="friendsListPage"></div>
+	
 	<!--
 	<footer>
 		<div class="pull-right">

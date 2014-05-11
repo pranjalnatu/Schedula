@@ -46,8 +46,9 @@
 				<div class=" col-sm-2">
 					<a href="/display_class" class="btn btn-default button2 link3">Make
 						a new<br> schedule
-					</a> <br> <br> <br/> <br/>
-					<div id="friendDisplay" class="friendLinks"><strong> <u>People Online:</u> </strong> <br> </div>
+					</a> <br> <br> <br> <br>
+					<div class="friendList" id="friendsListPage">
+				<strong> <u>People Online:</u> </strong> <br> <br> </div>
 					<!-- <a href="classinfo.jsp" class="btn btn-default button2 link3">Class<br>
 						Info
 					</a> -->
@@ -56,7 +57,6 @@
 			</div>
 		</div>
 		<div id="chatMessagesPage"></div>
-	<div id="friendsListPage"></div>
 	
 	</div>
 	
