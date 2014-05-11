@@ -50,10 +50,6 @@ href="classinfo.jsp"
                            <span id="pass1Info"></span>
                            
                             <input name = "Confirm" type="password" class="form-control" id="pass1" placeholder="Confirm Password">
-<<<<<<< HEAD
-=======
-                            <input name = "Confirm" type="password" class="form-control"  placeholder="Confirm Password">
->>>>>>> FETCH_HEAD
                         </div>
                         <div class="form-group">
                         <span id="phoneInfo"></span>
@@ -72,8 +68,8 @@ href="classinfo.jsp"
         </div>
         <footer>
         <div class = "pull-right">
-        <a href = "Help.jsp" class = "link1">About</a>&nbsp;&nbsp;
-         <a href = "#author.jsp" class = "link1">Author</a>&nbsp;&nbsp;
+        <a href = "Schedula_Help.pdf" class = "link1">Help</a>&nbsp;&nbsp;
+         <a href = "Author.html" class = "link1">Author</a>&nbsp;&nbsp;
         </div>
         </footer>
          <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

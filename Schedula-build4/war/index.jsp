@@ -59,8 +59,8 @@
         
         <footer>
         <div class = "pull-right">
-        <a href = "Help.jsp" class = "link1">About</a>&nbsp;&nbsp;
-         <a href = "/WEB-INF/Author.html" class = "link1">Author</a>&nbsp;&nbsp;
+        <a href = "Schedula_Help.pdf" class = "link1">Help</a>&nbsp;&nbsp;
+         <a href = "Author.html" class = "link1">Author</a>&nbsp;&nbsp;
         </div>
         </footer>
         
