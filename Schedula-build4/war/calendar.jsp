@@ -13,30 +13,22 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/post.css" rel="stylesheet">
-       
+         <link href="css/stylesheet.css" rel="stylesheet">
+     
 
         <style>
-            body{
-                background-image: url(img/background.png);
-                background-repeat: no-repeat;
-                background-size:  cover;
-            }  
-            .row1{
-                padding-top: 10%;
-            }
-            .button{
-                background-color: transparent;
-                border-color: white;
-                color: white;
+   
+               td{
+   				border-color: black;
+}
+               td.a {
+               background-color:#58ACF8;
                }
-               .button1{
-                background-color: transparent;
-                border-color: black;
-                color:black;
+               td.b{
+               background-color:#8181F7;
                }
-               .container{
-               padding-left:0px;
-               padding-rigth:0px;
+               td.c{
+               background-color:blue;
                }
                td{
    border-color: black;
@@ -52,23 +44,28 @@
                }
         </style>
     </head>
-    <body>
+    <body class="main2">
         <div class="container">
-            <div class=" pull-right">
-               <ul class=" nav navbar-nav">
-                     <li><span class=" glyphicon glyphicon-comment btn-lg"></span> </li>
-                    <li><span class=" glyphicon glyphicon-user btn-lg"></span> </li>
-                    <li><span class=" glyphicon glyphicon-off btn-lg"></span> </li>
-             
-                     </ul>
-                </div>
-            
-            
+           <div class=" pull-right">
+				<br>
+				<ul class="nav navbar-nav">
+					<li id="chat"><a href="index.jsp"><img src="img/chat.png"></a></li>
+					<li id="profile"><a href="index.jsp"><img
+							src="img/profile.png"></a></li>
+					<li id="logout"><a href="index.jsp"><img
+							src="img/logout.png"></a>&nbsp;
+					<!--<strong><span id="userid" class="name">${Name}</span></strong></li>-->
+				</ul>
+				<div class="name1">
+					&nbsp;&nbsp;&nbsp;&nbsp;<strong><span id="userid"
+						class="name">${Name}</span></strong>
+				</div>
+			</div>
+			 
             <div class="row row1">
                 <div class=" col-sm-2">
-                <a href="calendar.jsp" class="btn btn-default button active">Schedule 1 </a><br><br>
-                <button class="btn btn-default button">Schedule 2 </button><br><br>
-                <a  href="AddMajorClasses.jsp"class="btn btn-default button"> <span class="glyphicon glyphicon-edit "></span> </a>
+                <a href="calendar.jsp" class="btn btn-default button2 link3">Schedule 1 </a><br><br>
+               <a href="AddMajorClasses.jsp" class="btn btn-default button2 link3">Make a new<br> schedule </a>      
             
                 </div>
                 <div class=" col-sm-10">
@@ -549,11 +546,11 @@
                     </div>
                     </div>
                     <center>
-                    <button class="btn btn-default button1">Edit Schedule</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="btn btn-default button1">Edit Reminders</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="" class="btn btn-default buttons link4">Edit Schedule</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="" class="btn btn-default buttons link4">Edit Reminders</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    
-                     <button class="btn btn-default button1">Delete Schedule</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="btn btn-default button1">Print</button>
+                     <a href="" class="btn btn-default buttons link4">Delete Schedule</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="" class="btn btn-default buttons link4">Print</a>
                    
                     </center>
                 </div>

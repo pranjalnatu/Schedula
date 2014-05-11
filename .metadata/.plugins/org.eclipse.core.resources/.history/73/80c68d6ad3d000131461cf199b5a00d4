@@ -1,0 +1,112 @@
+<%-- 
+    Document   : Login
+    Created on : Mar 14, 2014, 10:38:30 AM
+    Author     : sanoussysangary
+<a href="/schedula_build1" class="link1">New Advisor?</a>
+--%>
+
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <title>Welcome - Login</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/stylesheet.css" rel="stylesheet">
+   <script type="text/javascript" src="js/asynch1.js"></script>
+   <link href="<c:url value="/favicon.ico"/>" rel="shortcut icon" type="image/x-icon" />
+
+    </head>
+    <body class="main1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-5">
+                <div class=" col-sm-5 a">
+                
+                    <center><h3> Login</h3></center>
+                 
+                    <br>
+                    <form id = "form1" action = "/sign_in">
+                        <div class = "form-group" ><p id = "result"> </p></div>
+                        <div class="form-group">
+                            <input name = "Id" type="email" class="form-control"  placeholder="SBU Email ID">
+                        </div>
+                        <div class="form-group">
+                            <input name = "Password"type="password" class="form-control" placeholder="Password">
+                        </div>
+                         
+          
+                        <center>
+                           <button type="submit" class="btn button">Submit</button> </a><br>
+                            <br><br><br>
+                        <a href="newstudent.jsp" class="link1">New Student?</a><br>
+                        <a href="newAdvisor.jsp" class="link1">New Advisor?</a><br>
+         
+                        
+                         </form>
+                        </center>
+                    </form>
+
+
+                </div>
+                </div>
+            </div><br><br>
+        </div>
+        
+        <footer>
+        <div class = "pull-right">
+        <a href = "Help.jsp" class = "link1">About</a>&nbsp;&nbsp;
+         <a href = "#author.jsp" class = "link1">Author</a>&nbsp;&nbsp;
+        </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+         
+<script type="text/javascript">
+ 
+var form = $('#form1');
+form.submit(function () {
+ 
+$.ajax({
+type: form.attr('method'),
+url: form.attr('action'),
+data: form.serialize(),
+success: function (data) {
+var result = data;
+var l = result.length;
+//var comp = "1";
+if (result > 0 )
+{
+  
+	window.location= "/studenthomepage.jsp";
+   //$("#form1").attr("action","/log_in");	
+   //alert)
+   //form.submit(function(){$.ajax({async:false,url: form.attr('action')});});	
+}
+else if (result < 0)
+	{
+	window.location= "/advisorhomepage.jsp";
+	}
+else
+ $('#result').html(result);        //attr("value",result);
+ }
+});
+ 
+
+
+return false;
+
+
+});
+
+</script>
+
+    </body>
+
+</html>

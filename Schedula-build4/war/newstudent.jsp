@@ -50,7 +50,10 @@ href="classinfo.jsp"
                            <span id="pass1Info"></span>
                            
                             <input name = "Confirm" type="password" class="form-control" id="pass1" placeholder="Confirm Password">
+<<<<<<< HEAD
+=======
                             <input name = "Confirm" type="password" class="form-control"  placeholder="Confirm Password">
+>>>>>>> FETCH_HEAD
                         </div>
                         <div class="form-group">
                         <span id="phoneInfo"></span>
@@ -76,4 +79,8 @@ href="classinfo.jsp"
          <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
        <script type="text/javascript" src="/js/validation.js"></script>
           </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> FETCH_HEAD

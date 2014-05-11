@@ -49,10 +49,6 @@
 					</a> <br> <br> <br> <br>
 					<div class="friendList" id="friendsListPage">
 				<strong> <u>People Online:</u> </strong> <br> <br> </div>
-					<!-- <a href="classinfo.jsp" class="btn btn-default button2 link3">Class<br>
-						Info
-					</a> -->
-
 				</div>
 			</div>
 		</div>

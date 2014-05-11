@@ -1,5 +1,17 @@
 @CHARSET "US-ASCII";
 
+.btn-default1 {
+	border-color: #848484;
+	font-size: 15px;
+	font-family: Century Gothic;
+	background-color: transparent;
+	color: #848484;
+}
+
+.btn-default1:active {
+	font-size: 15px;
+	font-family: Century Gothic;
+}
 
 th {
 	text-align: center;
@@ -26,6 +38,11 @@ body.main2 {
 	background-image: url(../img/screen.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.buttons {
+	background: transparent;
+	border-color: #848484;
 }
 
 .button2 {
@@ -112,6 +129,13 @@ a.link3 {
 	color: black;
 }
 
+a.link4 {
+	font-size: 15px;
+	font-family: Century Gothic;
+	background-color: transparent;
+	color: #848484;
+}
+
 a.link3:hover {
 	background-color: #F0F0F0;
 }
@@ -142,7 +166,7 @@ a.link3:hover {
 	font-family: Century Gothic;
 	text-align: center;
 	background-color: transparent;
-	color: #801200;
+	color: #FE2E2E;
 }
 
 h3 {
@@ -246,32 +270,61 @@ table {
 	clear: both;
 }
 
- .hint{
-            color: red;
-        }
-        #nameInfo {
-            color: red;
-        }
-        #lastInfo{
-         color:red;
-        }
-        #emailInfo {
-            color: red;
-        }
-        #pass1Info {
-            color: red;
-        }
-         #passInfo {
-            color: red;
-        }
-        #phoneInfo{
-         color:red;
-        }
+.hint {
+	color: red;
+}
+
+#nameInfo {
+	font-size: 15px;
+	font-family: Courier New;
+	text-align: center;
+	background-color: transparent;
+	color: #FE2E2E;
+}
+
+#lastInfo {
+	font-size: 15px;
+	font-family: Courier New;
+	text-align: center;
+	background-color: transparent;
+	color: #FE2E2E;
+}
+
+#emailInfo {
+	font-size: 15px;
+	font-family: Courier New;
+	text-align: center;
+	background-color: transparent;
+	color: #FE2E2E;
+}
+
+#pass1Info {
+	font-size: 15px;
+	font-family: Courier New;
+	text-align: center;
+	background-color: transparent;
+	color: #FE2E2E;
+}
+
+#passInfo {
+	font-size: 15px;
+	font-family: Courier New;
+	text-align: center;
+	background-color: transparent;
+	color: #FE2E2E;
+}
+
+#phoneInfo {
+	font-size: 15px;
+	font-family: Courier New;
+	text-align: center;
+	background-color: transparent;
+	color: #FE2E2E;
 }
 
 .authors {
+	
 }
-
 
 h2 {
 	font-size: 20px;
