@@ -30,8 +30,7 @@ public class Sign_upServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		
-		
-		
+
 		String first = req.getParameter("First_Name");
 		String last = req.getParameter("Last_Name");
 		String ID = req.getParameter("Id");

@@ -27,7 +27,7 @@ href="classinfo.jsp"
                		 <h3>Create an account</h3>
                 </center>
                     <br>
-                    <form  action = "/sign_up" id="myform" name="myform" method="post" >
+                    <form  action = "/sign_up" id="myform" name="myform" method="get" >
                         <div class="form-group">
                           <span id="nameInfo"></span>
                           <input name = "First_Name" type="text" id="firstName" class="form-control"  placeholder="First Name">
@@ -75,8 +75,5 @@ href="classinfo.jsp"
          <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
        <script type="text/javascript" src="/js/validation.js"></script>
           </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> FETCH_HEAD
+

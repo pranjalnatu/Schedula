@@ -118,7 +118,6 @@ addToFriends = function(friend){
 		
 	if(!contains){
 		friendsList.push(friend);
-
 		var a = "<a class='friendList' id='"+friend+"'>"+friend+"</a>";
 		var txt = document.createElement("div");
 		txt.innerHTML = a;
