@@ -17,6 +17,11 @@ th {
 	text-align: center;
 }
 
+body.authorBody
+{
+	background-color:black;
+}
+
 body.main1 {
 	background-image: url(../img/sch.png);
 	background-repeat: no-repeat;

@@ -45,7 +45,8 @@ public class Schedula_build1Servlet extends HttpServlet {
 		}
 		**/
 		
-		String[] valueList = req.getParameterValues("selectClass");
+		//String[] valueList = req.getParameterValues("selectClass");
+		//String v = req.getParameter("selectClass");
 		
 		String demo = req.getParameter("majorVal");
 	     
@@ -77,6 +78,7 @@ public class Schedula_build1Servlet extends HttpServlet {
         	     }
         
         String json = helper.writeJSON(pq.asIterable());
+       // System.out.println("okay"+json);
         out.println(json);
 		 
 		req.getSession().setAttribute("ClassList",classList); 

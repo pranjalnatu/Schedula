@@ -63,10 +63,22 @@ public class DisplayClass_servlet extends HttpServlet {
                 	 String start = (String)result.getProperty("StartTime");
                 	 String end = (String)result.getProperty("EndTime");
                 	 String days = (String)result.getProperty("Days");
-                	 String proffId = (String)result.getProperty("ProfessorId");
                 	 
-
-                	 ClassObj temp = new ClassObj(courseNum,coursesCode,courseName,sectionNo,category, start,end, days, proffId);
+                	 String proffId = (String)result.getProperty("ProfessorId");
+                	 Filter rateFilter = new FilterPredicate("ProffId",FilterOperator.EQUAL,proffId);        
+                     Query qRate = new Query("ProfessorTable").setFilter(rateFilter);
+        	         PreparedQuery pRate = datastore.prepare(qRate);
+                     Entity rateEntity = pRate.asSingleEntity();
+                	  
+                     if (rateEntity != null)
+                     {
+                    	 String fn = (String)rateEntity.getProperty("Pfirst");
+                     	 String ln = (String)rateEntity.getProperty("Plast");
+                     	 String pname = fn+ " "+ln;
+                    	 proffId = pname;
+                     
+                     } 	 
+                    	 ClassObj temp = new ClassObj(courseNum,coursesCode,courseName,sectionNo,category, start,end, days, proffId);
                 	 
                        list.add(temp);
                 	 
@@ -77,18 +89,93 @@ public class DisplayClass_servlet extends HttpServlet {
                     // classList.add(Courses);
                	  }
                  
-                 String s = list.get(0).getCourseCode();
-                req.getSession().setAttribute("S",s);
+                // String s = list.get(0).getCourseCode();
+                //req.getSession().setAttribute("S",s);
                  req.getSession().setAttribute("List", list);
-                 //req.getSession().setAttribute("O",o);
+                 
                 //String json = helper.writeJSON(pq.asIterable());
                // out.println(json);
        		 
-       		//req.getSession().setAttribute("ClassList",classList); 
-       		   
-       		
+       		     
                  
-                  //   req.getSession().setAttribute("ruzin", "dbs");
+                 
+                 
+     		    
+     		   Filter decFilterA = new FilterPredicate("Category",FilterOperator.EQUAL,"A");
+     		  Filter decFilterB = new FilterPredicate("Category",FilterOperator.EQUAL,"B");
+     		 Filter decFilterC = new FilterPredicate("Category",FilterOperator.EQUAL,"C");
+     		Filter decFilterD = new FilterPredicate("Category",FilterOperator.EQUAL,"D");
+     		Filter decFilterE = new FilterPredicate("Category",FilterOperator.EQUAL,"E");
+     		Filter decFilterF = new FilterPredicate("Category",FilterOperator.EQUAL,"F");
+     		Filter decFilterG = new FilterPredicate("Category",FilterOperator.EQUAL,"G");
+     		Filter decFilter = new FilterPredicate("Category",FilterOperator.EQUAL,"G");
+ 		    
+ 		    
+   		    
+                
+     		    Query qdec = new Query("Classes").setFilter(decFilter);
+	    		
+
+	    		
+	    		 
+	    		
+          PreparedQuery pqdec = datastore.prepare(qdec);
+          ArrayList<DecObj> listDec = new ArrayList<DecObj>();
+	         
+          
+          //ClassObj o = new ClassObj() ;
+          for (Entity resultDec : pqdec.asIterable()) {
+        	  
+         	 String coursesCode = (String)resultDec.getProperty("CourseCode");
+         	 String courseNum   = (String)resultDec.getProperty("CourseNum");
+         	 String courseName = (String)resultDec.getProperty("CourseName");
+         	 String sectionNo  = (String)resultDec.getProperty("SectionNo");
+         	 String category = (String)resultDec.getProperty("Category");
+         	 String start = (String)resultDec.getProperty("StartTime");
+         	 String end = (String)resultDec.getProperty("EndTime");
+         	 String days = (String)resultDec.getProperty("Days");
+         	 String proffId = (String)resultDec.getProperty("ProfessorId");
+         	 
+         	 
+         	 Filter rateFilter = new FilterPredicate("ProffId",FilterOperator.EQUAL,proffId);        
+             Query qRate = new Query("ProfessorTable").setFilter(rateFilter);
+	         PreparedQuery pRate = datastore.prepare(qRate);
+             Entity rateEntity = pRate.asSingleEntity();
+             if (rateEntity != null){
+         	 String easiness = (String)rateEntity.getProperty("Peasiness");
+         	 String overall = (String)rateEntity.getProperty("Poverall");
+         	 String help = (String)rateEntity.getProperty("Phelp");
+         	 String quality = (String)rateEntity.getProperty("Pquality");
+         	 String fn = (String)rateEntity.getProperty("Pfirst");
+         	 String ln = (String)rateEntity.getProperty("Plast");
+         	 String proffName = fn+ " "+ln;
+
+         DecObj temp = new DecObj(courseNum,coursesCode,courseName,sectionNo,category, start,end, days, proffId,proffName,easiness,help,overall,quality);
+         
+         listDec.add(temp);
+             }
+         	 
+         	 
+         	 // String lastName = (String) result.getProperty("lastName");
+        	    //Long height = (Long) result.getProperty("height");
+             // classList.add(Courses);
+        	  }
+          
+          //String s = list.get(0).getCourseCode();
+         //req.getSession().setAttribute("S",s);
+          req.getSession().setAttribute("ListofDecs",listDec);
+          
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
                  
 		  
 	       resp.sendRedirect("AddMajorClasses.jsp");	

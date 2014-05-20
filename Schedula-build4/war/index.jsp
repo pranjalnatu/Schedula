@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <title>Welcome - Login</title>
+        <title>JSP Page</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/stylesheet.css" rel="stylesheet">
    <script type="text/javascript" src="js/asynch1.js"></script>
@@ -59,8 +59,8 @@
         
         <footer>
         <div class = "pull-right">
-        <a href = "Schedula_Help.pdf" class = "link1">Help</a>&nbsp;&nbsp;
-         <a href = "Author.html" class = "link1">Author</a>&nbsp;&nbsp;
+        <a href = "Help.jsp" class = "link1">About</a>&nbsp;&nbsp;
+         <a href = "#author.jsp" class = "link1">Author</a>&nbsp;&nbsp;
         </div>
         </footer>
         

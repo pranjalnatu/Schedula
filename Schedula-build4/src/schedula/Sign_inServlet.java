@@ -62,7 +62,7 @@ public class Sign_inServlet extends HttpServlet {
 
 		HttpSession session = req.getSession();
 
-
+//-----------------------------START LOADING CLASSES------------------------------------------//
 		BufferedReader br = null;
 		
 		try {
@@ -120,11 +120,70 @@ public class Sign_inServlet extends HttpServlet {
 			}
 		}
 
+//-----------------------------END LOADING CLASSES-------------------------------------------//
 
+//-------------------------------BEGINNING Proffesor Load -----------------------------------//
+		
 
-		// resp.sendRedirect("studenthomepage.jsp");	
+		
+             br = null;
+		
+		try {
 
+			br = new BufferedReader(new FileReader("Professor.txt"));
+			String sCurr = br.readLine();
 
+			do {
+				//ProfID
+				//FirstName
+				//LastName
+				//Overall Quality
+				//Helpfulness
+				//Clarity
+				//Easiness
+				String proffId = sCurr;
+				String pFirst = br.readLine();
+				String pLast = br.readLine();
+				String pOverall = br.readLine();
+				String pHelp = br.readLine();
+				String pClarity = br.readLine();
+				String pEasiness = br.readLine();
+
+				// Key cseKey = KeyFactory.createKey("Course",courseId);
+				//String content = req.getParameter("content");
+				//Date date = new Date();
+				//
+				Entity proff = new Entity("ProfessorTable", proffId);
+				proff.setProperty("ProffId", proffId);
+				proff.setProperty("Pfirst",pFirst);
+				proff.setProperty("Plast",pLast);
+				proff.setProperty("Poverall", pOverall);
+				proff.setProperty("Phelp",pHelp);
+				proff.setProperty("Pclarity",pClarity);
+				proff.setProperty("Peasiness",pEasiness);
+				datastore.put(proff);
+				sCurr = br.readLine();
+
+			}while ((sCurr) != null); 
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+
+		
+		
+		
+//-------------------------------END---------------- ------------------------//		
+		
+		
+		
+		
 		if (result != null) 
 		{
 			String retId = (String)result.getProperty("ID");
